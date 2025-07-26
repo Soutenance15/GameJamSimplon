@@ -14,8 +14,7 @@ public class NotTargetableEnemy : MonoBehaviour
     [Header("Barre de vie")]
     public float maxHealth = 100f;
     private float currentHealth;
-
-
+    public float giveJumpForce = 4f; 
 
     public void TakeDamage(float amount)
     {
@@ -48,9 +47,11 @@ public class NotTargetableEnemy : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")
+        // || collision.gameObject.CompareTag("Player")
+        || collision.gameObject.CompareTag("Front Collision"))
         {
             Flip();
         }
