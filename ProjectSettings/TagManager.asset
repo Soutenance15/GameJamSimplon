@@ -9,6 +9,9 @@ TagManager:
   - NotTargetableEnemy
   - Stair
   - Front Collision
+  - MusicTrigger
+  - TeleportTrigger
+  - FixedBlockObject
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - GroundLayer
   - Water
   - UI
-  - 
+  - FixedBlockObjectLayer
   - 
   - 
   - 
