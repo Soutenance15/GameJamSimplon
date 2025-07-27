@@ -1,12 +1,13 @@
 using UnityEngine;
 
-// Ennemi mobile classique au sol ; se retourne aux collisions et peut transmettre une force de saut au joueur.
-public class EnemyOnG : Enemy
+// Ennemi mobile, peut transmettre une force supérieur de saut au joueur.
+public class EnemyBumper : Enemy
 {
-    // Valeur spécifique pour ce type d’ennemi
     public override void Start()
     {
         base.Start();
         giveJumpForce = 14f;
+        giveKnockBackForce = 6.5f;
+        maxHealth = 110f;
     }
 }

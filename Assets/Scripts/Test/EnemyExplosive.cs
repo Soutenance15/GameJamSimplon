@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// Ennemi explosif : explose à la collision, inflige des dégâts en zone, puis se détruit.
+// Ennemi explosif (tombant sur le sol et explose)
 public class EnemyExplosive : Enemy
 {
     public GameObject explosionEffectPrefab;
@@ -8,42 +8,48 @@ public class EnemyExplosive : Enemy
     public override void Start()
     {
         base.Start();
-        type = "explosive";
-        giveJumpForce = 0f;
+        Debug.Log("start");
+        moveSpeed = 0f; // Pour éviter tout déplacement
+        giveJumpForce = 0f; // Pas d'impulsion donné
+        giveKnockBackForce = 10f; // Poussé trés forte
     }
 
-    public override void OnCollisionEnter2D(Collision2D collision)
+    public override void Die()
     {
         Explode();
     }
 
+    public override void OnCollisionEnter2D(Collision2D collision)
+    {
+        base.OnCollisionEnter2D(collision);
+        if (!collision.gameObject.CompareTag("Enemy"))
+        {
+            Explode();
+        }
+    }
+
     public void Explode()
     {
-        float explosionRadius = 1f;
-        float damageDealt = 25f;
+        float explosionRadius = 2.5f;
+        float damageDealt = 80f;
 
-        // Dégâts de zone autour de l’ennemi
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
-
         foreach (Collider2D hit in hits)
         {
-            // Dégâts au joueur
             if (hit.CompareTag("Player"))
             {
-                PlayerController pc = hit.GetComponent<PlayerController>();
+                var pc = hit.GetComponent<PlayerController>();
                 if (pc != null)
                     pc.TakeDamage(damageDealt);
             }
-            // Dégâts aux autres ennemis (sauf soi-même)
             else if (hit.CompareTag("Enemy") && hit.gameObject != gameObject)
             {
-                Enemy enemy = hit.GetComponent<Enemy>();
+                var enemy = hit.GetComponent<Enemy>();
                 if (enemy != null)
                     enemy.TakeDamage(damageDealt);
             }
         }
 
-        // Effet visuel d’explosion
         if (explosionEffectPrefab != null)
         {
             GameObject effect = Instantiate(
@@ -59,8 +65,9 @@ public class EnemyExplosive : Enemy
         Destroy(gameObject);
     }
 
-    public override void Die()
+    public override void TakeDamage(float amount)
     {
+        Debug.Log("ok");
         Explode();
     }
 }

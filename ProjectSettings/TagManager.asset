@@ -12,6 +12,8 @@ TagManager:
   - MusicTrigger
   - TeleportTrigger
   - FixedBlockObject
+  - Projectile
+  - Friend
   layers:
   - Default
   - TransparentFX

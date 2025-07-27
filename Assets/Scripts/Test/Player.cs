@@ -30,6 +30,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool justBounced = false;
+
+    // Temps d'invulnerabilite (de grace) durant le bounce pour eviter les multiplications
+    // En cas de collisions multiples (en générale c'est le cas)
     private float bounceGraceTime = 0.12f;
     private float bounceTimer = 0f;
 
@@ -40,6 +43,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        groundLayer = LayerMask.GetMask("GroundLayer");
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
         currentHealth = maxHealth;
@@ -57,6 +61,17 @@ public class Player : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
+    private void startKnockBack()
+    {
+        isKnockedBack = true;
+        knockbackTimer = 0f;
+    }
+
+    private void finishKnockBack()
+    {
+        isKnockedBack = false;
+    }
+
     void Update()
     {
         // Mort si chute trop basse
@@ -69,7 +84,7 @@ public class Player : MonoBehaviour
             knockbackTimer += Time.deltaTime;
             if (knockbackTimer >= knockbackDuration)
             {
-                isKnockedBack = false;
+                finishKnockBack();
             }
             return; // Empêche tout contrôle temps du knockback
         }
@@ -108,7 +123,7 @@ public class Player : MonoBehaviour
     private bool IsStomping(Vector2 contactPoint)
     {
         // Retourne vrai si le contact est sous le centre du joueur et que le joueur descend
-        return (contactPoint.y < transform.position.y - 0.1f) && rb.linearVelocity.y < 0f;
+        return (contactPoint.y < transform.position.y + 0.025f) && rb.linearVelocity.y < 0f;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -123,15 +138,14 @@ public class Player : MonoBehaviour
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {
+                //Si le contact est sur la tête de l'ennemi
                 if (IsStomping(contact.point))
                 {
-                    // Générique sur n'importe quel type d'ennemi (basé sur héritage Enemy !)
                     var enemy = collision.gameObject.GetComponent<Enemy>();
+                    // if (enemy != null && enemy.GetType() == typeof(EnemyWeakHead))
                     if (enemy != null)
                     {
-                        if (enemy.type == "weakHead")
-                            enemy.TakeDamage(enemy.maxHealth);
-
+                        enemy.TakeDamage(enemy.damageOnHead);
                         rb.linearVelocity = new Vector2(
                             rb.linearVelocity.x,
                             enemy.giveJumpForce * 0.8f
@@ -142,8 +156,9 @@ public class Player : MonoBehaviour
                     }
                 }
             }
-            // Si aucun contact n'était un stomp, appliquer perte de vie + knockback
-            TakeDamage(20f, collision.gameObject.transform.position);
+            // Si aucun contact n'est sur la tête de l'ennemi,
+            // Appliquer perte de vie + knockback (poussé par l'ennemi)
+            TakeDamage(20f, collision.gameObject.GetComponent<Enemy>());
         }
     }
 
@@ -155,7 +170,7 @@ public class Player : MonoBehaviour
             {
                 if (!IsStomping(contact.point) && Time.time > lastDamageTime + damageInterval)
                 {
-                    TakeDamage(20f, collision.gameObject.transform.position);
+                    TakeDamage(20f, collision.gameObject.GetComponent<Enemy>());
                     lastDamageTime = Time.time;
                 }
             }
@@ -166,12 +181,30 @@ public class Player : MonoBehaviour
     {
         // Petite poussée vers la gauche ou la droite selon le facing actuel
         float direction = (transform.localScale.x > 0) ? -1f : 1f;
-        float pushForce = 10f;
-        rb.linearVelocity = new Vector2(direction * pushForce, rb.linearVelocity.y);
+        float knockBackForce = 10f;
+        rb.linearVelocity = new Vector2(direction * knockBackForce, rb.linearVelocity.y);
     }
 
     // Dégâts et knockback éventuel
-    public void TakeDamage(float amount, Vector2? pushSource = null)
+    // public void TakeDamage(float amount, Vector2? pushSource = null)
+    // {
+    //     ShowDamageScreen();
+    //     currentHealth -= amount;
+    //     UpdateHealthBar();
+    //     if (currentHealth <= 0f)
+    //         Die();
+
+    //     if (pushSource.HasValue)
+    //     {
+    //         Vector2 pushDirection = ((Vector2)transform.position - pushSource.Value).normalized;
+    //         float knockBackForce = 6.5f; // Ajuste selon le ressenti
+    //         rb.linearVelocity = new Vector2(pushDirection.x * knockBackForce, rb.linearVelocity.y);
+    //         isKnockedBack = true;
+    //         knockbackTimer = 0f;
+    //     }
+    // }
+
+    public void TakeDamage(float amount, Enemy enemy = null)
     {
         ShowDamageScreen();
         currentHealth -= amount;
@@ -179,13 +212,21 @@ public class Player : MonoBehaviour
         if (currentHealth <= 0f)
             Die();
 
-        if (pushSource.HasValue)
+        if (enemy != null)
         {
-            Vector2 pushDirection = ((Vector2)transform.position - pushSource.Value).normalized;
-            float pushForce = 6.5f; // Ajuste selon le ressenti
-            rb.linearVelocity = new Vector2(pushDirection.x * pushForce, rb.linearVelocity.y);
-            isKnockedBack = true;
-            knockbackTimer = 0f;
+            Debug.Log(enemy.giveKnockBackForce);
+            // Calcul de la direction (Player ----- Enemy)
+            Vector2 pushDirection = (
+                (Vector2)transform.position - (Vector2)enemy.transform.position
+            ).normalized;
+            // float knockBackForce = enemy.giveKnockBackForce; // La force personnalisée par l'ennemi
+            rb.linearVelocity = new Vector2(
+                pushDirection.x * enemy.giveKnockBackForce,
+                rb.linearVelocity.y
+            );
+
+            // Lance le knockBack
+            startKnockBack();
         }
     }
 
@@ -227,7 +268,7 @@ public class Player : MonoBehaviour
     {
         if (damageScreen != null)
             damageScreen.color = new Color(0, 0, 0, 0.4f);
-        Restart();
+        // Restart();
     }
 
     void Restart()

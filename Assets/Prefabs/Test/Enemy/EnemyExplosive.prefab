@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 6865895195532029697}
   - component: {fileID: 9179664129897341486}
   m_Layer: 7
-  m_Name: Explosive Enemy
+  m_Name: EnemyExplosive
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

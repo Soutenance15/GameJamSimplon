@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class FriendFollower : MonoBehaviour
 {
-
     [Header("Projectile")]
     public GameObject projectilePrefab;
     public Transform firePoint;
@@ -21,8 +20,6 @@ public class FriendFollower : MonoBehaviour
     [Header("Détection d'ennemis")]
     public string enemyTag = "Enemy"; // Tous les ennemis doivent avoir ce tag
 
-
-
     void Start()
     {
         // Si le Friend a un Rigidbody2D, désactiver la gravité
@@ -36,18 +33,25 @@ public class FriendFollower : MonoBehaviour
 
     void Update()
     {
-        if (player == null) return;
+        if (player == null)
+            return;
 
         // -------- 1. Calcul de la position cible à côté du joueur --------
         float cote = Mathf.Sign(transform.position.x - player.position.x);
-        if (cote == 0) cote = Mathf.Sign(followOffset.x);
+        if (cote == 0)
+            cote = Mathf.Sign(followOffset.x);
 
         Vector2 offset = new Vector2(Mathf.Abs(followOffset.x) * cote, followOffset.y);
         Vector3 targetPos = player.position + (Vector3)offset;
 
         // -------- 2. Évitement obstacle avec raycast --------
         Vector2 direction = (targetPos - transform.position).normalized;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, obstacleDetectDistance, LayerMask.GetMask("Ground"));
+        RaycastHit2D hit = Physics2D.Raycast(
+            transform.position,
+            direction,
+            obstacleDetectDistance,
+            LayerMask.GetMask("Ground")
+        );
         if (hit.collider != null)
         {
             targetPos.y = Mathf.Max(targetPos.y, hit.point.y + obstacleAvoidHeight);
@@ -79,12 +83,15 @@ public class FriendFollower : MonoBehaviour
             if (target != null && projectilePrefab != null && firePoint != null)
             {
                 Vector2 directionProjectile = (target.position - firePoint.position).normalized;
-                GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
-                proj.GetComponent<Projectile>().Init(directionProjectile);
+                GameObject proj = Instantiate(
+                    projectilePrefab,
+                    firePoint.position,
+                    Quaternion.identity
+                );
+                proj.GetComponent<ProjectileN>().Init(directionProjectile);
                 lastShotTime = Time.time;
             }
         }
-
     }
 
     // Trouver l'ennemi le plus proche portant le tag "Enemy"
@@ -96,7 +103,8 @@ public class FriendFollower : MonoBehaviour
 
         foreach (GameObject enemy in enemies)
         {
-            bool isInstanceOfNotTargetable = enemy.gameObject.GetComponent<NotTargetableEnemy>() != null;
+            bool isInstanceOfNotTargetable =
+                enemy.gameObject.GetComponent<NotTargetableEnemy>() != null;
             if (!(isInstanceOfNotTargetable))
             {
                 float dist = Vector2.Distance(transform.position, enemy.transform.position);

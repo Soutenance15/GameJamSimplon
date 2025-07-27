@@ -2,6 +2,7 @@ using UnityEngine;
 
 // Classe de base pour tous les ennemis au sol. Gère la vie, le déplacement, le flip, la barre de vie.
 // Les classes filles spécialisent les comportements.
+// public abstract class Enemy : MonoBehaviour
 public abstract class Enemy : MonoBehaviour
 {
     [Header("Mouvement")]
@@ -10,19 +11,24 @@ public abstract class Enemy : MonoBehaviour
     public float groundCheckRadius = 0.2f; // Rayon de détection du sol
     public LayerMask groundLayer; // Masque pour détecter le sol
 
+    //TODO
+    // Il est possible d'integrer un flipWaitTime pou eviter les repetitions de Flip
+    // Por le moment ce n'est pas le cas
+    // SOit integrer la fonctionalite, soit supprimer ce commentaire
+    // Pour le moment l'inclinaison du sol choisit évite les repetitins de flip
+    // TODO
     private Rigidbody2D rb;
     private bool isCollidedPlayer = false;
     public int moveDirection = 1;
 
-    [Header("Type d'ennemi")]
-    public string type = "normal";
-
     [Header("Vie")]
     public float maxHealth = 100f;
+    public float damageOnHead = 50f;
     public float currentHealth;
 
     [Header("Effets divers")]
-    public float giveJumpForce = 0f; // Force jump transmise au joueur par l'ennemi
+    public float giveJumpForce = 6f; // Force jump (vers le haut) transmise au joueur par l'ennemi
+    public float giveKnockBackForce = 6f; // Force knockBack vers un côté) transmise au joueur par l'ennemi
 
     [Header("UI")]
     public Transform healthBar; // Barre de vie (scale X modifiée selon la vie restante)
@@ -67,6 +73,7 @@ public abstract class Enemy : MonoBehaviour
     // Initialise la vie et récupère le rigidbody.
     public virtual void Start()
     {
+        groundLayer = LayerMask.GetMask("GroundLayer");
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
     }
