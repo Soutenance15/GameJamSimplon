@@ -9,10 +9,9 @@ public class EnemyFixed : EnemyExplosive
     // Pas de override ici, on réecris entierement car le parent
     //donne un comportement différent
     {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Friend")
-        )
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Friend"))
         {
-            Explode();
+            Explode(collision);
         }
     }
 }
