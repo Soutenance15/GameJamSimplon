@@ -181,6 +181,9 @@ MonoBehaviour:
     m_Bits: 8
   friendInstance: {fileID: 4970233588299606611}
   friendSpawnPoint: {fileID: 0}
+  isFriendDeployed: 0
+  controlDisable: 0
+  disableDeployFriend: 0
 --- !u!1001 &4638323908091417097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3598207109497811314, guid: b411271649731b749806a383904e0249, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3598207109497811314, guid: b411271649731b749806a383904e0249, type: 3}
       propertyPath: m_LocalPosition.z

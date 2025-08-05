@@ -30,13 +30,11 @@ public class Player : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask groundLayer;
-
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool justBounced = false;
 
-    // Temps d'invulnerabilite (de grace) durant le bounce pour eviter les multiplications
-    // En cas de collisions multiples (en générale c'est le cas)
+    // Temps d'invulnerabilité après bounce
     private float bounceGraceTime = 0.12f;
     private float bounceTimer = 0f;
 
@@ -51,6 +49,7 @@ public class Player : MonoBehaviour
     public bool isFriendDeployed = false;
     public bool controlDisable = false;
     private bool collidedObstacleJumpOn = false;
+    public bool disableDeployFriend = false;
 
     void Start()
     {
@@ -59,13 +58,16 @@ public class Player : MonoBehaviour
             // friendInstance.SetActive(false);
             isFriendDeployed = true;
         }
+
         groundLayer = LayerMask.GetMask("GroundLayer");
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
         currentHealth = maxHealth;
         UpdateHealthBar();
+
         if (damageScreen != null)
             damageScreen.enabled = false;
+
         if (groundCheck == null)
             Debug.LogWarning(
                 "groundCheck n'est pas assigné ! Assigne un enfant vide sous le joueur."
@@ -92,7 +94,6 @@ public class Player : MonoBehaviour
     {
         if (friend == null)
             yield break;
-
         float timer = 0f;
         while (timer < duration)
         {
@@ -107,47 +108,32 @@ public class Player : MonoBehaviour
 
     void DeployFriend()
     {
-        if (friendInstance != null && !isFriendDeployed)
+        if (friendInstance != null && !isFriendDeployed && !disableDeployFriend)
         {
-            // float hauteur = 0f;
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
-            // if (sr != null)
-            // {
-            float height = sr.bounds.size.y;
-            // }
-            // Debug.Log("Hauteur du Player : " + height);
+            float height = sr != null ? sr.bounds.size.y : 1f;
+            Vector3 spawnPos =
+                (friendSpawnPoint != null)
+                    ? friendSpawnPoint.position
+                    : transform.position + new Vector3(0, height, 0);
 
-            Vector3 spawnPos;
-            if (friendSpawnPoint != null)
-            {
-                spawnPos = friendSpawnPoint.position;
-            }
-            else
-            {
-                // spawnPos = transform.position;
-                spawnPos = transform.position + new Vector3(0, height, 0);
-            }
             friendInstance.transform.position = spawnPos;
             friendInstance.SetActive(true);
-
-            // Met à l'échelle minimale avant le scaling progressif
-            // friendInstance.transform.localScale = new Vector3(0.25f, 0.25f, 1f);
-
             StartCoroutine(ScaleFriendOverTime(friendInstance, 0.25f, 1f, 0.75f));
+            var friendScript = friendInstance.GetComponent<MonoBehaviour>(); // Remplace par le vrai type si besoin
 
-            var friendScript = friendInstance.GetComponent<Friend>();
             if (friendScript != null)
             {
-                friendScript.player = this.transform;
+                var field = friendScript.GetType().GetField("player");
+                if (field != null)
+                    field.SetValue(friendScript, this.transform);
             }
-
             isFriendDeployed = true;
         }
     }
 
     public void RecallFriend()
     {
-        Debug.Log("Recall");
         if (friendInstance != null && isFriendDeployed)
         {
             friendInstance.SetActive(false);
@@ -157,28 +143,27 @@ public class Player : MonoBehaviour
 
     public void PushMeInDirection(Vector2 direction, float force, float duration = 0.18f)
     {
-        rb.linearVelocity = direction.normalized * force; // Remplace la vitesse pour effet net
-        isPushed = true;
-        pushDuration = duration;
-        pushTimer = 0f;
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
+        isKnockedBack = true;
+        knockbackDuration = duration;
+        knockbackTimer = 0f;
     }
 
     void Control()
     {
+        if (isKnockedBack || controlDisable)
+            return;
+
         // Déploiement/rangement du Friend
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             if (friendInstance != null)
             {
                 if (!isFriendDeployed)
-                {
-                    // Déploie le Friend au point de spawn
                     DeployFriend();
-                }
                 else
-                {
                     RecallFriend();
-                }
             }
             else
             {
@@ -186,20 +171,7 @@ public class Player : MonoBehaviour
             }
         }
 
-        // Gère le knockback (empêche tout contrôle du joueur pendant knockback)
-        if (isKnockedBack)
-        {
-            knockbackTimer += Time.deltaTime;
-            if (knockbackTimer >= knockbackDuration)
-            {
-                finishKnockBack();
-            }
-            return; // Empêche tout contrôle temps du knockback
-        }
-
-        // // Déplacement horizontal
-        // float moveInput = Input.GetAxisRaw("Horizontal");
-        // rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // Knockback : gestion dans Update
 
         // Saut
         if (
@@ -214,7 +186,7 @@ public class Player : MonoBehaviour
         if (justBounced)
         {
             bounceTimer += Time.deltaTime;
-            if (bounceTimer > bounceGraceTime)
+            if (bounceTimer >= bounceGraceTime)
             {
                 justBounced = false;
                 bounceTimer = 0f;
@@ -223,6 +195,10 @@ public class Player : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Escape))
             SceneManager.LoadScene("MainMenu");
+
+        // Déplacement horizontal
+        float moveInput = Input.GetAxisRaw("Horizontal");
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 
     void Update()
@@ -233,17 +209,23 @@ public class Player : MonoBehaviour
 
         if (!controlDisable)
             Control();
+
+        if (isKnockedBack)
+        {
+            knockbackTimer += Time.deltaTime;
+            if (knockbackTimer >= knockbackDuration)
+                finishKnockBack();
+            return; // Empêche tout contrôle de l'input tant que knockback
+        }
+
         if (isPushed)
         {
             pushTimer += Time.deltaTime;
             if (pushTimer >= pushDuration)
                 isPushed = false;
             else
-                return; // Ignore tous l'input en dessous
+                return; // Ignore inputs tant que push
         }
-        // Déplacement horizontal
-        float moveInput = Input.GetAxisRaw("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
     }
 
     private bool IsStomping(Vector2 contactPoint)
@@ -259,20 +241,18 @@ public class Player : MonoBehaviour
             PushMeBack();
             return;
         }
+
         if (collision.gameObject.CompareTag("Obstacle Jump On"))
-        {
             collidedObstacleJumpOn = true;
-        }
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
             foreach (ContactPoint2D contact in collision.contacts)
             {
-                //Si le contact est sur la tête de l'ennemi
+                // Si le contact est sur la tête de l'ennemi
                 if (IsStomping(contact.point))
                 {
                     var enemy = collision.gameObject.GetComponent<Enemy>();
-                    // if (enemy != null && enemy.GetType() == typeof(EnemyWeakHead))
                     if (enemy != null)
                     {
                         enemy.TakeDamage(enemy.damageOnHead);
@@ -282,8 +262,8 @@ public class Player : MonoBehaviour
                         );
                         justBounced = true;
                         bounceTimer = 0f;
-                        return;
                     }
+                    return;
                 }
             }
             // Si aucun contact n'est sur la tête de l'ennemi,
@@ -295,9 +275,8 @@ public class Player : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacle Jump On"))
-        {
             collidedObstacleJumpOn = true;
-        }
+
         if (collision.gameObject.CompareTag("Enemy") && !justBounced)
         {
             foreach (ContactPoint2D contact in collision.contacts)
@@ -314,9 +293,7 @@ public class Player : MonoBehaviour
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Obstacle Jump On"))
-        {
             collidedObstacleJumpOn = false;
-        }
     }
 
     void PushMeBack()
@@ -324,27 +301,11 @@ public class Player : MonoBehaviour
         // Petite poussée vers la gauche ou la droite selon le facing actuel
         float direction = (transform.localScale.x > 0) ? -1f : 1f;
         float knockBackForce = 10f;
-        rb.linearVelocity = new Vector2(direction * knockBackForce, rb.linearVelocity.y);
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(new Vector2(direction * knockBackForce, 0f), ForceMode2D.Impulse);
+        isKnockedBack = true;
+        knockbackTimer = 0f;
     }
-
-    // Dégâts et knockback éventuel
-    // public void TakeDamage(float amount, Vector2? pushSource = null)
-    // {
-    //     ShowDamageScreen();
-    //     currentHealth -= amount;
-    //     UpdateHealthBar();
-    //     if (currentHealth <= 0f)
-    //         Die();
-
-    //     if (pushSource.HasValue)
-    //     {
-    //         Vector2 pushDirection = ((Vector2)transform.position - pushSource.Value).normalized;
-    //         float knockBackForce = 6.5f; // Ajuste selon le ressenti
-    //         rb.linearVelocity = new Vector2(pushDirection.x * knockBackForce, rb.linearVelocity.y);
-    //         isKnockedBack = true;
-    //         knockbackTimer = 0f;
-    //     }
-    // }
 
     public void TakeDamage(float amount, Enemy enemy = null)
     {
@@ -353,21 +314,15 @@ public class Player : MonoBehaviour
         UpdateHealthBar();
         if (currentHealth <= 0f)
             Die();
-
         if (enemy != null)
         {
-            Debug.Log(enemy.giveKnockBackForce);
+            Debug.Log(enemy.giveKnockBackForce + "kn");
             // Calcul de la direction (Player ----- Enemy)
             Vector2 pushDirection = (
                 (Vector2)transform.position - (Vector2)enemy.transform.position
             ).normalized;
-            // float knockBackForce = enemy.giveKnockBackForce; // La force personnalisée par l'ennemi
-            rb.linearVelocity = new Vector2(
-                pushDirection.x * enemy.giveKnockBackForce,
-                rb.linearVelocity.y
-            );
-
-            // Lance le knockBack
+            rb.linearVelocity = Vector2.zero;
+            rb.AddForce(pushDirection * enemy.giveKnockBackForce, ForceMode2D.Impulse);
             startKnockBack();
         }
     }
@@ -392,7 +347,6 @@ public class Player : MonoBehaviour
     {
         if (damageScreen == null)
             return;
-
         damageScreen.enabled = true;
         if (damageScreenRoutine != null)
             StopCoroutine(damageScreenRoutine);
@@ -410,10 +364,44 @@ public class Player : MonoBehaviour
     {
         if (damageScreen != null)
             damageScreen.color = new Color(0, 0, 0, 0.4f);
-        //TODO
-        // Patienter 3 secondes
-        // puis le restart
-        // Restart();
+
+        EnemyPc lastPcDisable = null;
+        GameObject[] allPCs = GameObject.FindGameObjectsWithTag("EnemyPC");
+        foreach (GameObject pc in allPCs)
+        {
+            var enemyPc = pc.GetComponent<EnemyPc>();
+            if (enemyPc.lastDisable)
+                lastPcDisable = enemyPc;
+        }
+        if (null != lastPcDisable)
+            SpawnAtCheckpoint(lastPcDisable);
+        else
+        {
+            //TODO attendre 3 secondes puis restart
+            Restart();
+        }
+    }
+
+    void SpawnAtCheckpoint(EnemyPc enemyPc)
+    {
+        ResetPlayer();
+        gameObject.SetActive(false);
+        gameObject.transform.position = new Vector3(
+            enemyPc.transform.position.x,
+            enemyPc.transform.position.y,
+            enemyPc.transform.position.z
+        );
+        gameObject.SetActive(true);
+    }
+
+    void ResetPlayer()
+    {
+        currentHealth = maxHealth;
+        UpdateHealthBar();
+        isFriendDeployed = false;
+        controlDisable = false;
+        collidedObstacleJumpOn = false;
+        disableDeployFriend = false;
     }
 
     void Restart()

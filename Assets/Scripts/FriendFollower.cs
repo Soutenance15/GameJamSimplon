@@ -88,7 +88,8 @@ public class FriendFollower : MonoBehaviour
                     firePoint.position,
                     Quaternion.identity
                 );
-                proj.GetComponent<ProjectileN>().Init(directionProjectile);
+                // proj.GetComponent<ProjectileN>().Init(directionProjectile);
+                proj.GetComponent<Projectile>().Init(directionProjectile);
                 lastShotTime = Time.time;
             }
         }

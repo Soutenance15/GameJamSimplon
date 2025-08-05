@@ -11,7 +11,7 @@ public class EnemyFixed : EnemyExplosive
     {
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Friend"))
         {
-            Explode(collision);
+            ExplodeDamage(collision);
         }
     }
 }

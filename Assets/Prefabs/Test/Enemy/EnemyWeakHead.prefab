@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2347499446974772596}
   - component: {fileID: 4665507100087541150}
   - component: {fileID: 3033518424333813773}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 524970023827911528}
   - component: {fileID: 7540123996571920326}
   - component: {fileID: 1521125142256457849}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Contour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 4370533846208181905}
   - component: {fileID: 6865895195532029697}
   - component: {fileID: 974958969224592839}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: EnemyWeakHead
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 1936274217866197978}
   - component: {fileID: 8527792813477786573}
   - component: {fileID: 6303953579374801663}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: CanvasHealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -743,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3598207109497811314, guid: b411271649731b749806a383904e0249, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3598207109497811314, guid: b411271649731b749806a383904e0249, type: 3}
       propertyPath: m_LocalPosition.z
