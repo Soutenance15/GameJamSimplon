@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960782, g: 0.6369152, b: 0.8156863, a: 1}
+  m_Color: {r: 0.81761, g: 0.34041065, b: 0.21854341, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -305,9 +305,6 @@ MonoBehaviour:
   interactionKey: 101
   interactionDistance: 2
   pcCounter: {fileID: 0}
-  explosiveEnemyPrefab: {fileID: 7223171690186758717, guid: b26c752b1aa270b4dac99ade2cf2d967, type: 3}
-  dropHeight: 10
-  numberOfEnemiesToDrop: 3
 --- !u!1 &7492756885485639082
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,7 +483,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

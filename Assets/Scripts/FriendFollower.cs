@@ -71,11 +71,11 @@ public class FriendFollower : MonoBehaviour
             transform.rotation = Quaternion.identity;
         }
 
-        bool shootButton = Input.GetKey(KeyCode.LeftControl);
+        bool shootButton = Input.GetKey(KeyCode.LeftControl); 
 
         if (shootButton && Time.time > lastShotTime + 1f / fireRate)
         {
-            Transform target = FindClosestEnemy();
+            Transform target = FindClosestEnemy(); // Fonction déjà existante
             if (target != null && projectilePrefab != null && firePoint != null)
             {
                 Vector2 directionProjectile = (target.position - firePoint.position).normalized;
@@ -96,15 +96,11 @@ public class FriendFollower : MonoBehaviour
 
         foreach (GameObject enemy in enemies)
         {
-            bool isInstanceOfNotTargetable = enemy.gameObject.GetComponent<NotTargetableEnemy>() != null;
-            if (!(isInstanceOfNotTargetable))
+            float dist = Vector2.Distance(transform.position, enemy.transform.position);
+            if (dist < minDistance)
             {
-                float dist = Vector2.Distance(transform.position, enemy.transform.position);
-                if (dist < minDistance)
-                {
-                    minDistance = dist;
-                    closest = enemy.transform;
-                }
+                minDistance = dist;
+                closest = enemy.transform;
             }
         }
 

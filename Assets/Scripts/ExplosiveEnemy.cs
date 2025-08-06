@@ -10,9 +10,6 @@ public class ExplosiveEnemy : MonoBehaviour
     private Rigidbody2D rb;
     private int moveDirection = 1;
     public string type = "normal";
-    public float giveJumpForce = 0f;
-
-    public GameObject explosionEffectPrefab;
 
     void Die()
     {
@@ -44,12 +41,11 @@ public class ExplosiveEnemy : MonoBehaviour
 
     void Explode()
     {
-        float explosionRadius = 1f;          // Rayon d’effet
-        float damageDealt = 25f;             // Dégâts infligés
+        float explosionRadius = 2f;          // Rayon d’effet
+        float damageDealt = 30f;             // Dégâts infligés
 
-        // Montrer un cercle dans la scène
-        // Mais ca marche pas
-        // Debug.DrawLine(transform.position, transform.position + Vector3.up * explosionRadius, Color.red, 1f);
+        // Optionnel : montrer un cercle dans la scène
+        Debug.DrawLine(transform.position, transform.position + Vector3.up * explosionRadius, Color.red, 1f);
 
         // 1. Détection des objets
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
@@ -81,16 +77,7 @@ public class ExplosiveEnemy : MonoBehaviour
             // }
         }
 
-        // 5. Ajouter effets visuels 
-        if (explosionEffectPrefab != null)
-        {
-            GameObject effect = Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
-            // float effectScale = explosionRadius * 2f; // 2x car le radius est le demi-diamètre
-            float effectScale = explosionRadius / 3; // 2x car le radius est le demi-diamètre
-            effect.transform.localScale = new Vector3(effectScale, effectScale, 1f);
-            // Détruit l’effet après sa durée
-            Destroy(effect, 1.5f); // ou la durée de ton effet
-        }
+        // 5. Ajouter effets visuels (facultatif)
         // Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
 
         // 6. Détruire l'ennemi après explosion

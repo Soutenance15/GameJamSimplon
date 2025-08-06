@@ -15,16 +15,6 @@ public class EnemyOnGround : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
 
-    public float giveJumpForce = 14f;
-
-    // bool SameDirection(Vector2 v1, Vector2 v2, float threshold = 0.8f)
-    // {
-    //     if (v1 == Vector2.zero || v2 == Vector2.zero)
-    //         return false;
-
-    //     float dot = Vector2.Dot(v1.normalized, v2.normalized);
-    //     return dot > threshold;
-    // }
 
 
     public void TakeDamage(float amount)
@@ -60,21 +50,10 @@ public class EnemyOnGround : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")
-        // || collision.gameObject.CompareTag("Player")
-        || collision.gameObject.CompareTag("Front Collision"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Flip();
         }
-        // else if (collision.gameObject.CompareTag("Player"))
-        // {
-        //     if (!SameDirection(rb.linearVelocity, collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity))
-        //     {
-        //         Debug.Log("test");
-        //         Flip();
-        //     }
-        // }
-
     }
 
     void Start()
@@ -88,7 +67,6 @@ public class EnemyOnGround : MonoBehaviour
         rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
 
         bool onGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
         if (!onGround)
         {
             Flip();
@@ -102,4 +80,6 @@ public class EnemyOnGround : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
+
+
 }
