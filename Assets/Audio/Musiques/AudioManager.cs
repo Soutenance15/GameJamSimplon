@@ -7,8 +7,7 @@ public class AudioManager : MonoBehaviour
 	private int musicIndex = 0;
 	public bool nextMusic = false;
 	public GameObject player ;
-	public GameObject drone ;
-	public GameObject zoneTeleport;
+	public GameObject zoneTeleport ;
 	public GameObject background1 ;
 	public GameObject background2 ;
 	
@@ -51,7 +50,6 @@ public class AudioManager : MonoBehaviour
         {
             // Contact principal
 			player.transform.position = zoneTeleport.transform.position;
-			drone.transform.position = zoneTeleport.transform.position;
 			PlayNextSong();
 			background1.SetActive(false);
 			background2.SetActive(true);

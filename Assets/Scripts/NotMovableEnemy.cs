@@ -15,8 +15,6 @@ public class NotMovableEnemy : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
 
-    public float giveJumpForce = 0f; 
-
     public GameObject explosionEffectPrefab;
 
     // private bool hasExploded = false;
@@ -26,7 +24,7 @@ public class NotMovableEnemy : MonoBehaviour
         // if (hasExploded) return;
         // hasExploded = true;
         float explosionRadius = 2.5f;          // Rayon d’effet
-        float damageDealt = 80f;             // Dégâts infligés
+        float damageDealt = 200f;             // Dégâts infligés
 
         // Optionnel : montrer un cercle dans la scène
         Debug.DrawLine(transform.position, transform.position + Vector3.up * explosionRadius, Color.red, 1f);
@@ -120,9 +118,9 @@ public class NotMovableEnemy : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            Explode();
+            Flip();
         }
     }
 

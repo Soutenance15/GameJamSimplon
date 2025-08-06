@@ -15,16 +15,6 @@ public class EnemyOnGround : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
 
-    public float giveJumpForce = 14f;
-
-    // bool SameDirection(Vector2 v1, Vector2 v2, float threshold = 0.8f)
-    // {
-    //     if (v1 == Vector2.zero || v2 == Vector2.zero)
-    //         return false;
-
-    //     float dot = Vector2.Dot(v1.normalized, v2.normalized);
-    //     return dot > threshold;
-    // }
 
     public void TakeDamage(float amount)
     {
@@ -106,4 +96,6 @@ public class EnemyOnGround : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
+
+
 }
