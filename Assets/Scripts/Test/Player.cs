@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,6 +13,9 @@ public class Player : MonoBehaviour
     [Header("Déplacements")]
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
+    private bool isPushed = false;
+    private float pushDuration = 0.18f; // Durée de l'effet, à ajuster à ton ressenti
+    private float pushTimer = 0f;
 
     [Header("Vie")]
     public float maxHealth = 100f;
@@ -41,8 +45,20 @@ public class Player : MonoBehaviour
     private float knockbackTimer = 0f;
     private float knockbackDuration = 0.15f; // Durée du repoussement
 
+    [Header("Détection Sol")]
+    public GameObject friendInstance;
+    public Transform friendSpawnPoint;
+    public bool isFriendDeployed = false;
+    public bool controlDisable = false;
+    private bool collidedObstacleJumpOn = false;
+
     void Start()
     {
+        if (friendInstance != null)
+        {
+            // friendInstance.SetActive(false);
+            isFriendDeployed = true;
+        }
         groundLayer = LayerMask.GetMask("GroundLayer");
         rb = GetComponent<Rigidbody2D>();
         rb.freezeRotation = true;
@@ -72,11 +88,103 @@ public class Player : MonoBehaviour
         isKnockedBack = false;
     }
 
-    void Update()
+    private IEnumerator ScaleFriendOverTime(GameObject friend, float from, float to, float duration)
     {
-        // Mort si chute trop basse
-        if (transform.position.y < -3f)
-            Die();
+        if (friend == null)
+            yield break;
+
+        float timer = 0f;
+        while (timer < duration)
+        {
+            timer += Time.deltaTime;
+            float percent = Mathf.Clamp01(timer / duration);
+            float scale = Mathf.Lerp(from, to, percent);
+            friend.transform.localScale = new Vector3(scale, scale, 1f);
+            yield return null;
+        }
+        friend.transform.localScale = new Vector3(to, to, 1f);
+    }
+
+    void DeployFriend()
+    {
+        if (friendInstance != null && !isFriendDeployed)
+        {
+            // float hauteur = 0f;
+            SpriteRenderer sr = GetComponent<SpriteRenderer>();
+            // if (sr != null)
+            // {
+            float height = sr.bounds.size.y;
+            // }
+            // Debug.Log("Hauteur du Player : " + height);
+
+            Vector3 spawnPos;
+            if (friendSpawnPoint != null)
+            {
+                spawnPos = friendSpawnPoint.position;
+            }
+            else
+            {
+                // spawnPos = transform.position;
+                spawnPos = transform.position + new Vector3(0, height, 0);
+            }
+            friendInstance.transform.position = spawnPos;
+            friendInstance.SetActive(true);
+
+            // Met à l'échelle minimale avant le scaling progressif
+            // friendInstance.transform.localScale = new Vector3(0.25f, 0.25f, 1f);
+
+            StartCoroutine(ScaleFriendOverTime(friendInstance, 0.25f, 1f, 0.75f));
+
+            var friendScript = friendInstance.GetComponent<Friend>();
+            if (friendScript != null)
+            {
+                friendScript.player = this.transform;
+            }
+
+            isFriendDeployed = true;
+        }
+    }
+
+    public void RecallFriend()
+    {
+        Debug.Log("Recall");
+        if (friendInstance != null && isFriendDeployed)
+        {
+            friendInstance.SetActive(false);
+            isFriendDeployed = false;
+        }
+    }
+
+    public void PushMeInDirection(Vector2 direction, float force, float duration = 0.18f)
+    {
+        rb.linearVelocity = direction.normalized * force; // Remplace la vitesse pour effet net
+        isPushed = true;
+        pushDuration = duration;
+        pushTimer = 0f;
+    }
+
+    void Control()
+    {
+        // Déploiement/rangement du Friend
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            if (friendInstance != null)
+            {
+                if (!isFriendDeployed)
+                {
+                    // Déploie le Friend au point de spawn
+                    DeployFriend();
+                }
+                else
+                {
+                    RecallFriend();
+                }
+            }
+            else
+            {
+                Debug.LogWarning("friendInstance n'est pas assigné !");
+            }
+        }
 
         // Gère le knockback (empêche tout contrôle du joueur pendant knockback)
         if (isKnockedBack)
@@ -89,17 +197,14 @@ public class Player : MonoBehaviour
             return; // Empêche tout contrôle temps du knockback
         }
 
-        // Déplacement horizontal
-        float moveInput = Input.GetAxisRaw("Horizontal");
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // // Déplacement horizontal
+        // float moveInput = Input.GetAxisRaw("Horizontal");
+        // rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // Saut
         if (
-            (
-                Input.GetKey(KeyCode.UpArrow)
-                || Input.GetKey(KeyCode.W)
-                || Input.GetKey(KeyCode.Space)
-            ) && isGrounded
+            (Input.GetKey(KeyCode.UpArrow) && isGrounded)
+            || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
         )
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -120,6 +225,27 @@ public class Player : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
     }
 
+    void Update()
+    {
+        // Mort si chute trop basse
+        if (transform.position.y < -3f)
+            Die();
+
+        if (!controlDisable)
+            Control();
+        if (isPushed)
+        {
+            pushTimer += Time.deltaTime;
+            if (pushTimer >= pushDuration)
+                isPushed = false;
+            else
+                return; // Ignore tous l'input en dessous
+        }
+        // Déplacement horizontal
+        float moveInput = Input.GetAxisRaw("Horizontal");
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+    }
+
     private bool IsStomping(Vector2 contactPoint)
     {
         // Retourne vrai si le contact est sous le centre du joueur et que le joueur descend
@@ -130,8 +256,12 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Front Collision"))
         {
-            PushMe();
+            PushMeBack();
             return;
+        }
+        if (collision.gameObject.CompareTag("Obstacle Jump On"))
+        {
+            collidedObstacleJumpOn = true;
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
@@ -164,6 +294,10 @@ public class Player : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Obstacle Jump On"))
+        {
+            collidedObstacleJumpOn = true;
+        }
         if (collision.gameObject.CompareTag("Enemy") && !justBounced)
         {
             foreach (ContactPoint2D contact in collision.contacts)
@@ -177,7 +311,15 @@ public class Player : MonoBehaviour
         }
     }
 
-    void PushMe()
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle Jump On"))
+        {
+            collidedObstacleJumpOn = false;
+        }
+    }
+
+    void PushMeBack()
     {
         // Petite poussée vers la gauche ou la droite selon le facing actuel
         float direction = (transform.localScale.x > 0) ? -1f : 1f;
@@ -268,6 +410,9 @@ public class Player : MonoBehaviour
     {
         if (damageScreen != null)
             damageScreen.color = new Color(0, 0, 0, 0.4f);
+        //TODO
+        // Patienter 3 secondes
+        // puis le restart
         // Restart();
     }
 
