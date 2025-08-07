@@ -439,7 +439,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   groundCheck: {fileID: 5088186483503434133}
-  stairCheck: {fileID: 646022013572352211}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2

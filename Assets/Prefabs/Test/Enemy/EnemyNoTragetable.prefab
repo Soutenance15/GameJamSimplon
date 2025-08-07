@@ -500,11 +500,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   moveDirection: 1
-  maxHealth: 100
+  maxHealth: 50
   damageOnHead: 50
   currentHealth: 0
   giveJumpForce: 0
   giveKnockBackForce: 6
+  healthBarCanvas: {fileID: 1936274217866197978}
   healthBar: {fileID: 2347499446974772596}
 --- !u!1 &7306503622758872281
 GameObject:

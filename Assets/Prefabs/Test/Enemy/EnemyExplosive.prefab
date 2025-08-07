@@ -329,9 +329,11 @@ MonoBehaviour:
   currentHealth: 0
   giveJumpForce: 0
   giveKnockBackForce: 6
+  healthBarCanvas: {fileID: 1936274217866197978}
   healthBar: {fileID: 2347499446974772596}
   explosionEffectPrefab: {fileID: 8425921150980482229, guid: 1caa0fa62536f844e972b62694c330c4, type: 3}
   explosionRadius: 1
+  damageDealt: 50
 --- !u!1 &7306503622758872281
 GameObject:
   m_ObjectHideFlags: 0

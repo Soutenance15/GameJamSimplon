@@ -166,7 +166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f712e6cf6ea1e448a5478c3de415dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 5882042923859128410, guid: 919b17e35125e5d418bf3479e0bd1f63, type: 3}
+  projectilePrefab: {fileID: 5882042923859128410, guid: 0792de41d9e4b0746926a822e308fd14, type: 3}
   firePoint: {fileID: 3409475476566445566}
   fireRate: 5
   player: {fileID: 0}
