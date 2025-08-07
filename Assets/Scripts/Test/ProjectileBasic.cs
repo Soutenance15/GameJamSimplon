@@ -30,11 +30,21 @@ public class ProjectileBasic : MonoBehaviour
         // GESTION CIBLE selon source
         if (source == ProjectileSource.Friend)
         {
-            if (other.CompareTag("Enemy"))
+            // TODO, attention mauvaise pratique ici,
+            // ajoute lheritage aussi pour la turret
+            // avec un Ennemyfixed au départ
+            if (other.CompareTag("Enemy") && null != other.GetComponent<Enemy>())
             {
                 var enemy = other.GetComponent<Enemy>();
                 if (enemy != null)
                     enemy.TakeDamage(25f);
+                Destroy(gameObject);
+            }
+            else if (other.CompareTag("Enemy") && null != other.GetComponent<Turret>())
+            {
+                var turret = other.GetComponent<Turret>();
+                if (turret != null)
+                    turret.TakeDamage(25f);
                 Destroy(gameObject);
             }
         }

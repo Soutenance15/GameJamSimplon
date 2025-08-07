@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
+    public float maxHealth = 100f;
+    public float currentHealth;
     public Transform body;
     public GameObject projectilePrefab;
     public Transform firePoint;
@@ -10,12 +12,45 @@ public class Turret : MonoBehaviour
     public Transform player;
     private float fireCooldown;
 
-    void Start()
+    [Header("UI")]
+    public Canvas healthBarCanvas; // ou Transform ou GameObject
+    public Transform healthBar; // Barre de vie (scale X modifiée selon la vie restante)
+
+    // Prend des dégâts et vérifie si l'ennemi doit être détruit.
+    public virtual void TakeDamage(float amount)
+    {
+        currentHealth -= amount;
+        UpdateHealthBar();
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    // Met à jour l'affichage de la barre de vie.
+    public virtual void UpdateHealthBar()
+    {
+        if (healthBar != null)
+        {
+            float scale = Mathf.Clamp01(currentHealth / maxHealth);
+            Vector3 localScale = healthBar.localScale;
+            healthBar.localScale = new Vector3(scale, localScale.y, localScale.z);
+        }
+    }
+
+    // Détruit l'ennemi. À personnaliser dans les sous-classes (ex: effets, animation).
+    public virtual void Die()
+    {
+        Destroy(gameObject);
+    }
+
+    public void Start()
     {
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
         }
+        currentHealth = maxHealth;
     }
 
     void Update()
