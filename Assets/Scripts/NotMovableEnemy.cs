@@ -15,6 +15,8 @@ public class NotMovableEnemy : MonoBehaviour
     public float maxHealth = 100f;
     private float currentHealth;
 
+    public float giveJumpForce = 0f; 
+
     public GameObject explosionEffectPrefab;
 
     // private bool hasExploded = false;
