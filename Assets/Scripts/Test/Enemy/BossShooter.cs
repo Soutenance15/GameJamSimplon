@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// public class BossShooter : EnemyShooter
 public class BossShooter : EnemyShooter
 {
     [Header("Boss: Multi-canons")]
@@ -32,7 +33,7 @@ public class BossShooter : EnemyShooter
             float targetAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             currentAngle = Mathf.LerpAngle(currentAngle, targetAngle, 0.2f);
 
-            // Si tu veux pivoter le corps (body) visuel
+            // Pivoter le corps (body) visuel
             if (body != null)
                 body.rotation = Quaternion.Euler(0f, 0f, currentAngle);
             // Sinon pivote juste le canon principal
@@ -40,7 +41,7 @@ public class BossShooter : EnemyShooter
                 mainFirePoint.rotation = Quaternion.Euler(0f, 0f, currentAngle);
         }
 
-        // 2. TIR MULTIPLE (ça ne déplace rien)
+        // 2. TIR MULTIPLE
         if (fireCooldown > 0f)
             fireCooldown -= Time.fixedDeltaTime;
 
@@ -64,8 +65,11 @@ public class BossShooter : EnemyShooter
 
             var projScript = proj.GetComponent<ProjectileBasic>();
             if (projScript != null)
-                projScript.Init(direction, ProjectileSource.Enemy); // Si tu utilises ProjectileSource
-
+            // projScript.Init(direction, ProjectileSource.Enemy); // Si tu utilises ProjectileSource
+            {
+                Color bossShootColor = Color.cyan; // ou new Color(0.5f, 0.8f, 1f);
+                projScript.Init(direction, ProjectileSource.Enemy, bossShootColor);
+            }
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             proj.transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }

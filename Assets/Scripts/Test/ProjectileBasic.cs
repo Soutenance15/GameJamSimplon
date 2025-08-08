@@ -11,12 +11,30 @@ public class ProjectileBasic : MonoBehaviour
     public float speed = 10f;
     public float lifeTime = 3f;
     private Vector2 direction;
-    public ProjectileSource source; // Ajout
 
-    public void Init(Vector2 dir, ProjectileSource src = ProjectileSource.Friend)
+    // public Color projectileColor = Color.white;
+    public Color projectileColor = new Color32(144, 238, 144, 255); // "LightGreen";
+    public ProjectileSource source;
+
+    public void Init(
+        Vector2 dir,
+        ProjectileSource src = ProjectileSource.Friend,
+        Color? color = null
+    )
     {
         direction = dir.normalized;
         source = src;
+
+        // Change la couleur si demandé
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+        {
+            if (color.HasValue)
+                sr.color = color.Value;
+            else
+                sr.color = projectileColor;
+        }
+
         Destroy(gameObject, lifeTime);
     }
 

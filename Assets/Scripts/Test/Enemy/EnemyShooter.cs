@@ -55,7 +55,8 @@ public class EnemyShooter : Enemy
         if (projScript != null)
         {
             // Passe la direction ET la source (ici Enemy)
-            projScript.Init(direction, ProjectileSource.Enemy);
+            Color bossShootColor = Color.cyan; // ou new Color(0.5f, 0.8f, 1f);
+            projScript.Init(direction, ProjectileSource.Enemy, bossShootColor);
         }
         else
         {
