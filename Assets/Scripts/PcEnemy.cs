@@ -13,6 +13,9 @@ public class PCEnemyInteraction : MonoBehaviour
     private bool isDisabled = false;
     [SerializeField] private PCCounter pcCounter;
 
+    public GameObject explosiveEnemyPrefab;
+    public float dropHeight = 10f; // Hauteur à laquelle ils tombent
+    public int numberOfEnemiesToDrop = 4; // Nombre d'ennemis à faire tomber
 
 
     void Start()
@@ -65,10 +68,36 @@ public class PCEnemyInteraction : MonoBehaviour
         if (pcCounter != null)
         {
             pcCounter.PCDeactivated();
+            DropExplosiveEnemies();
         }
         else
         {
             Debug.LogWarning("Référence à PC Counter non assignée !");
         }
     }
+    void DropExplosiveEnemies()
+    {
+        if (explosiveEnemyPrefab != null)
+        {
+            // Vector3 spawnBasePosition = transform.position + Vector3.up * dropHeight;
+            Vector3 spawnBasePosition = transform.position + Vector3.up * 2f;
+            spawnBasePosition += Vector3.left * 5f;
+            // Vector3 spawnBasePosition = transform.position ;
+            for (int i = 0; i < numberOfEnemiesToDrop; i++)
+            {
+                // Ajouter un léger décalage horizontal pour éviter la superposition
+                float xOffset = i * 3.5f;
+                Vector3 spawnPosition = new Vector3(spawnBasePosition.x + xOffset, spawnBasePosition.y, spawnBasePosition.z);
+
+                Instantiate(explosiveEnemyPrefab, spawnPosition, Quaternion.identity);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("ExplosiveEnemy prefab non assigné !");
+            return;
+        }
+
+    }
+
 }

@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7381343166483815230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6610634f4a8d4514395258edbf7122df, type: 3}
+  m_Script: {fileID: 11500000, guid: cd68786c51d09a349b55923247fa7bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damageScreen: {fileID: 0}
@@ -178,9 +178,12 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 8
-  friendInstance: {fileID: 4970233588299606611}
+    m_Bits: 0
+  friendInstance: {fileID: 0}
   friendSpawnPoint: {fileID: 0}
+  isFriendDeployed: 0
+  controlDisable: 0
+  disableDeployFriend: 0
 --- !u!1001 &4638323908091417097
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -199,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3598207109497811314, guid: b411271649731b749806a383904e0249, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: -0.4
       objectReference: {fileID: 0}
     - target: {fileID: 3598207109497811314, guid: b411271649731b749806a383904e0249, type: 3}
       propertyPath: m_LocalPosition.z
@@ -323,10 +326,5 @@ PrefabInstance:
 --- !u!4 &279131456576128319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4766219165399962640, guid: 1e6a74e82b3279e46b3e707974af70be, type: 3}
-  m_PrefabInstance: {fileID: 4754305323643785519}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4970233588299606611 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 361271611532868476, guid: 1e6a74e82b3279e46b3e707974af70be, type: 3}
   m_PrefabInstance: {fileID: 4754305323643785519}
   m_PrefabAsset: {fileID: 0}

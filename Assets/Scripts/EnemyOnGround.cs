@@ -106,6 +106,4 @@ public class EnemyOnGround : MonoBehaviour
         localScale.x *= -1;
         transform.localScale = localScale;
     }
-
-
 }

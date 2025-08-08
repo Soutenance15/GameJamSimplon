@@ -17,6 +17,8 @@ TagManager:
   - Obstacle Jump On
   - Portal
   - EnemyPC
+  - TutoEndTrigger
+  - TutoEndTriggerTP
   layers:
   - Default
   - TransparentFX

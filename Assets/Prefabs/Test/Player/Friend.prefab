@@ -163,24 +163,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 361271611532868476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17f712e6cf6ea1e448a5478c3de415dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 601d2f78cb2c18443b5db66990c4b7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 5882042923859128410, guid: 919b17e35125e5d418bf3479e0bd1f63, type: 3}
+  projectilePrefab: {fileID: 5882042923859128410, guid: 0792de41d9e4b0746926a822e308fd14, type: 3}
   firePoint: {fileID: 3409475476566445566}
   fireRate: 5
   player: {fileID: 0}
   speed: 4
   followOffset: {x: 1.5, y: 2}
-  obstacleDetectDistance: 1
-  obstacleAvoidHeight: 1
+  obstacleDetectDistance: 1.5
+  obstacleAvoidHeight: 1.5
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 0
   enemyTag: Enemy
   blockTimeBeforeIdle: 3
   minDistanceProgress: 0.5
-  reactivationDistance: 3
+  reactivationDistance: 12
 --- !u!1 &2503602761786595060
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
     public GameObject OptionScreen;
     public void Play()
     {
-        SceneManager.LoadScene("Finale Level V2");
+        SceneManager.LoadScene("IntroCinematic");
     }
     public void OptionButton() // Retour/Charge la sc�ne de menu principale
     {
