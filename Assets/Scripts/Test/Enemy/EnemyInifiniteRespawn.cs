@@ -7,6 +7,7 @@ public class EnemyInifiniteRespawn : Enemy
     public override void Start()
     {
         base.Start();
+        giveDamage = 0f;
         spawnPosition = transform.position;
     }
 

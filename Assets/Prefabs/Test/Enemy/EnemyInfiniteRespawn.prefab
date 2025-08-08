@@ -625,6 +625,7 @@ MonoBehaviour:
   currentHealth: 0
   giveJumpForce: 6
   giveKnockBackForce: 6
+  giveDamage: 0
   healthBarCanvas: {fileID: 1936274217866197978}
   healthBar: {fileID: 2347499446974772596}
 --- !u!1 &7306503622758872281

@@ -29,6 +29,7 @@ public abstract class Enemy : MonoBehaviour
     [Header("Effets divers")]
     public float giveJumpForce = 6f; // Force jump (vers le haut) transmise au joueur par l'ennemi
     public float giveKnockBackForce = 6f; // Force knockBack vers un côté) transmise au joueur par l'ennemi
+    public float giveDamage = 20f;
 
     [Header("UI")]
     public Canvas healthBarCanvas; // ou Transform ou GameObject

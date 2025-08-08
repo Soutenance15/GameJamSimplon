@@ -8,8 +8,8 @@ public class EnemyShooter : Enemy
     public float fireRate = 2f; // Tir toutes les X secondes
     public float projectileSpeed = 8f; // Vitesse du projectile
 
-    private float fireCooldown = 0f;
-    private Transform player;
+    protected float fireCooldown = 0f;
+    protected Transform player;
 
     public override void Start()
     {

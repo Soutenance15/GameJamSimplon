@@ -247,13 +247,13 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            foreach (ContactPoint2D contact in collision.contacts)
+            var enemy = collision.gameObject.GetComponent<Enemy>();
+            if (enemy != null)
             {
-                // Si le contact est sur la tête de l'ennemi
-                if (IsStomping(contact.point))
+                foreach (ContactPoint2D contact in collision.contacts)
                 {
-                    var enemy = collision.gameObject.GetComponent<Enemy>();
-                    if (enemy != null)
+                    // Si le contact est sur la tête de l'ennemi
+                    if (IsStomping(contact.point))
                     {
                         enemy.TakeDamage(enemy.damageOnHead);
                         rb.linearVelocity = new Vector2(
@@ -268,7 +268,7 @@ public class Player : MonoBehaviour
             }
             // Si aucun contact n'est sur la tête de l'ennemi,
             // Appliquer perte de vie + knockback (poussé par l'ennemi)
-            TakeDamage(20f, collision.gameObject.GetComponent<Enemy>());
+            TakeDamage(enemy.giveDamage, enemy);
         }
     }
 
@@ -279,11 +279,12 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy") && !justBounced)
         {
+            var enemy = collision.gameObject.GetComponent<Enemy>();
             foreach (ContactPoint2D contact in collision.contacts)
             {
                 if (!IsStomping(contact.point) && Time.time > lastDamageTime + damageInterval)
                 {
-                    TakeDamage(20f, collision.gameObject.GetComponent<Enemy>());
+                    TakeDamage(enemy.giveDamage, collision.gameObject.GetComponent<Enemy>());
                     lastDamageTime = Time.time;
                 }
             }
