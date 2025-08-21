@@ -173,9 +173,9 @@ public class Player : MonoBehaviour
 
         // Knockback : gestion dans Update
 
-        // Saut
+        // Saut (flèche haut/Espace/W), seulement si au sol
         if (
-            (Input.GetKey(KeyCode.UpArrow) && isGrounded)
+            ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGrounded)
             || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
         )
         {

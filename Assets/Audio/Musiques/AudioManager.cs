@@ -10,6 +10,10 @@ public class AudioManager : MonoBehaviour
 	public GameObject zoneTeleport ;
 	public GameObject background1 ;
 	public GameObject background2 ;
+
+	public GameObject boss1 ;
+	public GameObject boss2 ;
+	// public GameObject boss3 ;
 	
     void Start()
     {
@@ -55,11 +59,14 @@ public class AudioManager : MonoBehaviour
 			background1.SetActive(false);
 			background2.SetActive(true);
 		}
-		// else if (collision.gameObject.CompareTag("TutoEndTrigger"))
-		// {
-		// 	// Contact principal
-		// 	SceneManager.LoadScene("Finale Level V2");
-		// }
+		else if (collision.gameObject.CompareTag("BossTrigger"))
+		{
+			// Contact principal
+			PlayNextSong();
+			boss1.SetActive(true);
+			boss2.SetActive(true);
+			// boss3.SetActive(true);
+		}
 		else if (collision.gameObject.CompareTag("TutoEndTriggerTP"))
 		{
 			// Contact principal

@@ -19,6 +19,7 @@ TagManager:
   - EnemyPC
   - TutoEndTrigger
   - TutoEndTriggerTP
+  - BossTrigger
   layers:
   - Default
   - TransparentFX
