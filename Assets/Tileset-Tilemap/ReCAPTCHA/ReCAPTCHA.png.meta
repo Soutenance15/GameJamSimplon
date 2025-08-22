@@ -1,0 +1,2587 @@
+fileFormatVersion: 2
+guid: 697d94b356d991a459aa50c523582774
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3746156775301224931
+    second: ReCAPTCHA_0
+  - first:
+      213: -778913177166558623
+    second: ReCAPTCHA_1
+  - first:
+      213: 6749195269208484708
+    second: ReCAPTCHA_2
+  - first:
+      213: 4711842533987053848
+    second: ReCAPTCHA_3
+  - first:
+      213: 3367512370155797350
+    second: ReCAPTCHA_4
+  - first:
+      213: 2224029676578243856
+    second: ReCAPTCHA_5
+  - first:
+      213: -3491090090018152598
+    second: ReCAPTCHA_6
+  - first:
+      213: -1940253358394170562
+    second: ReCAPTCHA_7
+  - first:
+      213: 8505086000020949150
+    second: ReCAPTCHA_8
+  - first:
+      213: -2931745017449122424
+    second: ReCAPTCHA_9
+  - first:
+      213: -7379547466148835506
+    second: ReCAPTCHA_10
+  - first:
+      213: -1316596260695946358
+    second: ReCAPTCHA_11
+  - first:
+      213: 8797409542160661339
+    second: ReCAPTCHA_12
+  - first:
+      213: -8502279549798194741
+    second: ReCAPTCHA_13
+  - first:
+      213: 5313705126965315094
+    second: ReCAPTCHA_14
+  - first:
+      213: 3836407304294055218
+    second: ReCAPTCHA_15
+  - first:
+      213: -2966512401636975294
+    second: ReCAPTCHA_16
+  - first:
+      213: 5523597257911058181
+    second: ReCAPTCHA_17
+  - first:
+      213: 8736512618168418409
+    second: ReCAPTCHA_18
+  - first:
+      213: -4755222598152913846
+    second: ReCAPTCHA_19
+  - first:
+      213: -5066369011839275434
+    second: ReCAPTCHA_20
+  - first:
+      213: 1336646707189776164
+    second: ReCAPTCHA_21
+  - first:
+      213: -728837740169006788
+    second: ReCAPTCHA_22
+  - first:
+      213: 9130676861736171419
+    second: ReCAPTCHA_23
+  - first:
+      213: -2240512114531741804
+    second: ReCAPTCHA_24
+  - first:
+      213: -4942295967006120278
+    second: ReCAPTCHA_25
+  - first:
+      213: 5770758176917154780
+    second: ReCAPTCHA_26
+  - first:
+      213: 4542079213925208641
+    second: ReCAPTCHA_27
+  - first:
+      213: 9191382083814568128
+    second: ReCAPTCHA_28
+  - first:
+      213: 146497415529374528
+    second: ReCAPTCHA_29
+  - first:
+      213: 8368007692536942850
+    second: ReCAPTCHA_30
+  - first:
+      213: 3263217978934481663
+    second: ReCAPTCHA_31
+  - first:
+      213: 3896285376510328281
+    second: ReCAPTCHA_32
+  - first:
+      213: -8984551731615328944
+    second: ReCAPTCHA_33
+  - first:
+      213: -3064762714639017804
+    second: ReCAPTCHA_34
+  - first:
+      213: 3219477378834085672
+    second: ReCAPTCHA_35
+  - first:
+      213: -5384300676612997347
+    second: ReCAPTCHA_36
+  - first:
+      213: -105133968660350347
+    second: ReCAPTCHA_37
+  - first:
+      213: 8959268532582285890
+    second: ReCAPTCHA_38
+  - first:
+      213: -5211895507437522644
+    second: ReCAPTCHA_39
+  - first:
+      213: 7878277103874302666
+    second: ReCAPTCHA_40
+  - first:
+      213: -8174481401197433828
+    second: ReCAPTCHA_41
+  - first:
+      213: 655316826573916087
+    second: ReCAPTCHA_42
+  - first:
+      213: -509138436361905421
+    second: ReCAPTCHA_43
+  - first:
+      213: 3288793281920400909
+    second: ReCAPTCHA_44
+  - first:
+      213: -2705369821318612321
+    second: ReCAPTCHA_45
+  - first:
+      213: 7984123577688651069
+    second: ReCAPTCHA_46
+  - first:
+      213: -4349329512167771237
+    second: ReCAPTCHA_47
+  - first:
+      213: 1071186836900978407
+    second: ReCAPTCHA_48
+  - first:
+      213: -5362088445072798654
+    second: ReCAPTCHA_49
+  - first:
+      213: -8166263723194879990
+    second: ReCAPTCHA_50
+  - first:
+      213: -6392003118139058303
+    second: ReCAPTCHA_51
+  - first:
+      213: 479409300417580447
+    second: ReCAPTCHA_52
+  - first:
+      213: -8146419029497393010
+    second: ReCAPTCHA_53
+  - first:
+      213: 8877312040270191379
+    second: ReCAPTCHA_54
+  - first:
+      213: -1787159191723024540
+    second: ReCAPTCHA_55
+  - first:
+      213: -8156321508824405069
+    second: ReCAPTCHA_56
+  - first:
+      213: 1322602844166048947
+    second: ReCAPTCHA_57
+  - first:
+      213: 6862651484254957586
+    second: ReCAPTCHA_58
+  - first:
+      213: 2901945648174534635
+    second: ReCAPTCHA_59
+  - first:
+      213: 6588605982807481692
+    second: ReCAPTCHA_60
+  - first:
+      213: 3780181647301043664
+    second: ReCAPTCHA_61
+  - first:
+      213: -8046339542832491083
+    second: ReCAPTCHA_62
+  - first:
+      213: -6340186367441158152
+    second: ReCAPTCHA_63
+  - first:
+      213: 6309101950418890889
+    second: ReCAPTCHA_64
+  - first:
+      213: 7879244218523083623
+    second: ReCAPTCHA_65
+  - first:
+      213: -3476525944723580348
+    second: ReCAPTCHA_66
+  - first:
+      213: -8925691693843203052
+    second: ReCAPTCHA_67
+  - first:
+      213: 3196674013754612735
+    second: ReCAPTCHA_68
+  - first:
+      213: -7415492436203445222
+    second: ReCAPTCHA_69
+  - first:
+      213: 6719161924344838349
+    second: ReCAPTCHA_70
+  - first:
+      213: 5600122048447112213
+    second: ReCAPTCHA_71
+  - first:
+      213: -4209534530044459534
+    second: ReCAPTCHA_72
+  - first:
+      213: -7344105358046617288
+    second: ReCAPTCHA_73
+  - first:
+      213: 7451969682799462626
+    second: ReCAPTCHA_74
+  - first:
+      213: -2216690107207093618
+    second: ReCAPTCHA_75
+  - first:
+      213: -2763691312191818365
+    second: ReCAPTCHA_76
+  - first:
+      213: -3908195256001025863
+    second: ReCAPTCHA_77
+  - first:
+      213: -1560408105138606778
+    second: ReCAPTCHA_78
+  - first:
+      213: 5947774241085870133
+    second: ReCAPTCHA_79
+  - first:
+      213: 3871258805591744414
+    second: ReCAPTCHA_80
+  - first:
+      213: -3094547679831624770
+    second: ReCAPTCHA_81
+  - first:
+      213: 2553338767432512140
+    second: ReCAPTCHA_82
+  - first:
+      213: 8898078862539950435
+    second: ReCAPTCHA_83
+  - first:
+      213: 6514138564852382922
+    second: ReCAPTCHA_84
+  - first:
+      213: -30918360969446377
+    second: ReCAPTCHA_85
+  - first:
+      213: -8489988814209680089
+    second: ReCAPTCHA_86
+  - first:
+      213: -255909597103543659
+    second: ReCAPTCHA_87
+  - first:
+      213: -1373081221468425235
+    second: ReCAPTCHA_88
+  - first:
+      213: 7217789890535829075
+    second: ReCAPTCHA_89
+  - first:
+      213: 8921050369987782315
+    second: ReCAPTCHA_90
+  - first:
+      213: -2729119424211901611
+    second: ReCAPTCHA_91
+  - first:
+      213: -1435279743536384109
+    second: ReCAPTCHA_92
+  - first:
+      213: 5590805490913434910
+    second: ReCAPTCHA_93
+  - first:
+      213: 4961569440916369791
+    second: ReCAPTCHA_94
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ReCAPTCHA_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d166f37c24af20cc0800000000000000
+      internalID: -3746156775301224931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16acd1c979eb035f0800000000000000
+      internalID: -778913177166558623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_2
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b2beca655f9ad50800000000000000
+      internalID: 6749195269208484708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_3
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811ffdbf1d3d36140800000000000000
+      internalID: 4711842533987053848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_4
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66bbed7a8aecbbe20800000000000000
+      internalID: 3367512370155797350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_5
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0158f5a15375dde10800000000000000
+      internalID: 2224029676578243856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_6
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 2139
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6fd4994f082d8fc0800000000000000
+      internalID: -3491090090018152598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_7
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3328a6b9d5d215e0800000000000000
+      internalID: -1940253358394170562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_8
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e988567b7a2280670800000000000000
+      internalID: 8505086000020949150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_9
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8857cee80795057d0800000000000000
+      internalID: -2931745017449122424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_10
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f80159da4969990800000000000000
+      internalID: -7379547466148835506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_11
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b4c903da28abde0800000000000000
+      internalID: -1316596260695946358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_12
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b3e103e5da61a70800000000000000
+      internalID: 8797409542160661339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_13
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1975
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1e535ebc5d10a80800000000000000
+      internalID: -8502279549798194741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61680f5e8a21eb940800000000000000
+      internalID: 5313705126965315094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_15
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d392afd18ad3530800000000000000
+      internalID: 3836407304294055218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_16
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24d13ae10b4d4d6d0800000000000000
+      internalID: -2966512401636975294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_17
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f3c18d072c7ac40800000000000000
+      internalID: 5523597257911058181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_18
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96085ad20f35e3970800000000000000
+      internalID: 8736512618168418409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_19
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c7f21cd3e020eb0800000000000000
+      internalID: -4755222598152913846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_20
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1811
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ee54cf934a0b9b0800000000000000
+      internalID: -5066369011839275434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ffd3c2919bc8210800000000000000
+      internalID: 1336646707189776164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_22
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31f356dfe5a2e5f0800000000000000
+      internalID: -728837740169006788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_23
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97b9a6ba3ea6be70800000000000000
+      internalID: 9130676861736171419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_24
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f40624a1a18e0e0800000000000000
+      internalID: -2240512114531741804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_25
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa621cfd000796bb0800000000000000
+      internalID: -4942295967006120278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_26
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdbe3d3bcf9d51050800000000000000
+      internalID: 5770758176917154780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_27
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1647
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14292b7eaf4b80f30800000000000000
+      internalID: 4542079213925208641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_28
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c038a4ae495e8f70800000000000000
+      internalID: 9191382083814568128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_29
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043242d8f96780200800000000000000
+      internalID: 146497415529374528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_30
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201966729a2212470800000000000000
+      internalID: 8368007692536942850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_31
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2de0b6677494d20800000000000000
+      internalID: 3263217978934481663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_32
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dd727218e2621630800000000000000
+      internalID: 3896285376510328281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_33
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05592f26dc5705380800000000000000
+      internalID: -8984551731615328944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_34
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1483
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b854118c86c775d0800000000000000
+      internalID: -3064762714639017804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_35
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827bfc75e91edac20800000000000000
+      internalID: 3219477378834085672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_36
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f3696df0f1745b0800000000000000
+      internalID: -5384300676612997347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_37
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a3c28663d7a8ef0800000000000000
+      internalID: -105133968660350347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_38
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24207eb1347b55c70800000000000000
+      internalID: 8959268532582285890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_39
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c217bb856a0aba7b0800000000000000
+      internalID: -5211895507437522644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_40
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac2658af843455d60800000000000000
+      internalID: 7878277103874302666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_41
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1319
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ce692d9786e8e80800000000000000
+      internalID: -8174481401197433828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_42
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b746478e27281900800000000000000
+      internalID: 655316826573916087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_43
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa96272a4d2fe8f0800000000000000
+      internalID: -509138436361905421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_44
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e7e8ca01424ad20800000000000000
+      internalID: 3288793281920400909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_45
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9afd3e2b78947ad0800000000000000
+      internalID: -2705369821318612321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_46
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35f3fa971e4dce60800000000000000
+      internalID: 7984123577688651069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_47
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93fd183ad314a3c0800000000000000
+      internalID: -4349329512167771237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_48
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 1155
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee9e85b0ce9dde00800000000000000
+      internalID: 1071186836900978407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_49
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24c853108f80695b0800000000000000
+      internalID: -5362088445072798654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_50
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a007fc4196a9bae80800000000000000
+      internalID: -8166263723194879990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_51
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 187d124c70b0b47a0800000000000000
+      internalID: -6392003118139058303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_52
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9d886df73437a600800000000000000
+      internalID: 479409300417580447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_53
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e805353ed0b12fe80800000000000000
+      internalID: -8146419029497393010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_54
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b5a90444c823b70800000000000000
+      internalID: 8877312040270191379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_55
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 991
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f56441f2cb237e0800000000000000
+      internalID: -1787159191723024540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_56
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bba4a04dcceece80800000000000000
+      internalID: -8156321508824405069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_57
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc40718744da5210800000000000000
+      internalID: 1322602844166048947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_58
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 210f2504a290d3f50800000000000000
+      internalID: 6862651484254957586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_59
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef0fec1138c54820800000000000000
+      internalID: 2901945648174534635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_60
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5dd042cb3e6f6b50800000000000000
+      internalID: 6588605982807481692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_61
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d564d11e27e57430800000000000000
+      internalID: 3780181647301043664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_62
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 827
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b55a4f21d8a55090800000000000000
+      internalID: -8046339542832491083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_63
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff35ee27122308a0800000000000000
+      internalID: -6340186367441158152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_64
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980317efbce6e8750800000000000000
+      internalID: 6309101950418890889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_65
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7636e97eed2b85d60800000000000000
+      internalID: 7879244218523083623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_66
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a525c9216e0cfc0800000000000000
+      internalID: -3476525944723580348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_67
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c32ddd1b2912480800000000000000
+      internalID: -8925691693843203052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_68
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffbd09c241edc5c20800000000000000
+      internalID: 3196674013754612735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_69
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 663
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a146f711be0e61990800000000000000
+      internalID: -7415492436203445222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_70
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc877e8ab224f3d50800000000000000
+      internalID: 6719161924344838349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_71
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 514e5841551a7bd40800000000000000
+      internalID: 5600122048447112213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_72
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f585f2e5aab495c0800000000000000
+      internalID: -4209534530044459534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_73
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831a69c661f741a90800000000000000
+      internalID: -7344105358046617288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_74
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e80e3cb1f6ba6760800000000000000
+      internalID: 7451969682799462626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_75
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e827cce871cbc31e0800000000000000
+      internalID: -2216690107207093618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_76
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 499
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38539fbe46565a9d0800000000000000
+      internalID: -2763691312191818365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_77
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b821350f1d43c9c0800000000000000
+      internalID: -3908195256001025863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_78
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64da2948811585ae0800000000000000
+      internalID: -1560408105138606778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_79
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530542cd82dba8250800000000000000
+      internalID: 5947774241085870133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_80
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f16e47f5979b530800000000000000
+      internalID: 3871258805591744414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_81
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb37023e745fd05d0800000000000000
+      internalID: -3094547679831624770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_82
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c827c00b4184f6320800000000000000
+      internalID: 2553338767432512140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_83
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 335
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3690b19d4935c7b70800000000000000
+      internalID: 8898078862539950435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_84
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accf2b7e28ed66a50800000000000000
+      internalID: 6514138564852382922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_85
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71cf06d1ae7229ff0800000000000000
+      internalID: -30918360969446377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_86
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72dfdf5c7208d2a80800000000000000
+      internalID: -8489988814209680089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_87
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59aa70ac393d27cf0800000000000000
+      internalID: -255909597103543659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_88
+      rect:
+        serializedVersion: 2
+        x: 2471
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de37d9a67e5d1fce0800000000000000
+      internalID: -1373081221468425235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_89
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e2bc8f9adba2460800000000000000
+      internalID: 7217789890535829075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_90
+      rect:
+        serializedVersion: 2
+        x: 3703
+        y: 171
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba62d76bb00fdcb70800000000000000
+      internalID: 8921050369987782315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_91
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5532b3ad758302ad0800000000000000
+      internalID: -2729119424211901611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_92
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 7
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397333d7dacd41ce0800000000000000
+      internalID: -1435279743536384109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_93
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 7
+        width: 602
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dd23ef8f7869d40800000000000000
+      internalID: 5590805490913434910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReCAPTCHA_94
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 50
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9049dcd8df3437948ac785cac98b0770
+      internalID: 4961569440916369791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 82fec193805bc9d4a9984920a9e76b82
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ReCAPTCHA_0: -3746156775301224931
+      ReCAPTCHA_1: -778913177166558623
+      ReCAPTCHA_10: -7379547466148835506
+      ReCAPTCHA_11: -1316596260695946358
+      ReCAPTCHA_12: 8797409542160661339
+      ReCAPTCHA_13: -8502279549798194741
+      ReCAPTCHA_14: 5313705126965315094
+      ReCAPTCHA_15: 3836407304294055218
+      ReCAPTCHA_16: -2966512401636975294
+      ReCAPTCHA_17: 5523597257911058181
+      ReCAPTCHA_18: 8736512618168418409
+      ReCAPTCHA_19: -4755222598152913846
+      ReCAPTCHA_2: 6749195269208484708
+      ReCAPTCHA_20: -5066369011839275434
+      ReCAPTCHA_21: 1336646707189776164
+      ReCAPTCHA_22: -728837740169006788
+      ReCAPTCHA_23: 9130676861736171419
+      ReCAPTCHA_24: -2240512114531741804
+      ReCAPTCHA_25: -4942295967006120278
+      ReCAPTCHA_26: 5770758176917154780
+      ReCAPTCHA_27: 4542079213925208641
+      ReCAPTCHA_28: 9191382083814568128
+      ReCAPTCHA_29: 146497415529374528
+      ReCAPTCHA_3: 4711842533987053848
+      ReCAPTCHA_30: 8368007692536942850
+      ReCAPTCHA_31: 3263217978934481663
+      ReCAPTCHA_32: 3896285376510328281
+      ReCAPTCHA_33: -8984551731615328944
+      ReCAPTCHA_34: -3064762714639017804
+      ReCAPTCHA_35: 3219477378834085672
+      ReCAPTCHA_36: -5384300676612997347
+      ReCAPTCHA_37: -105133968660350347
+      ReCAPTCHA_38: 8959268532582285890
+      ReCAPTCHA_39: -5211895507437522644
+      ReCAPTCHA_4: 3367512370155797350
+      ReCAPTCHA_40: 7878277103874302666
+      ReCAPTCHA_41: -8174481401197433828
+      ReCAPTCHA_42: 655316826573916087
+      ReCAPTCHA_43: -509138436361905421
+      ReCAPTCHA_44: 3288793281920400909
+      ReCAPTCHA_45: -2705369821318612321
+      ReCAPTCHA_46: 7984123577688651069
+      ReCAPTCHA_47: -4349329512167771237
+      ReCAPTCHA_48: 1071186836900978407
+      ReCAPTCHA_49: -5362088445072798654
+      ReCAPTCHA_5: 2224029676578243856
+      ReCAPTCHA_50: -8166263723194879990
+      ReCAPTCHA_51: -6392003118139058303
+      ReCAPTCHA_52: 479409300417580447
+      ReCAPTCHA_53: -8146419029497393010
+      ReCAPTCHA_54: 8877312040270191379
+      ReCAPTCHA_55: -1787159191723024540
+      ReCAPTCHA_56: -8156321508824405069
+      ReCAPTCHA_57: 1322602844166048947
+      ReCAPTCHA_58: 6862651484254957586
+      ReCAPTCHA_59: 2901945648174534635
+      ReCAPTCHA_6: -3491090090018152598
+      ReCAPTCHA_60: 6588605982807481692
+      ReCAPTCHA_61: 3780181647301043664
+      ReCAPTCHA_62: -8046339542832491083
+      ReCAPTCHA_63: -6340186367441158152
+      ReCAPTCHA_64: 6309101950418890889
+      ReCAPTCHA_65: 7879244218523083623
+      ReCAPTCHA_66: -3476525944723580348
+      ReCAPTCHA_67: -8925691693843203052
+      ReCAPTCHA_68: 3196674013754612735
+      ReCAPTCHA_69: -7415492436203445222
+      ReCAPTCHA_7: -1940253358394170562
+      ReCAPTCHA_70: 6719161924344838349
+      ReCAPTCHA_71: 5600122048447112213
+      ReCAPTCHA_72: -4209534530044459534
+      ReCAPTCHA_73: -7344105358046617288
+      ReCAPTCHA_74: 7451969682799462626
+      ReCAPTCHA_75: -2216690107207093618
+      ReCAPTCHA_76: -2763691312191818365
+      ReCAPTCHA_77: -3908195256001025863
+      ReCAPTCHA_78: -1560408105138606778
+      ReCAPTCHA_79: 5947774241085870133
+      ReCAPTCHA_8: 8505086000020949150
+      ReCAPTCHA_80: 3871258805591744414
+      ReCAPTCHA_81: -3094547679831624770
+      ReCAPTCHA_82: 2553338767432512140
+      ReCAPTCHA_83: 8898078862539950435
+      ReCAPTCHA_84: 6514138564852382922
+      ReCAPTCHA_85: -30918360969446377
+      ReCAPTCHA_86: -8489988814209680089
+      ReCAPTCHA_87: -255909597103543659
+      ReCAPTCHA_88: -1373081221468425235
+      ReCAPTCHA_89: 7217789890535829075
+      ReCAPTCHA_9: -2931745017449122424
+      ReCAPTCHA_90: 8921050369987782315
+      ReCAPTCHA_91: -2729119424211901611
+      ReCAPTCHA_92: -1435279743536384109
+      ReCAPTCHA_93: 5590805490913434910
+      ReCAPTCHA_94: 4961569440916369791
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
