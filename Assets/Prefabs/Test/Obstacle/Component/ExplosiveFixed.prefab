@@ -162,7 +162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1345401648539739229}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae47c313f8d19bc46a818cee079262ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 3523c55fec0d4184b8c182106b2b9b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffectPrefab: {fileID: 8425921150980482229, guid: 1caa0fa62536f844e972b62694c330c4, type: 3}

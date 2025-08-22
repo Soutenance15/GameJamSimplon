@@ -298,7 +298,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5122343806761262966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7243c8256a061b14fb5cfdd9364bd510, type: 3}
+  m_Script: {fileID: 11500000, guid: 68f04f4f4a859b643961a156342fae37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   side1: {fileID: 7602184740298054407}
@@ -312,7 +312,7 @@ MonoBehaviour:
   lastDisable: 0
   pcCounter: {fileID: 0}
   explosiveEnemyPrefab: {fileID: 7223171690186758717, guid: f655004445fd36e469dd2b45113d18bf, type: 3}
-  numberBombs: 4
+  numberBombs: 0
 --- !u!1 &7492756885485639082
 GameObject:
   m_ObjectHideFlags: 0
