@@ -8,7 +8,7 @@ public class MainMenuController : MonoBehaviour
     public void Play()
     {
         // SceneManager.LoadScene("IntroCinematic");
-        SceneManager.LoadScene("Zone de tutoriel");
+        SceneManager.LoadScene("IntroCinematic");
     }
     public void OptionButton() // Retour/Charge la sc�ne de menu principale
     {
