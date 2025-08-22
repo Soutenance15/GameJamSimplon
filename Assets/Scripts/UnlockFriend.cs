@@ -4,34 +4,52 @@ public class UnlockFriend : MonoBehaviour
 {
     public KeyCode interactionKey = KeyCode.E;
     public float interactionDistance = 1f;
-    private GameObject player;
+    public GameObject playerObj; // rename to avoid confusion
     public GameObject Friend;
     public GameObject FriendOnFloor;
+    public DialogueManager dialogueManager; // ← drag & drop ton DialogueHUD ici
+
+    private Player playerScript; // reference to your Player script
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            playerScript = playerObj.GetComponent<Player>();
+            if (playerScript == null)
+            {
+                Debug.LogError("Player script not found on the assigned playerObj!");
+            }
+        }
     }
     void Update()
     {
-        if (player == null) return;
+        if (playerObj == null || playerScript == null) return;
 
-        float distance = Vector2.Distance(transform.position, player.transform.position);
+        float distance = Vector2.Distance(transform.position, playerObj.transform.position);
         bool isPlayerNear = distance <= interactionDistance;
 
         if (isPlayerNear)
         {
-            ActivateRebirth();
-            Debug.Log("le joueur est proche");
+            if (Input.GetKey(interactionKey))
+            {
+                ActivateRebirth();
+                Debug.Log("Player unlocked Rebirth!");
+            }
         }
     }
     void ActivateRebirth()
     {
-        if (Input.GetKey(interactionKey))
+        playerScript.disableDeployFriend = false; // The player can deploy and store friend
+        if (dialogueManager != null)
         {
-            Friend.SetActive(true);
-            FriendOnFloor.SetActive(false);  
+            dialogueManager.PlayDialogue("activate_rebirth");
         }
-
+        else
+        {
+            Debug.LogWarning("DialogueManager reference missing in UnlockFriend!");
+        }
+        Friend.SetActive(true);
+        FriendOnFloor.SetActive(false);
     }
 }
