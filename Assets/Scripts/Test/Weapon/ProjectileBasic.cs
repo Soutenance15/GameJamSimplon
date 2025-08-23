@@ -8,7 +8,7 @@ public enum ProjectileSource
 
 public class ProjectileBasic : MonoBehaviour
 {
-    public float speed = 10f;
+    public static float speed = 10f;
     public float lifeTime = 3f;
     private Vector2 direction;
 
@@ -16,7 +16,7 @@ public class ProjectileBasic : MonoBehaviour
     public Color projectileColor = new Color32(144, 238, 144, 255); // "LightGreen";
     public ProjectileSource source;
 
-    public void Init(
+    public virtual void Init(
         Vector2 dir,
         ProjectileSource src = ProjectileSource.Friend,
         Color? color = null
@@ -27,20 +27,20 @@ public class ProjectileBasic : MonoBehaviour
 
         // Change la couleur si demandé
         SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        if (sr != null)
+        if (sr != null && null != color)
         {
             if (color.HasValue)
                 sr.color = color.Value;
             else
                 sr.color = projectileColor;
         }
-
         Destroy(gameObject, lifeTime);
     }
 
     void Update()
     {
         transform.position += (Vector3)(direction * speed * Time.deltaTime);
+        // Debug.Log("Apelle parent");
     }
 
     void OnTriggerEnter2D(Collider2D other)

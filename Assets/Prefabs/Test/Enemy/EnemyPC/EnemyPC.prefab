@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1.05, y: 0.05}
+  m_SizeDelta: {x: 1.05, y: 0.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &830251932536985887
 CanvasRenderer:
@@ -110,7 +110,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.526, y: 0}
-  m_SizeDelta: {x: 1.05, y: 0.05}
+  m_SizeDelta: {x: 1.05, y: 0.18}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &3403565047403675550
 CanvasRenderer:
@@ -311,6 +311,7 @@ MonoBehaviour:
   interactionDistance: 2
   lastDisable: 0
   pcCounter: {fileID: 0}
+  screen: {fileID: 236807949548875766}
   explosiveEnemyPrefab: {fileID: 7223171690186758717, guid: f655004445fd36e469dd2b45113d18bf, type: 3}
   numberBombs: 4
 --- !u!1 &7492756885485639082
@@ -350,7 +351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0.582}
+  m_AnchoredPosition: {x: 0, y: 0.9}
   m_SizeDelta: {x: 1, y: 0.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &841138411326128311
@@ -513,15 +514,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2704201881610260430, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_Name
-      value: Side
+      value: Side Right
       objectReference: {fileID: 0}
     - target: {fileID: 7811380368106419242, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 7811380368106419242, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7811380368106419242, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -580,15 +581,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2704201881610260430, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_Name
-      value: Side (1)
+      value: Side Left
       objectReference: {fileID: 0}
     - target: {fileID: 7811380368106419242, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7811380368106419242, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7811380368106419242, guid: 466999e102c3ef148ba65ed160b024f4, type: 3}
       propertyPath: m_LocalPosition.z

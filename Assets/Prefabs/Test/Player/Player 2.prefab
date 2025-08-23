@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2387030497181889338}
   - component: {fileID: 7540579020940571314}
   m_Layer: 9
-  m_Name: Player
+  m_Name: Player 2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -167,9 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6610634f4a8d4514395258edbf7122df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inertia: 0.8
-  acceleration: 50
-  airAcceleration: 5
   damageScreen: {fileID: 0}
   damageScreenDuration: 0.05
   moveSpeed: 5
@@ -201,11 +198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4766219165399962640, guid: ec6b49046e447d74ebb0261684442b2e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.07938731
       objectReference: {fileID: 0}
     - target: {fileID: 4766219165399962640, guid: ec6b49046e447d74ebb0261684442b2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 1.9345437
       objectReference: {fileID: 0}
     - target: {fileID: 4766219165399962640, guid: ec6b49046e447d74ebb0261684442b2e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -239,10 +236,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5850067279897885247, guid: ec6b49046e447d74ebb0261684442b2e, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 1192413363482893852}
     - target: {fileID: 8500673710406676624, guid: ec6b49046e447d74ebb0261684442b2e, type: 3}
       propertyPath: player
       value: 

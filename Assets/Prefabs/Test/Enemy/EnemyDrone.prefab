@@ -150,7 +150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -678,7 +678,7 @@ Transform:
   m_GameObject: {fileID: 7087931261262091869}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.55, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.1, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -865,6 +865,7 @@ MonoBehaviour:
   currentHealth: 0
   giveJumpForce: 6
   giveKnockBackForce: 6
+  giveDamage: 20
   healthBarCanvas: {fileID: 1936274217866197978}
   healthBar: {fileID: 2347499446974772596}
   xMin: -4

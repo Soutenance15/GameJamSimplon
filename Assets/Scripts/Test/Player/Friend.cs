@@ -1,7 +1,37 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Friend : MonoBehaviour
 {
+    // public enum FriendAimState
+    // {
+    //     Idle,
+    //     Targeting,
+    // }
+
+    // private FriendAimState aimState = FriendAimState.Idle;
+
+    [Header("Upgrade tir")]
+    public float fireRateMultiplier = 1f; // 1f (=normal), supérieur à 1 = cadence plus rapide
+    public float projectileScaleMultiplier = 1f; // 1f par défaut, >1 gros projectiles
+
+    [Header("Indicateur de lock")]
+    public GameObject lockIndicatorPrefab;
+    private GameObject currentLockIndicator = null;
+
+    [Header("Cooldown Shoot")]
+    public Transform cooldownBarObject; // Cooldown pour le shoot
+
+    [Header("Gestion énergie de tir")]
+    public float energyMax = 15f; // Energie totale
+    public float energy = 0f; // Energie courante
+    public float energyCostPerShot = 1f; // Coût par tir
+    public float energyRegenRate = 3f; // Energie par seconde (lorsque relâché)
+    public float emptyLockDuration = 3f; // Durée du verrou si énergie 0 (secondes)
+
+    private bool energyLocked = false;
+    private float energyLockTimer = 0f;
+
     [Header("Projectile")]
     public GameObject projectilePrefab; // Préfabriqué du projectile
     public Transform firePoint; // Position de tir
@@ -20,6 +50,10 @@ public class Friend : MonoBehaviour
 
     [Header("Détection d'ennemis")]
     public string enemyTag = "Enemy"; // Tag utilisé pour les ennemis
+    public float enemyDetectDistance = 20f; // Distance maximum pour cibler un ennemi
+    private Transform lockedEnemy = null; // Cible actuellement verrouillée
+    private int lockedEnemyIndex = -1; // Index dans la liste cyclique
+    private List<Transform> validEnemies = new List<Transform>();
 
     [Header("Stand-by/Immobilisation")]
     public float blockTimeBeforeIdle = 3f; // Temps sans progrès avant immobilisation (secondes)
@@ -33,9 +67,11 @@ public class Friend : MonoBehaviour
     Vector3 lastCheckedPos;
     float blockTimer = 0f;
     bool immobile = false;
+    public bool useCooldown = false; // à afficher dans l’inspecteur
 
     void Start()
     {
+        energy = energyMax;
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
         {
@@ -54,7 +90,14 @@ public class Friend : MonoBehaviour
         if (player == null)
             return;
 
-        // --- Gestion immobilisation si le Friend ne progresse plus ---
+        // -- Gestion du mode cooldown par touche U --
+        // (à remplacer par tes propres logiques de zones ou triggers plus tard)
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            useCooldown = !useCooldown;
+        }
+
+        // -- Immobilisation si le Friend ne progresse plus --
         if (!immobile)
         {
             blockTimer += Time.deltaTime;
@@ -69,7 +112,6 @@ public class Friend : MonoBehaviour
         }
         else
         {
-            // Essaye de se réactiver si le joueur redevient accessible
             float distToPlayer = Vector2.Distance(transform.position, player.position);
             Vector2 dirToPlayer = (player.position - transform.position).normalized;
             float directDist = Vector2.Distance(transform.position, player.position);
@@ -87,21 +129,18 @@ public class Friend : MonoBehaviour
             }
         }
 
-        // --- Logique de mouvement uniquement si actif ---
+        // -- Mouvement et évitement d'obstacle --
         if (!immobile)
         {
-            // Inverse le côté si le joueur change nettement de direction
             float playerSpeedX =
                 (player.position.x - lastPlayerPosition.x) / Mathf.Max(Time.deltaTime, 0.0001f);
             if (Mathf.Abs(playerSpeedX) > 0.1f)
                 followSide = Mathf.Sign(playerSpeedX);
             lastPlayerPosition = player.position;
 
-            // Calcule la position cible à côté du joueur
             Vector2 offset = new Vector2(Mathf.Abs(followOffset.x) * followSide, followOffset.y);
             Vector3 targetPos = player.position + (Vector3)offset;
 
-            // Évitement d'obstacle : raycast horizontal
             Vector2 moveDir = (targetPos - transform.position).normalized;
             RaycastHit2D hit = Physics2D.Raycast(
                 transform.position,
@@ -126,48 +165,258 @@ public class Friend : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveDelta);
         }
 
-        // --- Visée automatique et tir (toujours actifs, même immobile) ---
-        Transform closestEnemy = FindClosestEnemy();
-        if (closestEnemy != null)
+        // ----- GESTION ENNEMIS / CIBLAGE -----
+        UpdateEnemyList();
+
+        // ----- DELock avec 'R' -----
+        if (lockedEnemy != null && Input.GetKeyDown(KeyCode.R))
         {
-            Vector2 dir = (closestEnemy.position - transform.position).normalized;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Lerp(
-                transform.rotation,
-                Quaternion.Euler(0, 0, angle),
-                0.2f
-            );
+            lockedEnemy = null;
+            lockedEnemyIndex = -1;
+        }
+
+        // --- LOCK/CYCLE AVEC TAB ---
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            if (lockedEnemy == null)
+            {
+                float minDist = float.MaxValue;
+                Transform closest = null;
+                for (int i = 0; i < validEnemies.Count; i++)
+                {
+                    float d = Vector2.Distance(transform.position, validEnemies[i].position);
+                    if (d < minDist)
+                    {
+                        minDist = d;
+                        closest = validEnemies[i];
+                        lockedEnemyIndex = i;
+                    }
+                }
+                if (closest != null)
+                    lockedEnemy = closest;
+            }
+            else if (validEnemies.Count >= 2)
+            {
+                int idx = validEnemies.IndexOf(lockedEnemy);
+                idx = (idx + 1) % validEnemies.Count;
+                lockedEnemy = validEnemies[idx];
+                lockedEnemyIndex = idx;
+            }
+        }
+
+        // --- Sortie du lock si cible morte/hors champ ---
+        if (lockedEnemy != null)
+        {
+            if (
+                !lockedEnemy.gameObject.activeInHierarchy
+                || Vector2.Distance(transform.position, lockedEnemy.position) > enemyDetectDistance
+            )
+            {
+                lockedEnemy = null;
+                lockedEnemyIndex = -1;
+            }
+        }
+
+        // --- Sélection de la cible à viser/tirer ---
+        Transform targetToAim = null;
+        if (lockedEnemy == null)
+        {
+            float minDist = float.MaxValue;
+            Transform closest = null;
+            foreach (var enemy in validEnemies)
+            {
+                float d = Vector2.Distance(transform.position, enemy.position);
+                if (d < minDist)
+                {
+                    minDist = d;
+                    closest = enemy;
+                }
+            }
+            targetToAim = closest;
         }
         else
         {
-            transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, 0.2f);
+            targetToAim = lockedEnemy;
         }
 
-        bool shootButton = Input.GetKey(KeyCode.LeftControl);
-        if (shootButton && Time.time > lastShotTime + 1f / fireRate)
+        // --- ROTATION & SKIN ---
+        float rotationSpeed = 500f;
+        if (targetToAim != null)
         {
-            if (closestEnemy != null && projectilePrefab != null && firePoint != null)
-            {
-                Vector2 directionProjectile = (
-                    closestEnemy.position - firePoint.position
-                ).normalized;
-                GameObject proj = Instantiate(
-                    projectilePrefab,
-                    firePoint.position,
-                    Quaternion.identity
-                );
-                // Friend.cs (quand il tire)
-                var projScript = proj.GetComponent<ProjectileBasic>();
-                if (projScript != null)
-                    projScript.Init(directionProjectile, ProjectileSource.Friend);
+            Vector2 dir = (targetToAim.position - transform.position).normalized;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            Quaternion targetRotation = Quaternion.Euler(0, 0, angle);
+            transform.rotation = Quaternion.RotateTowards(
+                transform.rotation,
+                targetRotation,
+                rotationSpeed * Time.deltaTime
+            );
+            skinTarget();
+        }
+        else
+        {
+            transform.rotation = Quaternion.RotateTowards(
+                transform.rotation,
+                Quaternion.identity,
+                rotationSpeed * Time.deltaTime
+            );
+            skinIdle();
+        }
 
-                // var projScript = proj.GetComponent<ProjectileN>();
-                // if (projScript != null)
-                //     projScript.Init(directionProjectile);
-                // lastShotTime, valeur amodifié pour rendre plus fort ou pas
-                lastShotTime = Time.time;
+        // -------- SHOOT (avec ou sans cooldown) --------
+        if (useCooldown)
+        {
+            // --- Mode complexe : énergie/cooldown ---
+            if (energyLocked)
+            {
+                energyLockTimer += Time.deltaTime;
+                if (energyLockTimer >= emptyLockDuration)
+                {
+                    energyLocked = false;
+                    energyLockTimer = 0f;
+                    energy = Mathf.Min(energyMax, energyRegenRate * Time.deltaTime);
+                }
+            }
+            else
+            {
+                bool shootButton = Input.GetKey(KeyCode.LeftControl);
+                if (
+                    shootButton
+                    && energy >= energyCostPerShot
+                    && Time.time > lastShotTime + 1f / (fireRate * fireRateMultiplier)
+                )
+                {
+                    if (targetToAim != null && projectilePrefab != null && firePoint != null)
+                    {
+                        Vector2 directionProjectile = (
+                            targetToAim.position - firePoint.position
+                        ).normalized;
+                        GameObject proj = Instantiate(
+                            projectilePrefab,
+                            firePoint.position,
+                            Quaternion.identity
+                        );
+                        proj.transform.localScale *= projectileScaleMultiplier;
+
+                        var projScript = proj.GetComponent<ProjectileBasic>();
+                        if (projScript != null)
+                            projScript.Init(directionProjectile, ProjectileSource.Friend);
+                        lastShotTime = Time.time;
+
+                        energy -= energyCostPerShot;
+                        energy = Mathf.Max(energy, 0f);
+                        if (energy == 0)
+                        {
+                            energyLocked = true;
+                            energyLockTimer = 0f;
+                        }
+                    }
+                }
+
+                // --- Énergie regen
+                if (!shootButton && energy < energyMax)
+                {
+                    energy += energyRegenRate * Time.deltaTime;
+                    energy = Mathf.Min(energy, energyMax);
+                }
+            }
+
+            // -- Barre d'énergie --
+            if (cooldownBarObject != null)
+            {
+                cooldownBarObject.gameObject.SetActive(true);
+                Vector3 localScale = cooldownBarObject.localScale;
+                cooldownBarObject.localScale = new Vector3(
+                    energy / energyMax,
+                    localScale.y,
+                    localScale.z
+                );
             }
         }
+        else
+        {
+            // --- Mode simple (pas de cooldown, pas d'énergie) ---
+            bool shootButton = Input.GetKey(KeyCode.LeftControl);
+            if (shootButton && Time.time > lastShotTime + 1f / (fireRate * fireRateMultiplier))
+            {
+                if (targetToAim != null && projectilePrefab != null && firePoint != null)
+                {
+                    Vector2 directionProjectile = (
+                        targetToAim.position - firePoint.position
+                    ).normalized;
+                    GameObject proj = Instantiate(
+                        projectilePrefab,
+                        firePoint.position,
+                        Quaternion.identity
+                    );
+                    proj.transform.localScale *= projectileScaleMultiplier;
+
+                    var projScript = proj.GetComponent<ProjectileBasic>();
+                    if (projScript != null)
+                        projScript.Init(directionProjectile, ProjectileSource.Friend);
+                    lastShotTime = Time.time;
+                }
+            }
+            // Barre d’énergie cachée en mode simple
+            if (cooldownBarObject != null)
+                cooldownBarObject.gameObject.SetActive(false);
+        }
+
+        // -------- Indicateur de lock (triangle, losange, etc.) --------
+        if (lockedEnemy != null)
+        {
+            if (currentLockIndicator == null)
+                currentLockIndicator = Instantiate(lockIndicatorPrefab);
+
+            // Position pile au-dessus (ajuste le 1.5f selon ton sprite/taille)
+            currentLockIndicator.transform.position = lockedEnemy.position + Vector3.up * 1.5f;
+            currentLockIndicator.SetActive(true);
+        }
+        else
+        {
+            if (currentLockIndicator != null)
+                currentLockIndicator.SetActive(false);
+        }
+    }
+
+    public void ActivateBoostShoot(float multiplier, float duration)
+    {
+        StartCoroutine(FireRateBoostRoutine(multiplier, duration));
+    }
+
+    private System.Collections.IEnumerator FireRateBoostRoutine(float mult, float duration)
+    {
+        fireRateMultiplier *= mult;
+        // Optionnel : feedback UI (changer couleur, son, etc.)
+        yield return new WaitForSeconds(duration);
+        fireRateMultiplier /= mult;
+        // Rends le feedback UI à l’état normal si besoin
+    }
+
+    public void ActivateProjectileScaleBoost(float mult, float duration)
+    {
+        StartCoroutine(ProjectileScaleBoostRoutine(mult, duration));
+    }
+
+    private System.Collections.IEnumerator ProjectileScaleBoostRoutine(float mult, float duration)
+    {
+        projectileScaleMultiplier *= mult;
+        yield return new WaitForSeconds(duration);
+        projectileScaleMultiplier /= mult;
+    }
+
+    private void skinTarget()
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+            sr.color = new Color32(176, 56, 26, 255); // Par exemple, rouge quand il cible
+    }
+
+    private void skinIdle()
+    {
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if (sr != null)
+            sr.color = new Color32(95, 176, 26, 255); // Par exemple, rouge quand il cible
     }
 
     // Renvoie l'ennemi le plus proche, en ignorant ceux non ciblables
@@ -175,7 +424,7 @@ public class Friend : MonoBehaviour
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
         Transform closest = null;
-        float minDistance = Mathf.Infinity;
+        float minDistance = enemyDetectDistance;
         foreach (GameObject enemy in enemies)
         {
             bool isNotTargetable = enemy.GetComponent<EnemyNotTargetable>() != null;
@@ -190,6 +439,41 @@ public class Friend : MonoBehaviour
             }
         }
         return closest;
+    }
+
+    void UpdateEnemyList()
+    {
+        validEnemies.Clear();
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        foreach (GameObject enemy in enemies)
+        {
+            // Ici, adapte si tu as un système pour ignorer certains ennemis (non-ciblables)
+            float dist = Vector2.Distance(transform.position, enemy.transform.position);
+            if (dist <= enemyDetectDistance && enemy.activeInHierarchy)
+            {
+                // Optionnel : teste ici d'autres critères (vie/mort, etc.)
+                validEnemies.Add(enemy.transform);
+            }
+        }
+    }
+
+    public void NextTarget()
+    {
+        UpdateEnemyList();
+        if (validEnemies.Count == 0)
+        {
+            lockedEnemy = null;
+            lockedEnemyIndex = -1;
+            return;
+        }
+
+        // Trouve l'index actuel dans la nouvelle liste (si la cible existe encore)
+        if (lockedEnemy != null)
+            lockedEnemyIndex = validEnemies.IndexOf(lockedEnemy);
+
+        // Passe à la suivante
+        lockedEnemyIndex = (lockedEnemyIndex + 1) % validEnemies.Count;
+        lockedEnemy = validEnemies[lockedEnemyIndex];
     }
 
     public void OnCollisionEnter2D(Collision2D collision)

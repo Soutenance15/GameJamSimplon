@@ -17,6 +17,7 @@ TagManager:
   - Obstacle Jump On
   - Portal
   - EnemyPC
+  - ProjectileFriend
   layers:
   - Default
   - TransparentFX
