@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 361271611532868476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17f712e6cf6ea1e448a5478c3de415dd, type: 3}
+  m_Script: {fileID: 11500000, guid: 601d2f78cb2c18443b5db66990c4b7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fireRateMultiplier: 1
@@ -261,12 +261,17 @@ MonoBehaviour:
   obstacleAvoidHeight: 1.5
   obstacleLayer:
     serializedVersion: 2
+<<<<<<< HEAD
     m_Bits: 64
+=======
+    m_Bits: 0
+>>>>>>> ee4da56a870b62ca13cf573f67777335eca55c6d
   enemyTag: Enemy
   enemyDetectDistance: 20
   blockTimeBeforeIdle: 3
   minDistanceProgress: 0.5
   reactivationDistance: 12
+<<<<<<< HEAD
   useCooldown: 1
 --- !u!1 &463878239092492196
 GameObject:
@@ -371,6 +376,8 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+=======
+>>>>>>> ee4da56a870b62ca13cf573f67777335eca55c6d
 --- !u!1 &2503602761786595060
 GameObject:
   m_ObjectHideFlags: 0

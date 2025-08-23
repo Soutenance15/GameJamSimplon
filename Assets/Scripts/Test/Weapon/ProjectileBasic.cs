@@ -11,7 +11,9 @@ public class ProjectileBasic : MonoBehaviour
     public static float speed = 10f;
     public float lifeTime = 3f;
     private Vector2 direction;
+    public ProjectileSource source; // Ajout
 
+<<<<<<< HEAD:Assets/Scripts/Test/Weapon/ProjectileBasic.cs
     // public Color projectileColor = Color.white;
     public Color projectileColor = new Color32(144, 238, 144, 255); // "LightGreen";
     public ProjectileSource source;
@@ -34,6 +36,12 @@ public class ProjectileBasic : MonoBehaviour
             else
                 sr.color = projectileColor;
         }
+=======
+    public void Init(Vector2 dir, ProjectileSource src = ProjectileSource.Friend)
+    {
+        direction = dir.normalized;
+        source = src;
+>>>>>>> ee4da56a870b62ca13cf573f67777335eca55c6d:Assets/Scripts/Test/ProjectileBasic.cs
         Destroy(gameObject, lifeTime);
     }
 

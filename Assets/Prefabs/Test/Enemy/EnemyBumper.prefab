@@ -402,7 +402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7223171690186758717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 360a843e97279d34ca5479d34a3cbd7f, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a96226864b470642ad3105c66b0c395, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
@@ -415,8 +415,9 @@ MonoBehaviour:
   maxHealth: 100
   damageOnHead: 50
   currentHealth: 0
-  giveJumpForce: 0
-  giveKnockBackForce: 0
+  giveJumpForce: 6
+  giveKnockBackForce: 6
+  giveDamage: 20
   healthBarCanvas: {fileID: 1936274217866197978}
   healthBar: {fileID: 2347499446974772596}
 --- !u!1 &7306503622758872281

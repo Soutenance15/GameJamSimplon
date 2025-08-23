@@ -402,7 +402,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7223171690186758717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5593eb389e4e86347b3620fb8daf0837, type: 3}
+  m_Script: {fileID: 11500000, guid: eb25f11d53b227e4ca201c3652249637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
@@ -415,12 +415,13 @@ MonoBehaviour:
   maxHealth: 100
   damageOnHead: 50
   currentHealth: 0
-  giveJumpForce: 0
+  giveJumpForce: 6
   giveKnockBackForce: 6
+  giveDamage: 20
   healthBarCanvas: {fileID: 1936274217866197978}
   healthBar: {fileID: 2347499446974772596}
   explosionEffectPrefab: {fileID: 8425921150980482229, guid: 1caa0fa62536f844e972b62694c330c4, type: 3}
-  explosionRadius: 3
+  explosionRadius: 0
   damageDealt: 50
 --- !u!1 &7306503622758872281
 GameObject:
