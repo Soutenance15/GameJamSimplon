@@ -5,9 +5,11 @@ public class PCEnemyInteraction : MonoBehaviour
     public Transform progressBar;        // Barre visuelle à scaler sur X
     public float activationTime = 2f;    // Temps pour remplir la barre
     public float resetSpeed = 1f;        // Vitesse de descente de la barre (en secondes pour vider totalement)
+    public GameObject PC_Animation;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionDistance = 2f;
 
+    private Animator pcAnimator;
     private GameObject player;
     private float progress = 0f;
     private bool isDisabled = false;
@@ -22,6 +24,9 @@ public class PCEnemyInteraction : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         SetProgressBar(0f);
+        
+        if (PC_Animation != null)
+            pcAnimator = PC_Animation.GetComponent<Animator>();
     }
 
     void Update()
@@ -63,7 +68,12 @@ public class PCEnemyInteraction : MonoBehaviour
     void ActivatePC()
     {
         isDisabled = true;
-        Debug.Log("PC activé !");
+        // Debug.Log("PC activé !");
+
+        if (pcAnimator != null)
+        {
+            pcAnimator.Play("PCDeactivatedAnimation");
+        }
 
         if (pcCounter != null)
         {

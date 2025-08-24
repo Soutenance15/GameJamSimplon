@@ -27,7 +27,7 @@ public class IntroCinematicManager : MonoBehaviour
     private Coroutine typingCoroutine;
     private float progress = 0f;
     private float activationTime = 2f;    // Temps pour remplir la barre
-    private float resetSpeed = 4f;        // Vitesse de descente de la barre (en secondes pour vider totalement)
+    private float resetSpeed = 1f;        // Vitesse de descente de la barre (en secondes pour vider totalement)
 
     void Start()
     {

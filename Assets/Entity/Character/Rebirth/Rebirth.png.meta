@@ -1,223 +1,130 @@
 fileFormatVersion: 2
-guid: 6aa172fa6cd665b488c9974dfabc06c1
+guid: 7e6e3602ea6f21842935d26344738203
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5682915589835074383
-    second: Rebirth(NormalForm)_0
+      213: 6714447940197070179
+    second: Rebirth_0
   - first:
-      213: -8729594566899670413
-    second: Rebirth(NormalForm)_1
+      213: 5649645373062619393
+    second: Rebirth_1
   - first:
-      213: 1989212462465826262
-    second: Rebirth(NormalForm)_2
+      213: -4624226371783822939
+    second: Rebirth_2
   - first:
-      213: 5149295683791531041
-    second: Rebirth(NormalForm)_3
+      213: 7591053462584312800
+    second: Rebirth_3
   - first:
-      213: 451653577162259370
-    second: Rebirth(NormalForm)_4
+      213: 3271069878372009979
+    second: Rebirth_4
   - first:
-      213: -2610215898152371264
-    second: Rebirth(NormalForm)_5
+      213: -7286480604235946941
+    second: Rebirth_5
   - first:
-      213: 4271043071097501053
-    second: Rebirth(NormalForm)_6
+      213: -1800214608102013905
+    second: Rebirth_6
   - first:
-      213: 1893872197245420796
-    second: Rebirth(NormalForm)_7
+      213: 622800928461025964
+    second: Rebirth_7
   - first:
-      213: -4087100568060075635
-    second: Rebirth(NormalForm)_8
+      213: 980220242863474547
+    second: Rebirth_8
   - first:
-      213: -4374246553548690353
-    second: Rebirth(NormalForm)_9
+      213: 2627986312225825277
+    second: Rebirth_9
   - first:
-      213: 3001286379622520654
-    second: Rebirth(NormalForm)_10
+      213: 2950480630996951731
+    second: Rebirth_10
   - first:
-      213: 1817747493673342067
-    second: Rebirth(NormalForm)_11
+      213: -5035782871921698212
+    second: Rebirth_11
   - first:
-      213: 5555945955574416182
-    second: Rebirth(NormalForm)_12
+      213: 1330423629907679514
+    second: Rebirth_12
   - first:
-      213: 2925233550530130838
-    second: Rebirth(NormalForm)_13
+      213: -4676454798094235298
+    second: Rebirth_13
   - first:
-      213: 8149578219781687017
-    second: Rebirth(NormalForm)_14
+      213: -5580972836916196471
+    second: Rebirth_14
   - first:
-      213: -600387375162378674
-    second: Rebirth(NormalForm)_15
+      213: -6168943605116383087
+    second: Rebirth_15
   - first:
-      213: -2237985152048393758
-    second: Rebirth(NormalForm)_16
+      213: -1704051020398742865
+    second: Rebirth_16
   - first:
-      213: 841830528157869305
-    second: Rebirth(NormalForm)_17
+      213: -6276706214652468077
+    second: Rebirth_17
   - first:
-      213: 2699551613806571350
-    second: Rebirth(NormalForm)_18
+      213: 6491580297783498832
+    second: Rebirth_18
   - first:
-      213: -1136622549492727318
-    second: Rebirth(NormalForm)_19
+      213: 6268340542370278302
+    second: Rebirth_19
   - first:
-      213: 7773704539752054302
-    second: Rebirth(NormalForm)_20
+      213: -556509618235924751
+    second: Rebirth_20
   - first:
-      213: -6695547964947529224
-    second: Rebirth(NormalForm)_21
+      213: 8231366685333507138
+    second: Rebirth_21
   - first:
-      213: -5032574078181939631
-    second: Rebirth(NormalForm)_22
+      213: -8553766627300446582
+    second: Rebirth_22
   - first:
-      213: 2871325594466530811
-    second: Rebirth(NormalForm)_23
+      213: 6686564723836555409
+    second: Rebirth_23
   - first:
-      213: -3912456299740976832
-    second: Rebirth(NormalForm)_24
+      213: 438632459151165985
+    second: Rebirth_24
   - first:
-      213: 1041811102139472089
-    second: Rebirth(NormalForm)_25
+      213: -8904370398393810169
+    second: Rebirth_25
   - first:
-      213: 5763727975865355403
-    second: Rebirth(NormalForm)_26
+      213: -779788487308032801
+    second: Rebirth_26
   - first:
-      213: 7388091163263716838
-    second: Rebirth(NormalForm)_27
+      213: 3581098842925431616
+    second: Rebirth_27
   - first:
-      213: 5305453206191967928
-    second: Rebirth(NormalForm)_28
+      213: -3078353157914954599
+    second: Rebirth_28
   - first:
-      213: -5193024985125653987
-    second: Rebirth(NormalForm)_29
+      213: -6218353535472705345
+    second: Rebirth_29
   - first:
-      213: 459235595839535841
-    second: Rebirth(NormalForm)_30
+      213: -1479341676117791395
+    second: Rebirth_30
   - first:
-      213: -2446703911873515533
-    second: Rebirth(NormalForm)_31
+      213: 3114026330374996008
+    second: Rebirth_31
   - first:
-      213: 8316181833907000254
-    second: Rebirth(NormalForm)_32
+      213: -8026178243417901852
+    second: Rebirth_32
   - first:
-      213: 902769930986454519
-    second: Rebirth(NormalForm)_33
+      213: 8308624387670710411
+    second: Rebirth_33
   - first:
-      213: 1940710881527422880
-    second: Rebirth(NormalForm)_34
+      213: -6817374820492796045
+    second: Rebirth_34
   - first:
-      213: 6696710943160029111
-    second: Rebirth(NormalForm)_35
+      213: -4842041470135651318
+    second: Rebirth_35
   - first:
-      213: 641342997090112475
-    second: Rebirth(NormalForm)_36
+      213: -4548814939995961343
+    second: Rebirth_36
   - first:
-      213: 8628022245689336798
-    second: Rebirth(NormalForm)_37
+      213: -8497532604363002449
+    second: Rebirth_37
   - first:
-      213: 1620412414152957992
-    second: Rebirth(NormalForm)_38
+      213: -338671467172897897
+    second: Rebirth_38
   - first:
-      213: -4277863195908127381
-    second: Rebirth(NormalForm)_39
+      213: -1330159335948651256
+    second: Rebirth_39
   - first:
-      213: -231874603607354139
-    second: Rebirth(NormalForm)_40
-  - first:
-      213: -2797341768817666424
-    second: Rebirth(NormalForm)_41
-  - first:
-      213: -5853209233250841138
-    second: Rebirth(NormalForm)_42
-  - first:
-      213: -3936586783289340986
-    second: Rebirth(NormalForm)_43
-  - first:
-      213: 7609318539333010322
-    second: Rebirth(NormalForm)_44
-  - first:
-      213: -2548256255043728065
-    second: Rebirth(NormalForm)_45
-  - first:
-      213: 2107421267724264994
-    second: Rebirth(NormalForm)_46
-  - first:
-      213: -7665517691165885311
-    second: Rebirth(NormalForm)_47
-  - first:
-      213: 1915052770401332224
-    second: Rebirth(NormalForm)_48
-  - first:
-      213: -2821917541765492947
-    second: Rebirth(NormalForm)_49
-  - first:
-      213: -2205262227439212021
-    second: Rebirth(NormalForm)_50
-  - first:
-      213: 5135524769111645325
-    second: Rebirth(NormalForm)_51
-  - first:
-      213: -8265542428012706100
-    second: Rebirth(NormalForm)_52
-  - first:
-      213: 7773521940488197362
-    second: Rebirth(NormalForm)_53
-  - first:
-      213: 5302901365168428999
-    second: Rebirth(NormalForm)_54
-  - first:
-      213: 147054959547544711
-    second: Rebirth(NormalForm)_55
-  - first:
-      213: -4250882740996780141
-    second: Rebirth(NormalForm)_56
-  - first:
-      213: -6659382696250800889
-    second: Rebirth(NormalForm)_57
-  - first:
-      213: -6012482093313570297
-    second: Rebirth(NormalForm)_58
-  - first:
-      213: 2868784125924296604
-    second: Rebirth(NormalForm)_59
-  - first:
-      213: 6944884112669038867
-    second: Rebirth(NormalForm)_60
-  - first:
-      213: -1039406406332538917
-    second: Rebirth(NormalForm)_61
-  - first:
-      213: 8696827452718919152
-    second: Rebirth(NormalForm)_62
-  - first:
-      213: -5947216532635185302
-    second: Rebirth(NormalForm)_63
-  - first:
-      213: 598139727855054562
-    second: Rebirth(NormalForm)_64
-  - first:
-      213: -3692547145368407452
-    second: Rebirth(NormalForm)_65
-  - first:
-      213: -8604469793769716037
-    second: Rebirth(NormalForm)_66
-  - first:
-      213: 5156984034519253362
-    second: Rebirth(NormalForm)_67
-  - first:
-      213: -2479743486088717495
-    second: Rebirth(NormalForm)_68
-  - first:
-      213: 8095246813465808444
-    second: Rebirth(NormalForm)_69
-  - first:
-      213: -4530142038474202868
-    second: Rebirth(NormalForm)_70
-  - first:
-      213: -6186177892603935568
-    second: Rebirth(NormalForm)_71
+      213: -3869993584049243097
+    second: Rebirth_40
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -264,7 +171,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -313,7 +220,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_0
+      name: RebirthShoot1
       rect:
         serializedVersion: 2
         x: 0
@@ -321,21 +228,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b4d953616a3221b0800000000000000
-      internalID: -5682915589835074383
+      spriteID: 365bc42b3d28e2d50800000000000000
+      internalID: 6714447940197070179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_1
+      name: RebirthShoot2
       rect:
         serializedVersion: 2
         x: 96
@@ -343,21 +250,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 372e3c62eff3ad680800000000000000
-      internalID: -8729594566899670413
+      spriteID: 101a350a882976e40800000000000000
+      internalID: 5649645373062619393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_2
+      name: RebirthShoot3
       rect:
         serializedVersion: 2
         x: 192
@@ -365,21 +272,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6dd3e00023a1b9b10800000000000000
-      internalID: 1989212462465826262
+      spriteID: 5a1f4d47d9273dfb0800000000000000
+      internalID: -4624226371783822939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_3
+      name: RebirthShoot4
       rect:
         serializedVersion: 2
         x: 288
@@ -387,21 +294,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 12ca8db6429f57740800000000000000
-      internalID: 5149295683791531041
+      spriteID: 0e34654b7e6d85960800000000000000
+      internalID: 7591053462584312800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_4
+      name: RebirthShoot5
       rect:
         serializedVersion: 2
         x: 384
@@ -409,21 +316,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aab7a441988944600800000000000000
-      internalID: 451653577162259370
+      spriteID: bf708d739bc256d20800000000000000
+      internalID: 3271069878372009979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_5
+      name: RebirthShoot6
       rect:
         serializedVersion: 2
         x: 480
@@ -431,21 +338,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0cbfc8b5876a6cbd0800000000000000
-      internalID: -2610215898152371264
+      spriteID: 3442eb1fe7831ea90800000000000000
+      internalID: -7286480604235946941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_6
+      name: RebirthShoot7
       rect:
         serializedVersion: 2
         x: 576
@@ -453,21 +360,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d75f8215b0bc54b30800000000000000
-      internalID: 4271043071097501053
+      spriteID: f244c941a5a5407e0800000000000000
+      internalID: -1800214608102013905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_7
+      name: RebirthShoot8
       rect:
         serializedVersion: 2
         x: 672
@@ -475,21 +382,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf44dceaab2684a10800000000000000
-      internalID: 1893872197245420796
+      spriteID: ca2f3ba0522a4a800800000000000000
+      internalID: 622800928461025964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_8
+      name: Projectile1
       rect:
         serializedVersion: 2
         x: 768
@@ -497,21 +404,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d816b7f00b3b747c0800000000000000
-      internalID: -4087100568060075635
+      spriteID: 37746811e117a9d00800000000000000
+      internalID: 980220242863474547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_9
+      name: Projectile2
       rect:
         serializedVersion: 2
         x: 864
@@ -519,21 +426,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4ce0cf6fed8b43c0800000000000000
-      internalID: -4374246553548690353
+      spriteID: df12fc690ab787420800000000000000
+      internalID: 2627986312225825277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_10
+      name: Projectile3
       rect:
         serializedVersion: 2
         x: 960
@@ -541,21 +448,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e475e9e8f06b6a920800000000000000
-      internalID: 3001286379622520654
+      spriteID: 3b26e37608632f820800000000000000
+      internalID: 2950480630996951731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_11
+      name: Projectile4
       rect:
         serializedVersion: 2
         x: 1056
@@ -563,21 +470,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 37491c3f6bfe93910800000000000000
-      internalID: 1817747493673342067
+      spriteID: c5a5c11a82e4d1ab0800000000000000
+      internalID: -5035782871921698212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_12
+      name: Projectile5
       rect:
         serializedVersion: 2
         x: 1152
@@ -585,21 +492,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6330841f86faa1d40800000000000000
-      internalID: 5555945955574416182
+      spriteID: a19de651e3d967210800000000000000
+      internalID: 1330423629907679514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_13
+      name: Projectile6
       rect:
         serializedVersion: 2
         x: 1248
@@ -607,21 +514,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69337686a64889820800000000000000
-      internalID: 2925233550530130838
+      spriteID: e590c675325e91fb0800000000000000
+      internalID: -4676454798094235298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_14
+      name: Projectile7
       rect:
         serializedVersion: 2
         x: 1344
@@ -629,21 +536,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e6095b663e191170800000000000000
-      internalID: 8149578219781687017
+      spriteID: 98b818a26c66c82b0800000000000000
+      internalID: -5580972836916196471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_15
+      name: RebirthDeath1
       rect:
         serializedVersion: 2
         x: 0
@@ -651,21 +558,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e4631dffcdefaa7f0800000000000000
-      internalID: -600387375162378674
+      spriteID: 190de91c972836aa0800000000000000
+      internalID: -6168943605116383087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_16
+      name: RebirthDeath2
       rect:
         serializedVersion: 2
         x: 96
@@ -673,21 +580,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e19e8f8c5411f0e0800000000000000
-      internalID: -2237985152048393758
+      spriteID: fa2bdf910aef958e0800000000000000
+      internalID: -1704051020398742865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_17
+      name: RebirthDeath3
       rect:
         serializedVersion: 2
         x: 192
@@ -695,21 +602,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f4ede7b768ceab00800000000000000
-      internalID: 841830528157869305
+      spriteID: 394272404f8a4e8a0800000000000000
+      internalID: -6276706214652468077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_18
+      name: RebirthDeath4
       rect:
         serializedVersion: 2
         x: 288
@@ -717,21 +624,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65fe5c1d3ebb67520800000000000000
-      internalID: 2699551613806571350
+      spriteID: 0585f4013e9b61a50800000000000000
+      internalID: 6491580297783498832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_19
+      name: RebirthDeath5
       rect:
         serializedVersion: 2
         x: 384
@@ -739,21 +646,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae189c530d7e930f0800000000000000
-      internalID: -1136622549492727318
+      spriteID: e9be82f138e9df650800000000000000
+      internalID: 6268340542370278302
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_20
+      name: RebirthDeath6
       rect:
         serializedVersion: 2
         x: 480
@@ -761,21 +668,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e1e33c0971fb1eb60800000000000000
-      internalID: 7773704539752054302
+      spriteID: 1fe95f26371e648f0800000000000000
+      internalID: -556509618235924751
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_21
+      name: RebirthDeath7
       rect:
         serializedVersion: 2
         x: 576
@@ -783,21 +690,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8f186b4b992a413a0800000000000000
-      internalID: -6695547964947529224
+      spriteID: 24cc94f7360bb3270800000000000000
+      internalID: 8231366685333507138
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_22
+      name: RebirthDeath8
       rect:
         serializedVersion: 2
         x: 672
@@ -805,21 +712,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15660242a84b82ab0800000000000000
-      internalID: -5032574078181939631
+      spriteID: a8e6a20829aea4980800000000000000
+      internalID: -8553766627300446582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_23
+      name: RebirthDeath9
       rect:
         serializedVersion: 2
         x: 768
@@ -827,21 +734,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf53aac4a6ff8d720800000000000000
-      internalID: 2871325594466530811
+      spriteID: 1909feb70337bcc50800000000000000
+      internalID: 6686564723836555409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_24
+      name: RebirthDeath10
       rect:
         serializedVersion: 2
         x: 864
@@ -849,21 +756,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 04923b679b924b9c0800000000000000
-      internalID: -3912456299740976832
+      spriteID: 12a49aac5e5561600800000000000000
+      internalID: 438632459151165985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_25
+      name: RebirthDeath11
       rect:
         serializedVersion: 2
         x: 960
@@ -871,21 +778,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d8d41a7da1457e00800000000000000
-      internalID: 1041811102139472089
+      spriteID: 703cb3fcc425d6480800000000000000
+      internalID: -8904370398393810169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_26
+      name: RebirthDeath12
       rect:
         serializedVersion: 2
         x: 1056
@@ -893,21 +800,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8c8f677e00ecff40800000000000000
-      internalID: 5763727975865355403
+      spriteID: fd4c0169082ad25f0800000000000000
+      internalID: -779788487308032801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_27
+      name: RebirthHurt1
       rect:
         serializedVersion: 2
         x: 0
@@ -915,21 +822,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ed498ae4c5c78660800000000000000
-      internalID: 7388091163263716838
+      spriteID: 04bf1269c6e92b130800000000000000
+      internalID: 3581098842925431616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_28
+      name: RebirthHurt2
       rect:
         serializedVersion: 2
         x: 96
@@ -937,21 +844,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8be878fd491c0a940800000000000000
-      internalID: 5305453206191967928
+      spriteID: 994f649dc1e7745d0800000000000000
+      internalID: -3078353157914954599
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_29
+      name: RebirthHurt3
       rect:
         serializedVersion: 2
         x: 192
@@ -959,21 +866,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d127bd33a4baee7b0800000000000000
-      internalID: -5193024985125653987
+      spriteID: fb0ea5ed768f3b9a0800000000000000
+      internalID: -6218353535472705345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_30
+      name: RebirthHurt4
       rect:
         serializedVersion: 2
         x: 288
@@ -981,21 +888,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1eafa3e57588f5600800000000000000
-      internalID: 459235595839535841
+      spriteID: d5d619d5592587be0800000000000000
+      internalID: -1479341676117791395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_31
+      name: RebirthMove1
       rect:
         serializedVersion: 2
         x: 0
@@ -1003,21 +910,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ff683e51cf8b0ed0800000000000000
-      internalID: -2446703911873515533
+      spriteID: 820073bd27e373b20800000000000000
+      internalID: 3114026330374996008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_32
+      name: RebirthMove2
       rect:
         serializedVersion: 2
         x: 96
@@ -1025,21 +932,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb355912153096370800000000000000
-      internalID: 8316181833907000254
+      spriteID: 4e47b1189694d9090800000000000000
+      internalID: -8026178243417901852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_33
+      name: RebirthMove3
       rect:
         serializedVersion: 2
         x: 192
@@ -1047,21 +954,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fdf95a1878478c00800000000000000
-      internalID: 902769930986454519
+      spriteID: b88924f0cd92e4370800000000000000
+      internalID: 8308624387670710411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_34
+      name: RebirthMove4
       rect:
         serializedVersion: 2
         x: 288
@@ -1069,21 +976,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0af5d21b34aceea10800000000000000
-      internalID: 1940710881527422880
+      spriteID: 37f95d388b1d361a0800000000000000
+      internalID: -6817374820492796045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_35
+      name: RebirthMove5
       rect:
         serializedVersion: 2
         x: 384
@@ -1091,21 +998,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7bf46824f1f7fec50800000000000000
-      internalID: 6696710943160029111
+      spriteID: a04bad8efec9dccb0800000000000000
+      internalID: -4842041470135651318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_36
+      name: RebirthIdle1
       rect:
         serializedVersion: 2
         x: 0
@@ -1113,21 +1020,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd39db0de0286e800800000000000000
-      internalID: 641342997090112475
+      spriteID: 1080d88a9ec5fd0c0800000000000000
+      internalID: -4548814939995961343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_37
+      name: RebirthIdle2
       rect:
         serializedVersion: 2
         x: 96
@@ -1135,21 +1042,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed32b7ce484ecb770800000000000000
-      internalID: 8628022245689336798
+      spriteID: fada4a14e13b21a80800000000000000
+      internalID: -8497532604363002449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_38
+      name: RebirthIdle3
       rect:
         serializedVersion: 2
         x: 192
@@ -1157,21 +1064,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 820683f518cdc7610800000000000000
-      internalID: 1620412414152957992
+      spriteID: 79b599f481ccc4bf0800000000000000
+      internalID: -338671467172897897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_39
+      name: RebirthIdle4
       rect:
         serializedVersion: 2
         x: 288
@@ -1179,21 +1086,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b65cd22a61af1a4c0800000000000000
-      internalID: -4277863195908127381
+      spriteID: 8057c16a1235a8de0800000000000000
+      internalID: -1330159335948651256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_40
+      name: RebirthIdle5
       rect:
         serializedVersion: 2
         x: 384
@@ -1201,21 +1108,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5e49c8bc64738ccf0800000000000000
-      internalID: -231874603607354139
+      spriteID: 72c34b3e6550b4ac0800000000000000
+      internalID: -3869993584049243097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_41
+      name: RebirthIdle6
       rect:
         serializedVersion: 2
         x: 480
@@ -1223,21 +1130,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 88692427b78dd29d0800000000000000
-      internalID: -2797341768817666424
+      spriteID: 8c669d78a43ec9b4482440e2af3c50b3
+      internalID: -354455396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_42
+      name: RebirthDodge1
       rect:
         serializedVersion: 2
         x: 0
@@ -1245,21 +1152,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ecd0c08c63935cea0800000000000000
-      internalID: -5853209233250841138
+      spriteID: 005f11a00efcda54eaabc89f4bfc3644
+      internalID: -1841204798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_43
+      name: RebirthDodge2
       rect:
         serializedVersion: 2
         x: 96
@@ -1267,21 +1174,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6cb8a827d2f6e59c0800000000000000
-      internalID: -3936586783289340986
+      spriteID: 8fc21550fbc59ba44a4eeccdd2583efa
+      internalID: 1111291134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_44
+      name: RebirthDodge3
       rect:
         serializedVersion: 2
         x: 192
@@ -1289,21 +1196,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2930db745eab99960800000000000000
-      internalID: 7609318539333010322
+      spriteID: a6f626c7a1a9ae24b85fbf951cb5077c
+      internalID: -1002083786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_45
+      name: RebirthDodge4
       rect:
         serializedVersion: 2
         x: 288
@@ -1311,21 +1218,21 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f3d8371ff66c2acd0800000000000000
-      internalID: -2548256255043728065
+      spriteID: 6b3dc61f2ecd82f418c0dfa9159d6fe9
+      internalID: 1517063960
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Rebirth(NormalForm)_46
+      name: RebirthDodge5
       rect:
         serializedVersion: 2
         x: 384
@@ -1333,15 +1240,15 @@ TextureImporter:
         width: 96
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 226eec63a701f3d10800000000000000
-      internalID: 2107421267724264994
+      spriteID: 960d47ed1e4eaa94384b798998c6d1a4
+      internalID: 1005871858
       vertices: []
       indices: 
       edges: []
@@ -1350,7 +1257,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3556375dc8e5f7f418236bd178e698ab
+    spriteID: adb3f17028be39948ab52bcf2e3a8073
     internalID: 0
     vertices: []
     indices: 
@@ -1362,53 +1269,55 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Rebirth(NormalForm)_0: -5682915589835074383
-      Rebirth(NormalForm)_1: -8729594566899670413
-      Rebirth(NormalForm)_10: 3001286379622520654
-      Rebirth(NormalForm)_11: 1817747493673342067
-      Rebirth(NormalForm)_12: 5555945955574416182
-      Rebirth(NormalForm)_13: 2925233550530130838
-      Rebirth(NormalForm)_14: 8149578219781687017
-      Rebirth(NormalForm)_15: -600387375162378674
-      Rebirth(NormalForm)_16: -2237985152048393758
-      Rebirth(NormalForm)_17: 841830528157869305
-      Rebirth(NormalForm)_18: 2699551613806571350
-      Rebirth(NormalForm)_19: -1136622549492727318
-      Rebirth(NormalForm)_2: 1989212462465826262
-      Rebirth(NormalForm)_20: 7773704539752054302
-      Rebirth(NormalForm)_21: -6695547964947529224
-      Rebirth(NormalForm)_22: -5032574078181939631
-      Rebirth(NormalForm)_23: 2871325594466530811
-      Rebirth(NormalForm)_24: -3912456299740976832
-      Rebirth(NormalForm)_25: 1041811102139472089
-      Rebirth(NormalForm)_26: 5763727975865355403
-      Rebirth(NormalForm)_27: 7388091163263716838
-      Rebirth(NormalForm)_28: 5305453206191967928
-      Rebirth(NormalForm)_29: -5193024985125653987
-      Rebirth(NormalForm)_3: 5149295683791531041
-      Rebirth(NormalForm)_30: 459235595839535841
-      Rebirth(NormalForm)_31: -2446703911873515533
-      Rebirth(NormalForm)_32: 8316181833907000254
-      Rebirth(NormalForm)_33: 902769930986454519
-      Rebirth(NormalForm)_34: 1940710881527422880
-      Rebirth(NormalForm)_35: 6696710943160029111
-      Rebirth(NormalForm)_36: 641342997090112475
-      Rebirth(NormalForm)_37: 8628022245689336798
-      Rebirth(NormalForm)_38: 1620412414152957992
-      Rebirth(NormalForm)_39: -4277863195908127381
-      Rebirth(NormalForm)_4: 451653577162259370
-      Rebirth(NormalForm)_40: -231874603607354139
-      Rebirth(NormalForm)_41: -2797341768817666424
-      Rebirth(NormalForm)_42: -5853209233250841138
-      Rebirth(NormalForm)_43: -3936586783289340986
-      Rebirth(NormalForm)_44: 7609318539333010322
-      Rebirth(NormalForm)_45: -2548256255043728065
-      Rebirth(NormalForm)_46: 2107421267724264994
-      Rebirth(NormalForm)_5: -2610215898152371264
-      Rebirth(NormalForm)_6: 4271043071097501053
-      Rebirth(NormalForm)_7: 1893872197245420796
-      Rebirth(NormalForm)_8: -4087100568060075635
-      Rebirth(NormalForm)_9: -4374246553548690353
+      1RebirthHurt: 3581098842925431616
+      Projectile1: 980220242863474547
+      Projectile2: 2627986312225825277
+      Projectile3: 2950480630996951731
+      Projectile4: -5035782871921698212
+      Projectile5: 1330423629907679514
+      Projectile6: -4676454798094235298
+      Projectile7: -5580972836916196471
+      RebirthDeath1: -6168943605116383087
+      RebirthDeath10: 438632459151165985
+      RebirthDeath11: -8904370398393810169
+      RebirthDeath12: -779788487308032801
+      RebirthDeath2: -1704051020398742865
+      RebirthDeath3: -6276706214652468077
+      RebirthDeath4: 6491580297783498832
+      RebirthDeath5: 6268340542370278302
+      RebirthDeath6: -556509618235924751
+      RebirthDeath7: 8231366685333507138
+      RebirthDeath8: -8553766627300446582
+      RebirthDeath9: 6686564723836555409
+      RebirthDodge1: -1841204798
+      RebirthDodge2: 1111291134
+      RebirthDodge3: -1002083786
+      RebirthDodge4: 1517063960
+      RebirthDodge5: 1005871858
+      RebirthHurt1: 3581098842925431616
+      RebirthHurt2: -3078353157914954599
+      RebirthHurt3: -6218353535472705345
+      RebirthHurt4: -1479341676117791395
+      RebirthI_27: 3581098842925431616
+      RebirthIdle1: -4548814939995961343
+      RebirthIdle2: -8497532604363002449
+      RebirthIdle3: -338671467172897897
+      RebirthIdle4: -1330159335948651256
+      RebirthIdle5: -3869993584049243097
+      RebirthIdle6: -354455396
+      RebirthMove1: 3114026330374996008
+      RebirthMove2: -8026178243417901852
+      RebirthMove3: 8308624387670710411
+      RebirthMove4: -6817374820492796045
+      RebirthMove5: -4842041470135651318
+      RebirthShoot1: 6714447940197070179
+      RebirthShoot2: 5649645373062619393
+      RebirthShoot3: -4624226371783822939
+      RebirthShoot4: 7591053462584312800
+      RebirthShoot5: 3271069878372009979
+      RebirthShoot6: -7286480604235946941
+      RebirthShoot7: -1800214608102013905
+      RebirthShoot8: 622800928461025964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

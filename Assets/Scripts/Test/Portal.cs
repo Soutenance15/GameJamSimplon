@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
+    public GameObject buttonToPress;
     public string sceneToLoad;
     private bool playerInsidePortal = false;
     private Transform playerTransform = null;
@@ -11,6 +12,7 @@ public class Portal : MonoBehaviour
 
     public float attractDuration = 0.6f; // Durée de l’aspiration vers le centre
     public float shrinkDuration = 0.5f; // Durée du rapetissement
+    // Désactive la physique pour le joueur (plus de gravité, pas de mouvement physique)
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -36,6 +38,14 @@ public class Portal : MonoBehaviour
         if (playerInsidePortal && !isAbsorbing && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine(AbsorbPlayerAndLoad());
+        }
+        if (playerInsidePortal && !isAbsorbing)
+        {
+            buttonToPress.SetActive(true);
+        }
+        else if (!playerInsidePortal)
+        {
+            buttonToPress.SetActive(false);
         }
     }
 

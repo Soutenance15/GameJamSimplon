@@ -40,7 +40,7 @@ public class AudioManager : MonoBehaviour
 	}
 	void OnCollisionEnter2D(Collision2D collision)
 	{
-		print(collision.gameObject.tag);
+		// print(collision.gameObject.tag);
 		//PlayNextSong();
 		if (collision.gameObject.CompareTag("MusicTrigger"))
 		{
@@ -67,10 +67,10 @@ public class AudioManager : MonoBehaviour
 			boss2.SetActive(true);
 			// boss3.SetActive(true);
 		}
-		else if (collision.gameObject.CompareTag("TutoEndTriggerTP"))
-		{
-			// Contact principal
-			SceneManager.LoadScene("Niveau de départ");
-		}
+		// else if (collision.gameObject.CompareTag("TutoEndTriggerTP"))
+		// {
+		// 	// Contact principal
+		// 	SceneManager.LoadScene("Niveau de départ");
+		// }
 	}
 }

@@ -207,7 +207,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4287888528067472099}
-  - component: {fileID: 254213459347749404}
   m_Layer: 0
   m_Name: "D\xE9cadencePC"
   m_TagString: Untagged
@@ -233,20 +232,6 @@ Transform:
   - {fileID: 6575694111303274079}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &254213459347749404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7060132012363629689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8224db1bdbfc9e744a2a3a3d25944f66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spriteToChange: {fileID: 0}
-  transitionSpeed: 1
 --- !u!1 &7189743822464420025
 GameObject:
   m_ObjectHideFlags: 0

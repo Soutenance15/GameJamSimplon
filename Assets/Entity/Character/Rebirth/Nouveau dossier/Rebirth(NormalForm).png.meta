@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6aa172fa6cd665b488c9974dfabc06c1
+guid: 24f5d3b10fcd27b46a867b6cbdeab557
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -264,7 +264,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 96
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -316,10 +316,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 480
-        width: 96
-        height: 96
+        x: 17
+        y: 503
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +338,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 480
-        width: 96
-        height: 96
+        x: 113
+        y: 503
+        width: 78
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +360,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_2
       rect:
         serializedVersion: 2
-        x: 192
-        y: 480
-        width: 96
-        height: 96
+        x: 208
+        y: 502
+        width: 80
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,10 +382,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_3
       rect:
         serializedVersion: 2
-        x: 288
-        y: 480
-        width: 96
-        height: 96
+        x: 303
+        y: 501
+        width: 81
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +404,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_4
       rect:
         serializedVersion: 2
-        x: 384
-        y: 480
-        width: 96
-        height: 96
+        x: 398
+        y: 500
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +426,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_5
       rect:
         serializedVersion: 2
-        x: 480
-        y: 480
-        width: 96
-        height: 96
+        x: 495
+        y: 501
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,10 +448,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_6
       rect:
         serializedVersion: 2
-        x: 576
-        y: 480
-        width: 96
-        height: 96
+        x: 593
+        y: 502
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_7
       rect:
         serializedVersion: 2
-        x: 672
-        y: 480
-        width: 96
-        height: 96
+        x: 689
+        y: 503
+        width: 140
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,10 +492,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_8
       rect:
         serializedVersion: 2
-        x: 768
-        y: 480
-        width: 96
-        height: 96
+        x: 934
+        y: 518
+        width: 16
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,10 +514,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_9
       rect:
         serializedVersion: 2
-        x: 864
-        y: 480
-        width: 96
-        height: 96
+        x: 1024
+        y: 385
+        width: 311
+        height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,10 +536,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_10
       rect:
         serializedVersion: 2
-        x: 960
+        x: 1406
         y: 480
-        width: 96
-        height: 96
+        width: 84
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,10 +558,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_11
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 480
-        width: 96
-        height: 96
+        x: 1488
+        y: 514
+        width: 28
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,10 +580,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_12
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 480
-        width: 96
-        height: 96
+        x: 1516
+        y: 514
+        width: 16
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -602,10 +602,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_13
       rect:
         serializedVersion: 2
-        x: 1248
-        y: 480
-        width: 96
-        height: 96
+        x: 17
+        y: 407
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,10 +624,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_14
       rect:
         serializedVersion: 2
-        x: 1344
-        y: 480
-        width: 96
-        height: 96
+        x: 113
+        y: 407
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,10 +646,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 96
-        height: 96
+        x: 208
+        y: 405
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +668,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_16
       rect:
         serializedVersion: 2
-        x: 96
-        y: 384
-        width: 96
-        height: 96
+        x: 305
+        y: 403
+        width: 74
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,10 +690,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_17
       rect:
         serializedVersion: 2
-        x: 192
-        y: 384
-        width: 96
-        height: 96
+        x: 399
+        y: 401
+        width: 74
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,10 +712,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_18
       rect:
         serializedVersion: 2
-        x: 288
-        y: 384
-        width: 96
-        height: 96
+        x: 493
+        y: 395
+        width: 74
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -734,10 +734,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_19
       rect:
         serializedVersion: 2
-        x: 384
-        y: 384
-        width: 96
-        height: 96
+        x: 589
+        y: 385
+        width: 74
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,10 +756,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_20
       rect:
         serializedVersion: 2
-        x: 480
-        y: 384
-        width: 96
-        height: 96
+        x: 681
+        y: 383
+        width: 74
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,10 +778,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_21
       rect:
         serializedVersion: 2
-        x: 576
-        y: 384
-        width: 96
-        height: 96
+        x: 776
+        y: 383
+        width: 74
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -800,10 +800,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_22
       rect:
         serializedVersion: 2
-        x: 672
-        y: 384
-        width: 96
-        height: 96
+        x: 871
+        y: 385
+        width: 74
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -822,10 +822,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_23
       rect:
         serializedVersion: 2
-        x: 768
+        x: 966
         y: 384
-        width: 96
-        height: 96
+        width: 74
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -844,10 +844,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_24
       rect:
         serializedVersion: 2
-        x: 864
-        y: 384
-        width: 96
-        height: 96
+        x: 1440
+        y: 394
+        width: 24
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,10 +866,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_25
       rect:
         serializedVersion: 2
-        x: 960
-        y: 384
-        width: 96
-        height: 96
+        x: 1464
+        y: 395
+        width: 16
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -888,10 +888,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_26
       rect:
         serializedVersion: 2
-        x: 1056
-        y: 384
-        width: 96
-        height: 96
+        x: 1480
+        y: 394
+        width: 50
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -910,10 +910,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 96
-        height: 96
+        x: 17
+        y: 311
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_28
       rect:
         serializedVersion: 2
-        x: 96
-        y: 288
-        width: 96
-        height: 96
+        x: 113
+        y: 308
+        width: 74
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -954,10 +954,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_29
       rect:
         serializedVersion: 2
-        x: 192
-        y: 288
-        width: 96
-        height: 96
+        x: 207
+        y: 306
+        width: 74
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -976,10 +976,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_30
       rect:
         serializedVersion: 2
-        x: 288
-        y: 288
-        width: 96
-        height: 96
+        x: 305
+        y: 308
+        width: 74
+        height: 67
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,10 +998,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_31
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 96
-        height: 96
+        x: 1441
+        y: 308
+        width: 30
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1020,10 +1020,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_32
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 96
-        height: 96
+        x: 1473
+        y: 313
+        width: 21
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1042,10 +1042,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_33
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 96
-        height: 96
+        x: 1495
+        y: 313
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1064,10 +1064,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_34
       rect:
         serializedVersion: 2
-        x: 288
-        y: 192
-        width: 96
-        height: 96
+        x: 1509
+        y: 313
+        width: 23
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1086,10 +1086,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_35
       rect:
         serializedVersion: 2
-        x: 384
-        y: 192
-        width: 96
-        height: 96
+        x: 17
+        y: 215
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1108,10 +1108,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_36
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 96
-        height: 96
+        x: 114
+        y: 216
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1130,10 +1130,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_37
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 96
-        height: 96
+        x: 211
+        y: 214
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1152,10 +1152,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_38
       rect:
         serializedVersion: 2
-        x: 192
-        y: 96
-        width: 96
-        height: 96
+        x: 306
+        y: 212
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1174,10 +1174,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_39
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
-        width: 96
-        height: 96
+        x: 401
+        y: 215
+        width: 76
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1196,10 +1196,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_40
       rect:
         serializedVersion: 2
-        x: 384
-        y: 96
-        width: 96
-        height: 96
+        x: 1395
+        y: 244
+        width: 26
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1218,10 +1218,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_41
       rect:
         serializedVersion: 2
-        x: 480
-        y: 96
-        width: 96
-        height: 96
+        x: 1420
+        y: 244
+        width: 19
+        height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1240,10 +1240,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_42
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 96
-        height: 96
+        x: 1439
+        y: 245
+        width: 6
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1262,10 +1262,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_43
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 96
+        x: 1446
+        y: 243
+        width: 19
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1284,10 +1284,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_44
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 96
+        x: 1465
+        y: 239
+        width: 12
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1306,10 +1306,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_45
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 96
-        height: 96
+        x: 1475
+        y: 240
+        width: 23
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1328,10 +1328,10 @@ TextureImporter:
       name: Rebirth(NormalForm)_46
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 96
-        height: 96
+        x: 1498
+        y: 245
+        width: 7
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1346,11 +1346,561 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_47
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 237
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18cb596064c9e9590800000000000000
+      internalID: -7665517691165885311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_48
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 239
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c26e92952a39a10800000000000000
+      internalID: 1915052770401332224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_49
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 201
+        width: 68
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2fcf9962f886d8d0800000000000000
+      internalID: -2821917541765492947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_50
+      rect:
+        serializedVersion: 2
+        x: 1469
+        y: 205
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a26e820b55561e0800000000000000
+      internalID: -2205262227439212021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_51
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 205
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c9e1e719c054740800000000000000
+      internalID: 5135524769111645325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_52
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 205
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6026654f4ea4d80800000000000000
+      internalID: -8265542428012706100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_53
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 119
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4118cd40911eb60800000000000000
+      internalID: 7773521940488197362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_54
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 120
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c75cc512b0b79940800000000000000
+      internalID: 5302901365168428999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_55
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 121
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7847a42e4b17a0200800000000000000
+      internalID: 147054959547544711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_56
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 122
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f4c015ba4d105c0800000000000000
+      internalID: -4250882740996780141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_57
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 121
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705869e78be1593a0800000000000000
+      internalID: -6659382696250800889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_58
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 120
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70ac5a1446f5f8ca0800000000000000
+      internalID: -6012482093313570297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_59
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 120
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c974ffa86f7ffc720800000000000000
+      internalID: 2868784125924296604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_60
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 121
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31954ed0e4f216060800000000000000
+      internalID: 6944884112669038867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_61
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 122
+        width: 6
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf984561694391f0800000000000000
+      internalID: -1039406406332538917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_62
+      rect:
+        serializedVersion: 2
+        x: 1505
+        y: 121
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd2d209d7651b870800000000000000
+      internalID: 8696827452718919152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_63
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 23
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6f03f1c21e377da0800000000000000
+      internalID: -5947216532635185302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_64
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 22
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee69d4d9e40d4800800000000000000
+      internalID: 598139727855054562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_65
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 19
+        width: 74
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462feeb6fef61ccc0800000000000000
+      internalID: -3692547145368407452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_66
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 17
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb607cd9f48c69880800000000000000
+      internalID: -8604469793769716037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_67
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 21
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27181e118a9419740800000000000000
+      internalID: 5156984034519253362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_68
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 32
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bd799007e269dd0800000000000000
+      internalID: -2479743486088717495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_69
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 33
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e0ebd1618185070800000000000000
+      internalID: 8095246813465808444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_70
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 20
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c016ea651d3b121c0800000000000000
+      internalID: -4530142038474202868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rebirth(NormalForm)_71
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 33
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4c7f18bf7462aa0800000000000000
+      internalID: -6186177892603935568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3556375dc8e5f7f418236bd178e698ab
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -1358,9 +1908,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":96.0,"y":96.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
       Rebirth(NormalForm)_0: -5682915589835074383
       Rebirth(NormalForm)_1: -8729594566899670413
@@ -1404,9 +1952,34 @@ TextureImporter:
       Rebirth(NormalForm)_44: 7609318539333010322
       Rebirth(NormalForm)_45: -2548256255043728065
       Rebirth(NormalForm)_46: 2107421267724264994
+      Rebirth(NormalForm)_47: -7665517691165885311
+      Rebirth(NormalForm)_48: 1915052770401332224
+      Rebirth(NormalForm)_49: -2821917541765492947
       Rebirth(NormalForm)_5: -2610215898152371264
+      Rebirth(NormalForm)_50: -2205262227439212021
+      Rebirth(NormalForm)_51: 5135524769111645325
+      Rebirth(NormalForm)_52: -8265542428012706100
+      Rebirth(NormalForm)_53: 7773521940488197362
+      Rebirth(NormalForm)_54: 5302901365168428999
+      Rebirth(NormalForm)_55: 147054959547544711
+      Rebirth(NormalForm)_56: -4250882740996780141
+      Rebirth(NormalForm)_57: -6659382696250800889
+      Rebirth(NormalForm)_58: -6012482093313570297
+      Rebirth(NormalForm)_59: 2868784125924296604
       Rebirth(NormalForm)_6: 4271043071097501053
+      Rebirth(NormalForm)_60: 6944884112669038867
+      Rebirth(NormalForm)_61: -1039406406332538917
+      Rebirth(NormalForm)_62: 8696827452718919152
+      Rebirth(NormalForm)_63: -5947216532635185302
+      Rebirth(NormalForm)_64: 598139727855054562
+      Rebirth(NormalForm)_65: -3692547145368407452
+      Rebirth(NormalForm)_66: -8604469793769716037
+      Rebirth(NormalForm)_67: 5156984034519253362
+      Rebirth(NormalForm)_68: -2479743486088717495
+      Rebirth(NormalForm)_69: 8095246813465808444
       Rebirth(NormalForm)_7: 1893872197245420796
+      Rebirth(NormalForm)_70: -4530142038474202868
+      Rebirth(NormalForm)_71: -6186177892603935568
       Rebirth(NormalForm)_8: -4087100568060075635
       Rebirth(NormalForm)_9: -4374246553548690353
   mipmapLimitGroupName: 

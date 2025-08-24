@@ -182,7 +182,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && currentLines != null)
+        if((Input.GetKeyDown(KeyCode.Space)||Input.GetMouseButtonDown(0)||Input.GetKeyDown(KeyCode.E)) && currentLines != null)
         {
             StopAllCoroutines();
 
