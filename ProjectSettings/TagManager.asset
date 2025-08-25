@@ -9,6 +9,11 @@ TagManager:
   - NotTargetableEnemy
   - Stair
   - Front Collision
+  - Friend
+  - Projectile
+  - EnemyPC
+  - Portal
+  - Obstacle Jump On
   layers:
   - Default
   - TransparentFX
