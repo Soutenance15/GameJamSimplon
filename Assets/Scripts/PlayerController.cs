@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 public class PlayerController : MonoBehaviour
 {
     [Header("Effet de dégât")]
-    public SpriteRenderer damageScreen;
+    public SpriteRenderer damageScreen = null;
     public float damageScreenDuration = 0.05f;
 
     private Coroutine damageScreenRoutine;
@@ -282,7 +282,7 @@ public class PlayerController : MonoBehaviour
         // mais les controls resten Active
 
         // Recharger la scène actuelle pour respawn
-        damageScreen.color = new Color(0, 0, 0, 0.4f);
+        if(damageScreen != null) damageScreen.color = new Color(0, 0, 0, 0.4f);
         // Thread.Sleep(2000);
 
         Restart();

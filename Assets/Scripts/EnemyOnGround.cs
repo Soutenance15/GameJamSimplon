@@ -26,7 +26,6 @@ public class EnemyOnGround : MonoBehaviour
     //     return dot > threshold;
     // }
 
-
     public void TakeDamage(float amount)
     {
         currentHealth -= amount;
@@ -53,16 +52,18 @@ public class EnemyOnGround : MonoBehaviour
         {
             float scale = Mathf.Clamp01(currentHealth / maxHealth);
             Vector3 localScale = healthBar.localScale;
-            // On ne modifie que la largeur (axe X), pas la hauteur (axe Y) ni la profondeur (axe Z) 
+            // On ne modifie que la largeur (axe X), pas la hauteur (axe Y) ni la profondeur (axe Z)
             healthBar.localScale = new Vector3(scale, localScale.y, localScale.z);
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")
-        // || collision.gameObject.CompareTag("Player")
-        || collision.gameObject.CompareTag("Front Collision"))
+        if (
+            collision.gameObject.CompareTag("Enemy")
+            // || collision.gameObject.CompareTag("Player")
+            || collision.gameObject.CompareTag("Front Collision")
+        )
         {
             Flip();
         }
@@ -74,7 +75,6 @@ public class EnemyOnGround : MonoBehaviour
         //         Flip();
         //     }
         // }
-
     }
 
     void Start()
@@ -87,7 +87,11 @@ public class EnemyOnGround : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(moveDirection * moveSpeed, rb.linearVelocity.y);
 
-        bool onGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        bool onGround = Physics2D.OverlapCircle(
+            groundCheck.position,
+            groundCheckRadius,
+            groundLayer
+        );
 
         if (!onGround)
         {

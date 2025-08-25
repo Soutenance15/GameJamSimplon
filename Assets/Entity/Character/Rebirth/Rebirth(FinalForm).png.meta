@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -96,19 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -116,10 +103,10 @@ TextureImporter:
       name: Rebirth(FinalForm)_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 68
-        width: 66
-        height: 66
+        x: 0
+        y: 0
+        width: 269
+        height: 135
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,165 +121,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_1
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 68
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5c7cf409a3fdd64581408512a6a70c9
-      internalID: 1729256541
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_2
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 68
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b6dfe0813ccc284e9b3ed9867832d0c
-      internalID: 790642506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_3
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 68
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dcae8d6f459a2cc4c88e1e44beeebae6
-      internalID: -192177926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_4
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c6cec3ff7e2a177458810ee5ef8467c0
-      internalID: 1059896300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_5
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 1
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd3fe55e98c2b2246a180f9afff97edd
-      internalID: -914435749
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_6
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 1
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e3ac30603e9e4842b9169241a2e312e
-      internalID: -1357141883
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Rebirth(FinalForm)_7
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 1
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fffeaf70eee1e0a438f36513f3b35a0c
-      internalID: 1710494861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 910aff81c6f01594cbe48beca8186b8e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -300,18 +133,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":66.0,"y":66.0},"gridSpriteOffset":{"x":1.0,"y":1.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
       Rebirth(FinalForm)_0: 7445802189530326530
-      Rebirth(FinalForm)_1: 1729256541
-      Rebirth(FinalForm)_2: 790642506
-      Rebirth(FinalForm)_3: -192177926
-      Rebirth(FinalForm)_4: 1059896300
-      Rebirth(FinalForm)_5: -914435749
-      Rebirth(FinalForm)_6: -1357141883
-      Rebirth(FinalForm)_7: 1710494861
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
