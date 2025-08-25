@@ -5,6 +5,10 @@ using UnityEngine.UI; // Ajoute cette ligne au début
 
 public class Player : MonoBehaviour
 {
+    [Header("Pause")]
+    public GameObject hudPanel;
+    public bool isPaused = false;
+
     [Header("Effet de dégât")]
     public Image damageScreen = null;
     public float damageScreenDuration = 0.1f;
@@ -54,6 +58,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        hudPanel.SetActive(false);
         if (friendInstance != null)
         {
             // friendInstance.SetActive(false);
@@ -92,6 +97,21 @@ public class Player : MonoBehaviour
                 rb.linearVelocity.y
             );
         }
+    }
+
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            Time.timeScale = 0f; // Pause
+        }
+        else
+        {
+            Time.timeScale = 1f; // Jeu normal
+        }
+
+        hudPanel.SetActive(isPaused); // Montre/cache le HUD selon l’état de pause
     }
 
     private void startKnockBack()
@@ -274,6 +294,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            TogglePause();
+        }
         // Mort si chute trop basse
         if (transform.position.y < -3f)
             Die();
