@@ -420,6 +420,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3867551652729373578, guid: 24bd829c291a2c64cadcd23ddc9f90cf, type: 3}
+      propertyPath: hudPanel
+      value: 
+      objectReference: {fileID: 643946511}
+    - target: {fileID: 3867551652729373578, guid: 24bd829c291a2c64cadcd23ddc9f90cf, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1246304263479128926}
