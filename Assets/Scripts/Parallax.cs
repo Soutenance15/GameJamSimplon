@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 public class Parallax : MonoBehaviour {
 	
 	private float length, startpos;
@@ -26,6 +27,8 @@ public class Parallax : MonoBehaviour {
 	}
 }
 =======
+=======
+>>>>>>> Stashed changes
 [DisallowMultipleComponent]
 public class ParallaxAutoTiler2D : MonoBehaviour
 {
@@ -241,4 +244,7 @@ public class ParallaxAutoTiler2D : MonoBehaviour
         Gizmos.DrawCube(root.position, new Vector3(w, h, 0.1f));
     }
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
 	private int musicIndex = 0;
 	public bool nextMusic = false;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	public GameObject player ;
 	public GameObject zoneTeleport ;
 	public GameObject background1 ;
@@ -20,11 +21,14 @@ public class AudioManager : MonoBehaviour
         
     }
 =======
+=======
+>>>>>>> Stashed changes
 	public GameObject player;
 	public GameObject zoneTeleport;
 	public GameObject background1;
 	public GameObject background2;
 	private static AudioManager instance;
+<<<<<<< Updated upstream
 
 	int ActualSound;
 	public GameObject boss1;
@@ -32,10 +36,19 @@ public class AudioManager : MonoBehaviour
 	// public GameObject boss3 ;
 >>>>>>> Stashed changes
 
+=======
+
+	int ActualSound;
+	public GameObject boss1;
+	public GameObject boss2;
+	// public GameObject boss3 ;
+
+>>>>>>> Stashed changes
 	public static AudioManager Instance
 	{
 		get { return instance; }
 	}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 	void OnCollisionEnter2D(Collision2D collision)
     {
@@ -46,6 +59,8 @@ public class AudioManager : MonoBehaviour
             // Contact principal
 			if (!nextMusic){
 =======
+=======
+>>>>>>> Stashed changes
 
 	private void Awake()
 	{
@@ -53,6 +68,7 @@ public class AudioManager : MonoBehaviour
 		{
 			Destroy(this.gameObject);
 			return;
+<<<<<<< Updated upstream
 		}
 
 		instance = this;
@@ -88,6 +104,31 @@ public class AudioManager : MonoBehaviour
 
 		public void PlayNextSong()
 		{
+=======
+		}
+
+		instance = this;
+		//DontDestroyOnLoad(this.gameObject); 
+	}
+		void Start()
+		{
+
+			audioSource.clip= playlist[0];
+			audioSource.Play();
+
+		}
+
+		void Update()
+		{
+			if (!audioSource.isPlaying)
+			{
+				PlayNextSong();
+			}
+		}
+
+		public void PlayNextSong()
+		{
+>>>>>>> Stashed changes
 		EndSound();
 		audioSource.Stop();
 		ActualSound++;
@@ -100,6 +141,9 @@ public class AudioManager : MonoBehaviour
 	public void EndSound()
 	{
 		audioSource.volume = Mathf.Lerp(1, 0, 1);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	}
 	public void StartSound()

@@ -301,6 +301,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 67610388}
   m_CullTransparentMesh: 1
 --- !u!1 &102401669
@@ -357,6 +358,8 @@ MonoBehaviour:
 --- !u!212 &102401672
 SpriteRenderer:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 44921495}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -376,11 +379,15 @@ SpriteRenderer:
   m_PresetInfoIsWorld: 0
 --- !u!223 &44921499
 Canvas:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 102401669}
   m_Enabled: 1
@@ -521,6 +528,8 @@ SpriteRenderer:
 --- !u!1 &194304395
 GameObject:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 44921495}
   m_Enabled: 1
   serializedVersion: 3
@@ -625,6 +634,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194304395}
   serializedVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 155.74, y: 0.6, z: 0}
@@ -1794,6 +1804,8 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &362260372
 =======
+=======
+>>>>>>> Stashed changes
   m_Modification:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
@@ -2267,10 +2279,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 479911265}
   - component: {fileID: 479911266}
   m_Layer: 0
   m_Name: "Arri\xE8re-plan (2)"
+=======
+  - component: {fileID: 442990741}
+  m_Layer: 0
+  m_Name: HUD (1)
+>>>>>>> Stashed changes
 =======
   - component: {fileID: 442990741}
   m_Layer: 0
@@ -2282,7 +2300,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &479911265
+=======
+--- !u!4 &442990741
+>>>>>>> Stashed changes
 =======
 --- !u!4 &442990741
 >>>>>>> Stashed changes
@@ -2291,6 +2313,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 479911264}
   serializedVersion: 2
@@ -2358,6 +2381,8 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &503085770
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 442990740}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2377,6 +2402,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   serializedVersion: 6
   m_Component:
@@ -2619,6 +2645,8 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &544045199
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &541421431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2782,6 +2810,7 @@ Canvas:
   m_TargetDisplay: 0
 --- !u!1001 &592652683
 PrefabInstance:
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2796,6 +2825,10 @@ PrefabInstance:
 --- !u!212 &581601887
 SpriteRenderer:
 =======
+=======
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+>>>>>>> Stashed changes
   m_Modification:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
@@ -2859,11 +2892,15 @@ SpriteRenderer:
   m_SourcePrefab: {fileID: 100100000, guid: 95443cc93db1f554bbdb691d8bbfc3e7, type: 3}
 --- !u!1 &610809262
 GameObject:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 581601885}
   m_Enabled: 1
@@ -2916,6 +2953,8 @@ GameObject:
   m_SpriteSortPoint: 0
 --- !u!1001 &624000748
 =======
+=======
+>>>>>>> Stashed changes
   serializedVersion: 6
   m_Component:
   - component: {fileID: 610809263}
@@ -3163,6 +3202,7 @@ PrefabInstance:
     - {fileID: 3069974708569323058, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
     m_AddedGameObjects: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 449535639240062735, guid: 8420674d9bfa5c44d967cd15b2aa12f7, type: 3}
       insertIndex: -1
@@ -3390,6 +3430,8 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &680172915
 =======
+=======
+>>>>>>> Stashed changes
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5b1d3d9d6cc8c499dc908efbca16a0, type: 3}
 --- !u!1001 &673917606
@@ -3454,6 +3496,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 755808f2219f696439d666e847b767e8, type: 3}
 --- !u!1 &710210059
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,6 +3598,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingOrder: 2
   m_Sprite: {fileID: -855298285791758126, guid: 6568077ef101853448cf16151b412345, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3646,10 +3692,15 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 3836954968553550457, guid: 915d77723c01e354c9ad33dd85ffca33, type: 3}
 >>>>>>> Stashed changes
+=======
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 3836954968553550457, guid: 915d77723c01e354c9ad33dd85ffca33, type: 3}
+>>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_Size: {x: 5.76, y: 2.68}
   m_AdaptiveModeThreshold: 0.5
@@ -3951,6 +4002,9 @@ SpriteRenderer:
 =======
   m_Size: {x: 19.2, y: 10.8}
 >>>>>>> Stashed changes
+=======
+  m_Size: {x: 19.2, y: 10.8}
+>>>>>>> Stashed changes
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -4200,6 +4254,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95443cc93db1f554bbdb691d8bbfc3e7, type: 3}
 --- !u!1 &855277857
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -4209,17 +4266,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 941831733}
   - component: {fileID: 941831735}
   - component: {fileID: 941831734}
   m_Layer: 0
   m_Name: "Arri\xE8re-plan (4)"
 =======
+=======
+>>>>>>> Stashed changes
   - component: {fileID: 855277858}
   - component: {fileID: 855277860}
   - component: {fileID: 855277859}
   m_Layer: 0
   m_Name: "Arri\xE8re plan (1)"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4227,7 +4290,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &941831733
+=======
+--- !u!4 &855277858
+>>>>>>> Stashed changes
 =======
 --- !u!4 &855277858
 >>>>>>> Stashed changes
@@ -4236,6 +4303,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 941831732}
   serializedVersion: 2
@@ -4250,6 +4318,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &941831734
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 855277857}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
@@ -4260,6 +4330,9 @@ Transform:
   m_Father: {fileID: 1374625347}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!114 &855277859
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4267,7 +4340,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 941831732}
+=======
+  m_GameObject: {fileID: 855277857}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 855277857}
 >>>>>>> Stashed changes
@@ -4277,10 +4354,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   cam: {fileID: 2022763392}
   parallaxEffect: 1
 --- !u!212 &941831735
 =======
+=======
+>>>>>>> Stashed changes
   cameraTransform: {fileID: 2022763395}
   visualsRoot: {fileID: 0}
   parallaxMultiplierX: 1
@@ -4292,6 +4372,9 @@ MonoBehaviour:
   zOffset: 0
   drawBoundsGizmo: 0
 --- !u!212 &855277860
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4299,7 +4382,11 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 941831732}
+=======
+  m_GameObject: {fileID: 855277857}
+>>>>>>> Stashed changes
 =======
   m_GameObject: {fileID: 855277857}
 >>>>>>> Stashed changes
@@ -4340,8 +4427,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingOrder: 2
   m_Sprite: {fileID: -855298285791758126, guid: 6568077ef101853448cf16151b412345, type: 3}
+=======
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 3836954968553550457, guid: 915d77723c01e354c9ad33dd85ffca33, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SortingOrder: 0
   m_Sprite: {fileID: 3836954968553550457, guid: 915d77723c01e354c9ad33dd85ffca33, type: 3}
@@ -4351,7 +4443,11 @@ SpriteRenderer:
   m_FlipY: 0
   m_DrawMode: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Size: {x: 5.76, y: 3.24}
+=======
+  m_Size: {x: 19.2, y: 10.8}
+>>>>>>> Stashed changes
 =======
   m_Size: {x: 19.2, y: 10.8}
 >>>>>>> Stashed changes
@@ -4361,8 +4457,11 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &1041234734
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!1001 &896516760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5088,6 +5187,7 @@ Tilemap:
     e32: 0
     e33: 1
 --- !u!1 &1016990084
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -5415,12 +5515,16 @@ TilemapRenderer:
   m_MaskInteraction: 0
 --- !u!1839735485 &1041234740
 Tilemap:
+=======
+GameObject:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041234734}
   m_Enabled: 1
+<<<<<<< Updated upstream
   m_Tiles:
   - first: {x: -185, y: 40, z: 0}
     second:
@@ -5852,6 +5956,78 @@ Tilemap:
     e32: 0
     e33: 1
 --- !u!1 &1081505802
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c739745f2f98c434daaeee2e1b3b3c54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  counterText: {fileID: 388967276}
+  totalPC: 4
+--- !u!114 &1016990087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016990084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1016990088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016990084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 2
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1016990089
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016990084}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!1 &1018652035
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5859,6 +6035,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 1081505803}
   - component: {fileID: 1081505806}
   - component: {fileID: 1081505805}
@@ -5866,16 +6043,31 @@ GameObject:
   m_Layer: 9
   m_Name: Trigger
   m_TagString: MusicTrigger
+=======
+  - component: {fileID: 1018652036}
+  - component: {fileID: 1018652039}
+  - component: {fileID: 1018652038}
+  - component: {fileID: 1018652037}
+  m_Layer: 7
+  m_Name: Group Hud component
+  m_TagString: Untagged
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< Updated upstream
 --- !u!4 &1081505803
 Transform:
+=======
+--- !u!224 &1018652036
+RectTransform:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1081505802}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -5887,10 +6079,32 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1081505804
 TilemapCollider2D:
+=======
+  m_GameObject: {fileID: 1018652035}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2096772, y: 1.2096772, z: 1.2096772}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1387096271}
+  - {fileID: 1560539027}
+  - {fileID: 2130696916}
+  - {fileID: 388967278}
+  m_Father: {fileID: 1016990085}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 198, y: 399}
+  m_SizeDelta: {x: 1, y: 0.20019531}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1018652037
+MonoBehaviour:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 1081505802}
   m_Enabled: 1
   serializedVersion: 3
@@ -6283,6 +6497,69 @@ Tilemap:
     e33: 1
 --- !u!1 &1153321685
 =======
+=======
+  m_GameObject: {fileID: 1018652035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1018652038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018652035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1018652039
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018652035}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 10
+  m_TargetDisplay: 0
+--- !u!1001 &1056887021
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+>>>>>>> Stashed changes
   m_Modification:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
@@ -6451,6 +6728,9 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc7f8b7a699da34e9a5f06c95d252d9, type: 3}
 --- !u!1 &1152507912
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -6550,8 +6830,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SortingOrder: 2
   m_Sprite: {fileID: -855298285791758126, guid: 6568077ef101853448cf16151b412345, type: 3}
+=======
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 7094887773775264657, guid: 834df13e09f747640b68d345a9f1b62e, type: 3}
+>>>>>>> Stashed changes
 =======
   m_SortingOrder: 5
   m_Sprite: {fileID: 7094887773775264657, guid: 834df13e09f747640b68d345a9f1b62e, type: 3}
@@ -6712,8 +6997,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!4 &1414258209
 Transform:
+=======
+--- !u!224 &1387096271
+RectTransform:
+>>>>>>> Stashed changes
 =======
 --- !u!224 &1387096271
 RectTransform:
@@ -6722,6 +7012,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1414258208}
   serializedVersion: 2
@@ -6998,6 +7289,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1512511767
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1387096270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -7012,12 +7305,16 @@ Transform:
   m_SizeDelta: {x: 206, y: 24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387096272
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1512511765}
   m_Enabled: 1
@@ -7030,6 +7327,8 @@ MonoBehaviour:
 --- !u!212 &1512511768
 SpriteRenderer:
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1387096270}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -7056,11 +7355,15 @@ SpriteRenderer:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1387096273
 CanvasRenderer:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1512511765}
   m_Enabled: 1
@@ -7112,6 +7415,8 @@ CanvasRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 =======
+=======
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1387096270}
   m_CullTransparentMesh: 1
 --- !u!1001 &1464193184
@@ -204089,6 +204394,165 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!1 &1917941699
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1917941702}
+  - component: {fileID: 1917941701}
+  - component: {fileID: 1917941700}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1917941700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917941699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cb0ece19f7b96a44bf519ae63277f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playlist:
+  - {fileID: 8300000, guid: d33991403f5f06046a34caebb9632c39, type: 3}
+  - {fileID: 8300000, guid: 68ea91248d05b8b4ea5e1009f55bc077, type: 3}
+  - {fileID: 8300000, guid: b6df34f4b54b19b47a9aeecea96650d4, type: 3}
+  - {fileID: 8300000, guid: 1e4e42c03fdeff94c9339a9633177c1e, type: 3}
+  - {fileID: 8300000, guid: c9d6cb607f319d147b5f5832f9c635be, type: 3}
+  audioSource: {fileID: 1917941701}
+  nextMusic: 0
+  player: {fileID: 0}
+  zoneTeleport: {fileID: 0}
+  background1: {fileID: 0}
+  background2: {fileID: 0}
+  boss1: {fileID: 0}
+  boss2: {fileID: 0}
+--- !u!82 &1917941701
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917941699}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 463307adc5386af4dbcc961582ef241b, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.15
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 163
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1917941702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917941699}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -26.68806, y: 26.00732, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1922016721
 >>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
@@ -204129,6 +204593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cb0ece19f7b96a44bf519ae63277f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   playlist:
   - {fileID: 8300000, guid: d33991403f5f06046a34caebb9632c39, type: 3}
   - {fileID: 8300000, guid: 68ea91248d05b8b4ea5e1009f55bc077, type: 3}
@@ -204444,6 +204909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c739745f2f98c434daaeee2e1b3b3c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
   counterText: {fileID: 388967276}
   totalPC: 4
 --- !u!1001 &1984625519
@@ -204792,6 +205259,7 @@ MonoBehaviour:
 GameObject:
   m_ObjectHideFlags: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -205014,6 +205482,8 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &2145240178
 =======
+=======
+>>>>>>> Stashed changes
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
@@ -205336,4 +205806,7 @@ SceneRoots:
   - {fileID: 592652683}
   - {fileID: 845189845}
   - {fileID: 1917941702}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

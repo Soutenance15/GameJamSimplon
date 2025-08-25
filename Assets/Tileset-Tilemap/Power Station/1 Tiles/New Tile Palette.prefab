@@ -18175,6 +18175,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: d85c3e7008fb9a14c915b213600ccb0e, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 55c25d3e09eb7c24ea0ea591f1563d8b, type: 2}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TileSpriteArray:
   - m_RefCount: 1
@@ -21261,6 +21264,9 @@ Tilemap:
     m_Data: {fileID: -500828098, guid: d2d6c2ab4c70e3741a084613e7fb5ba7, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 1516
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     m_Data:
       e00: 1
@@ -21280,6 +21286,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   - m_RefCount: 148
     m_Data: {r: 1, g: 1, b: 1, a: 1}
@@ -21337,6 +21344,8 @@ Tilemap:
   m_Origin: {x: -6, y: -21, z: 0}
   m_Size: {x: 21, y: 22, z: 1}
 =======
+=======
+>>>>>>> Stashed changes
   - m_RefCount: 1516
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
@@ -21344,6 +21353,9 @@ Tilemap:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -27, y: -83, z: 0}
   m_Size: {x: 74, y: 81, z: 1}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
@@ -21417,7 +21429,11 @@ TilemapRenderer:
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!114 &1575240073239284109
+=======
+--- !u!114 &8227438131421995665
+>>>>>>> Stashed changes
 =======
 --- !u!114 &8227438131421995665
 >>>>>>> Stashed changes

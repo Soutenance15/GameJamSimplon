@@ -20,6 +20,9 @@ TagManager:
   - Portal
   - EnemyPC
   - BossTrigger
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   layers:
   - Default
