@@ -9,14 +9,8 @@ public class Bonus : MonoBehaviour
     public float respawnDelay = 15f;
     private float respawnTimer = 0f;
     public TextMeshPro respawnTimerText;
-    // private Collider2D bonusCollider;
-    // private SpriteRenderer childSpriteRenderer;
 
-    // void Awake()
-    // {
-    //     bonusCollider = GetComponent<Collider2D>();
-    //     childSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
-    // }
+    public GameObject body;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,7 +32,10 @@ public class Bonus : MonoBehaviour
         StartCoroutine(UpdateTimerDisplay());
         // cacher le bonus
         GetComponent<Collider2D>().enabled = false;
-        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        if (null != body)
+        {
+            body.SetActive(false);
+        }
         while (respawnTimer > 0)
         {
             yield return new WaitForSeconds(1f);
@@ -46,7 +43,10 @@ public class Bonus : MonoBehaviour
         }
         // afficher le bonus
         GetComponent<Collider2D>().enabled = true;
-        GetComponentInChildren<SpriteRenderer>().enabled = true;
+        if (null != body)
+        {
+            body.SetActive(true);
+        }
         respawnTimerText.text = ""; // vide à la fin
     }
 
