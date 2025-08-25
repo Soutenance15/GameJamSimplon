@@ -1,0 +1,7 @@
+Here you will find two folders:
+-1_ tileset
+-2_ example Tile
+
+The first is where you can find all the materials, completely free to be modified if you want.
+
+In the second, a series of example and reference mappings.

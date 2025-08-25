@@ -9,6 +9,18 @@ TagManager:
   - NotTargetableEnemy
   - Stair
   - Front Collision
+<<<<<<< Updated upstream
+=======
+  - MusicTrigger
+  - TeleportTrigger
+  - FixedBlockObject
+  - Projectile
+  - Friend
+  - Obstacle Jump On
+  - Portal
+  - EnemyPC
+  - BossTrigger
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
