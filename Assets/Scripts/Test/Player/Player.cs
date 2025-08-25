@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -10,7 +11,13 @@ public class Player : MonoBehaviour
     public float damageScreenDuration = 0.05f;
     private Coroutine damageScreenRoutine;
 
-    [Header("Déplacements")]
+    [Header("Déplacements/interactions")]
+    public InputActionReference EscapeAction;
+    // public InputActionReference MoveAction;
+    public InputActionReference JumpAction;
+    // public InputActionReference ShootAction;
+    // public InputActionReference InteractAction;
+    public InputActionReference FriendAction;
     public float moveSpeed = 5f;
     public float jumpForce = 7f;
     private bool isPushed = false;
@@ -72,6 +79,58 @@ public class Player : MonoBehaviour
             Debug.LogWarning(
                 "groundCheck n'est pas assigné ! Assigne un enfant vide sous le joueur."
             );
+    }
+
+    private void OnEnable()
+    {
+        EscapeAction.action.performed += OnEscapeActionPerformed;
+        // EscapeAction.action.canceled += OnMoveActionCanceled;
+        EscapeAction.action.Enable();
+
+        // MoveAction.action.performed += OnMoveActionPerformed;
+        // MoveAction.action.canceled += OnMoveActionCanceled;
+        // MoveAction.action.Enable();
+
+        JumpAction.action.performed += OnJumpActionPerformed;
+        // JumpAction.action.canceled += OnJumpActionCanceled;
+        JumpAction.action.Enable();
+
+        // InteractAction.action.performed += OnInteractActionPerformed;
+        // MoveAction.action.canceled += OnMoveActionCanceled;
+        // MoveAction.action.Enable();
+
+        FriendAction.action.performed += OnFriendActionPerformed;
+        // FriendAction.action.canceled += OnFriendActionCanceled;
+        FriendAction.action.Enable();
+    }
+    private void OnDisable()
+    {
+        
+    }
+    private void OnEscapeActionPerformed(InputAction.CallbackContext context) // Saut (flèche haut/Espace/W), seulement si au sol
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    private void OnFriendActionPerformed(InputAction.CallbackContext context) // Déploiement/rangement du Friend
+    {
+        if (friendInstance != null)
+        {
+            if (!isFriendDeployed)
+                DeployFriend();
+            else
+                RecallFriend();
+        }
+        else
+        {
+            Debug.LogWarning("friendInstance n'est pas assigné !");
+        }
+    }
+    private void OnJumpActionPerformed(InputAction.CallbackContext context) // Saut (flèche haut/Espace/W), seulement si au sol
+    {
+        if (isGrounded || collidedObstacleJumpOn)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
     }
 
     void FixedUpdate()
@@ -152,35 +211,35 @@ public class Player : MonoBehaviour
 
     void Control()
     {
+        // Knockback : gestion dans Update
         if (isKnockedBack || controlDisable)
             return;
 
-        // Déploiement/rangement du Friend
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            if (friendInstance != null)
-            {
-                if (!isFriendDeployed)
-                    DeployFriend();
-                else
-                    RecallFriend();
-            }
-            else
-            {
-                Debug.LogWarning("friendInstance n'est pas assigné !");
-            }
-        }
+        // // Déploiement/rangement du Friend
+        // if (Input.GetKeyDown(KeyCode.DownArrow))
+        // {
+        //     if (friendInstance != null)
+        //     {
+        //         if (!isFriendDeployed)
+        //             DeployFriend();
+        //         else
+        //             RecallFriend();
+        //     }
+        //     else
+        //     {
+        //         Debug.LogWarning("friendInstance n'est pas assigné !");
+        //     }
+        // }
 
-        // Knockback : gestion dans Update
 
-        // Saut (flèche haut/Espace/W), seulement si au sol
-        if (
-            ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGrounded)
-            || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
-        )
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        // // Saut (flèche haut/Espace/W), seulement si au sol
+        // if (
+        //     ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGrounded)
+        //     || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
+        // )
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        // }
 
         // Gestion de la grâce après rebond
         if (justBounced)

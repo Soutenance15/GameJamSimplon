@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Threading;
@@ -21,6 +22,10 @@ public class PlayerController : MonoBehaviour
     private Coroutine damageScreenRoutine;
 
     [Header("Déplacements")]
+    public InputActionReference MoveAction;
+    public InputActionReference JumpAction;
+    public InputActionReference ShootAction;
+    
     public float moveSpeed = 5f;      // Vitesse déplacement horizontal
     public float jumpForce = 7f;      // Puissance du saut
 

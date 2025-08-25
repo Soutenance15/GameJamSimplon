@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5243603260674232600}
   - component: {fileID: 2387030497181889338}
   - component: {fileID: 7540579020940571314}
+  - component: {fileID: 3342148671307292237}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -169,6 +170,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageScreen: {fileID: 0}
   damageScreenDuration: 0.05
+  EscapeAction: {fileID: -1597657819627347112, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  JumpAction: {fileID: -2099379676528639254, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  ShootAction: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  InteractAction: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  FriendAction: {fileID: -4840562582093124142, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   moveSpeed: 5
   jumpForce: 7
   maxHealth: 100
@@ -184,6 +190,36 @@ MonoBehaviour:
   isFriendDeployed: 0
   controlDisable: 0
   disableDeployFriend: 0
+--- !u!114 &3342148671307292237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7381343166483815230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &4638323908091417097
 PrefabInstance:
   m_ObjectHideFlags: 0

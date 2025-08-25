@@ -6,6 +6,7 @@ public class Portal : MonoBehaviour
 {
     public GameObject buttonToPress;
     public string sceneToLoad;
+    public InputActionReference InteractAction;
     private bool playerInsidePortal = false;
     private Transform playerTransform = null;
     private bool isAbsorbing = false;

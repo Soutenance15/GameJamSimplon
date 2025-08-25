@@ -1,7 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Friend : MonoBehaviour
 {
+    public InputActionReference ShootAction;
+
     [Header("Projectile")]
     public GameObject projectilePrefab; // Préfabriqué du projectile
     public Transform firePoint; // Position de tir
@@ -33,7 +36,7 @@ public class Friend : MonoBehaviour
     Vector3 lastCheckedPos;
     float blockTimer = 0f;
     bool immobile = false;
-
+    bool shootButton ;
     void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -49,6 +52,39 @@ public class Friend : MonoBehaviour
         lastCheckedPos = transform.position;
     }
 
+    // private void OnEnable()
+    // {
+    //     ShootAction.action.performed += OnShootActionPerformed;
+    //     // ShootAction.action.canceled += OnShootActionCanceled;
+    //     ShootAction.action.Enable();
+    // }
+    // private void OnShootActionPerformed(InputAction.CallbackContext context)
+    // {
+    //     if (Time.time > lastShotTime + 1f / fireRate)
+    //     {
+    //         if (closestEnemy != null && projectilePrefab != null && firePoint != null)
+    //         {
+    //             Vector2 directionProjectile = (
+    //                 closestEnemy.position - firePoint.position
+    //             ).normalized;
+    //             GameObject proj = Instantiate(
+    //                 projectilePrefab,
+    //                 firePoint.position,
+    //                 Quaternion.identity
+    //             );
+    //             // Friend.cs (quand il tire)
+    //             var projScript = proj.GetComponent<ProjectileBasic>();
+    //             if (projScript != null)
+    //                 projScript.Init(directionProjectile, ProjectileSource.Friend);
+
+    //             // var projScript = proj.GetComponent<ProjectileN>();
+    //             // if (projScript != null)
+    //             //     projScript.Init(directionProjectile);
+    //             // lastShotTime, valeur amodifié pour rendre plus fort ou pas
+    //             lastShotTime = Time.time;
+    //         }
+    //     }
+    // }
     void Update()
     {
         if (player == null)
@@ -143,7 +179,8 @@ public class Friend : MonoBehaviour
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.identity, 0.2f);
         }
 
-        bool shootButton = Input.GetKey(KeyCode.LeftControl);
+        // bool shootButton = Input.GetKey(KeyCode.LeftControl);
+        bool shootButton = ShootAction.action.IsPressed();
         if (shootButton && Time.time > lastShotTime + 1f / fireRate)
         {
             if (closestEnemy != null && projectilePrefab != null && firePoint != null)
