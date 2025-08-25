@@ -78,6 +78,20 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        // Friction personnalisée (freinage) uniquement si au sol
+        if (
+            isGrounded
+            && Mathf.Abs(rb.linearVelocity.x) > 0f
+            && Mathf.Abs(Input.GetAxisRaw("Horizontal")) < 0.01f
+        )
+        {
+            // Force de freinage, ajuste "frictionForce" pour que l'arrêt soit naturel
+            float frictionForce = 15f;
+            rb.linearVelocity = new Vector2(
+                Mathf.MoveTowards(rb.linearVelocity.x, 0, frictionForce * Time.fixedDeltaTime),
+                rb.linearVelocity.y
+            );
+        }
     }
 
     private void startKnockBack()
