@@ -1,11 +1,13 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class HealthBoost : MonoBehaviour
 {
     public float energyAmount = 25f;
     public float respawnDelay = 15f;
-
+    private float respawnTimer = 0f;
+    public TextMeshPro respawnTimerText;
     private Collider2D bonusCollider;
     private SpriteRenderer childSpriteRenderer;
 
@@ -27,14 +29,28 @@ public class HealthBoost : MonoBehaviour
 
     private IEnumerator RespawnRoutine()
     {
-        bonusCollider.enabled = false;
-        if (childSpriteRenderer != null)
-            childSpriteRenderer.enabled = false;
+        respawnTimer = respawnDelay;
+        StartCoroutine(UpdateTimerDisplay());
+        // cacher le bonus
+        GetComponent<Collider2D>().enabled = false;
+        GetComponentInChildren<SpriteRenderer>().enabled = false;
+        while (respawnTimer > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            respawnTimer--;
+        }
+        // afficher le bonus
+        GetComponent<Collider2D>().enabled = true;
+        GetComponentInChildren<SpriteRenderer>().enabled = true;
+        respawnTimerText.text = ""; // vide à la fin
+    }
 
-        yield return new WaitForSeconds(respawnDelay);
-
-        bonusCollider.enabled = true;
-        if (childSpriteRenderer != null)
-            childSpriteRenderer.enabled = true;
+    private IEnumerator UpdateTimerDisplay()
+    {
+        while (respawnTimer > 0)
+        {
+            respawnTimerText.text = respawnTimer.ToString("0");
+            yield return null;
+        }
     }
 }
