@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour
 	public bool nextMusic = false;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	public GameObject player ;
 	public GameObject zoneTeleport ;
 	public GameObject background1 ;
@@ -23,11 +24,14 @@ public class AudioManager : MonoBehaviour
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 	public GameObject player;
 	public GameObject zoneTeleport;
 	public GameObject background1;
 	public GameObject background2;
 	private static AudioManager instance;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
 	int ActualSound;
@@ -36,6 +40,14 @@ public class AudioManager : MonoBehaviour
 	// public GameObject boss3 ;
 >>>>>>> Stashed changes
 
+=======
+
+	int ActualSound;
+	public GameObject boss1;
+	public GameObject boss2;
+	// public GameObject boss3 ;
+
+>>>>>>> Stashed changes
 =======
 
 	int ActualSound;
@@ -50,6 +62,7 @@ public class AudioManager : MonoBehaviour
 	}
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	void OnCollisionEnter2D(Collision2D collision)
     {
 		print(collision.gameObject.tag);
@@ -61,6 +74,8 @@ public class AudioManager : MonoBehaviour
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 	private void Awake()
 	{
@@ -68,6 +83,7 @@ public class AudioManager : MonoBehaviour
 		{
 			Destroy(this.gameObject);
 			return;
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 		}
 
@@ -146,6 +162,44 @@ public class AudioManager : MonoBehaviour
 =======
 >>>>>>> Stashed changes
 	}
+=======
+		}
+
+		instance = this;
+		//DontDestroyOnLoad(this.gameObject); 
+	}
+		void Start()
+		{
+
+			audioSource.clip= playlist[0];
+			audioSource.Play();
+
+		}
+
+		void Update()
+		{
+			if (!audioSource.isPlaying)
+			{
+				PlayNextSong();
+			}
+		}
+
+		public void PlayNextSong()
+		{
+		EndSound();
+		audioSource.Stop();
+		ActualSound++;
+		audioSource.clip = playlist[ActualSound];
+
+		StartSound();
+
+			audioSource.Play();
+		}
+	public void EndSound()
+	{
+		audioSource.volume = Mathf.Lerp(1, 0, 1);
+	}
+>>>>>>> Stashed changes
 	public void StartSound()
 	{
 		audioSource.volume = Mathf.Lerp(0, 1, 1);

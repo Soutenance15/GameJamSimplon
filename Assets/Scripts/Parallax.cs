@@ -3,6 +3,7 @@ using UnityEngine;
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 public class Parallax : MonoBehaviour {
 	
 	private float length, startpos;
@@ -27,6 +28,8 @@ public class Parallax : MonoBehaviour {
 	}
 }
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 [DisallowMultipleComponent]
@@ -245,6 +248,9 @@ public class ParallaxAutoTiler2D : MonoBehaviour
     }
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
