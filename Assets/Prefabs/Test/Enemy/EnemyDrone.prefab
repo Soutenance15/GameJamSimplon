@@ -870,6 +870,7 @@ MonoBehaviour:
   healthBar: {fileID: 2347499446974772596}
   xMin: -4
   xMax: 4
+  patrolRange: 12
   yLevel: 3
   flySpeed: 2.5
   body: {fileID: 8520467450038805664}

@@ -3,8 +3,11 @@ using UnityEngine;
 public class EnemyDrone : Enemy
 {
     [Header("Ligne de vol")]
-    public float xMin = -4f;
-    public float xMax = 4f;
+    private float startX;
+    private float startY;
+    public float xMin = 0f;
+    public float xMax = 0f;
+    public float patrolRange = 8f; // Plage de patrouille en X
     public float yLevel = 3f;
     public float flySpeed = 2.5f;
 
@@ -29,6 +32,11 @@ public class EnemyDrone : Enemy
     public override void Start()
     {
         base.Start();
+        startX = transform.position.x;
+        startY = transform.position.y;
+        xMin = startX;
+        xMax = startX + patrolRange;
+        yLevel = startY; // yLevel devient dynamique
         // RÉGLAGE PHYSIQUE PRO : empêche tout drift vertical
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null)
@@ -53,7 +61,8 @@ public class EnemyDrone : Enemy
         pos.y = yLevel;
         transform.position = pos;
 
-        Vector2 droneToPlayer = player != null ? (player.position - transform.position) : Vector2.zero;
+        Vector2 droneToPlayer =
+            player != null ? (player.position - transform.position) : Vector2.zero;
         float distToPlayer = droneToPlayer.magnitude;
         targetingPlayer = (player != null && distToPlayer <= detectionRange);
 
@@ -117,7 +126,8 @@ public class EnemyDrone : Enemy
 
     void ShootAtPlayer()
     {
-        if (projectilePrefab == null || firePoint == null || player == null) return;
+        if (projectilePrefab == null || firePoint == null || player == null)
+            return;
 
         Vector2 direction = (player.position - firePoint.position).normalized;
         GameObject proj = Instantiate(projectilePrefab, firePoint.position, Quaternion.identity);
