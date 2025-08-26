@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
@@ -36,7 +37,7 @@ public class Portal : MonoBehaviour
     void Update()
     {
         // Quand le joueur est dans le portail + appuie sur E
-        if (playerInsidePortal && !isAbsorbing && Input.GetKeyDown(KeyCode.E))
+        if (playerInsidePortal && !isAbsorbing && InteractAction.action.IsPressed())
         {
             StartCoroutine(AbsorbPlayerAndLoad());
         }

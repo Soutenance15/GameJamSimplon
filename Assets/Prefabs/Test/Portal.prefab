@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonToPress: {fileID: 6609857589267098483}
   sceneToLoad: 
+  InteractAction: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   attractDuration: 0.6
   shrinkDuration: 0.5
 --- !u!61 &9187030551714121260
