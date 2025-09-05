@@ -3,35 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Enemy
-  - Ground
-  - NotTargetableEnemy
-  - Stair
-  - Front Collision
-<<<<<<< Updated upstream
-=======
-  - MusicTrigger
-  - TeleportTrigger
-  - FixedBlockObject
-  - Projectile
-  - Friend
-  - Obstacle Jump On
-  - Portal
-  - EnemyPC
-  - BossTrigger
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - GroundLayer
+  - 
   - Water
   - UI
   - 

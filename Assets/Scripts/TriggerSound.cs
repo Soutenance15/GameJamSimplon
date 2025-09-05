@@ -7,7 +7,7 @@ public class TriggerSound : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            AudioManager.Instance.PlayNextSong();
+           // AudioManager.Instance.PlayNextSong();
             Destroy(this.gameObject);
         }
     }
