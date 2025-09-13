@@ -124,7 +124,7 @@ public class Friend : MonoBehaviour
         }
 
         // --- Logique de mouvement uniquement si actif ---
-        if (!immobile)
+        if (!immobile) 
         {
             // Inverse le côté si le joueur change nettement de direction
             float playerSpeedX =

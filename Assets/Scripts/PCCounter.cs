@@ -12,12 +12,7 @@ public class PCCounter : MonoBehaviour
 
     void Start()
     {
-        totalPC = Object
-            .FindObjectsByType<PCEnemyInteraction>(
-                FindObjectsInactive.Exclude,
-                FindObjectsSortMode.None
-            )
-            .Length;
+        totalPC = Object.FindObjectsByType<PCEnemyInteraction>(FindObjectsInactive.Exclude,FindObjectsSortMode.None).Length + Object.FindObjectsByType<EnemyPc>(FindObjectsInactive.Exclude, FindObjectsSortMode.None).Length;
         UpdateHUD();
     }
 
