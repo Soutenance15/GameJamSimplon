@@ -21,6 +21,9 @@ public class EnemyPc : MonoBehaviour
     [SerializeField]
     private PCCounter pcCounter;
 
+    [Header("Screen")]
+    public SpriteRenderer screen;
+
     [Header("Prefab de bombe (ennemi explosif)")]
     public GameObject explosiveEnemyPrefab;
     private bool everCollidedByPlayer = false;
@@ -141,6 +144,15 @@ public class EnemyPc : MonoBehaviour
         // {
         //     Debug.LogWarning("Référence à PC Counter non assignée !");
         // }
+        SkinDisable();
+    }
+
+    public void SkinDisable()
+    {
+        if (null != screen)
+        {
+            screen.color = new Color(0f, 0f, 1f, 1f);
+        }
     }
 
     public IEnumerator DropBombRain()

@@ -4,11 +4,10 @@ public class UnlockFriend : MonoBehaviour
 {
     public KeyCode interactionKey = KeyCode.E;
     public float interactionDistance = 1f;
-    public GameObject playerObj; // rename to avoid confusion
+    public GameObject playerObj; 
     public GameObject Friend;
     public GameObject FriendOnFloor;
     public DialogueManager dialogueManager; // ← drag & drop ton DialogueHUD ici
-
     private Player playerScript; // reference to your Player script
 
     void Start()
@@ -22,11 +21,13 @@ public class UnlockFriend : MonoBehaviour
             }
         }
     }
+
     void Update()
     {
         if (playerObj == null || playerScript == null) return;
 
         float distance = Vector2.Distance(transform.position, playerObj.transform.position);
+
         bool isPlayerNear = distance <= interactionDistance;
 
         if (isPlayerNear)

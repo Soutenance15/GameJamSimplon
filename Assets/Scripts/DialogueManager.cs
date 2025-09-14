@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject backgroundDim;
 
     private Dictionary<string, string[]> dialogueDatabase = new Dictionary<string, string[]>();
+
     // private Dictionary<string, DialogueLine[]> dialogueDatabase = new Dictionary<string, DialogueLine[]>();
     private string[] currentLines;
     private int index;
@@ -99,6 +100,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         dialogueText.text = "";
+
         // 💬 Définir tous les dialogues ici
         dialogueDatabase.Add("activate_rebirth", new string[]
         {

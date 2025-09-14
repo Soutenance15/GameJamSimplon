@@ -1,29 +1,29 @@
+using TMPro; // Pour TextMeshPro
 using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI; // Pour Image si tu utilises un background
 using System.Collections;
+using UnityEngine.SceneManagement; // Pour changer de scène
 
 public class IntroCinematicManager : MonoBehaviour
 {
     [Header("UI Elements")]
     public Transform progressBar;        // Barre visuelle à scaler sur X
     public GameObject SkipAction;
-    public TextMeshProUGUI storyText;
+    public TextMeshProUGUI storyText; // Drag & drop ton TextMeshPro ici dans l'Inspector
+    public Image backgroundDim; // Optionnel : Drag & drop ton background ici
     public TextMeshProUGUI timerNewZone;
 
     [Header("Cinematic Settings")]
-    public float textDisplaySpeed = 0.05f; // vitesse d'affichage du text
-    public float timeBetweenLines = 3f; // durée du compte à rebours entre chaque ligne
-    public float timeAfterLastLine = 3f; // durée du compte à rebours après la dernière ligne
-    public string nextSceneName = "Zone de tutoriel";
+    public float textDisplaySpeed = 0.05f; // Vitesse de défilement du texte (caractère par caractère)
+    public float timeBetweenLines = 3f; // Temps d'attente entre chaque ligne de dialogue APRÈS qu'elle soit entièrement affichée
+    public float timeAfterLastLine = 2f; // Temps avant de charger la scène suivante après la dernière ligne
+    public string nextSceneName = "Zone de tutoriel"; // Nom de ta scène de jeu
 
 
-    [TextArea(5, 10)]
-    public string[] cinematicLines;
-
+    [TextArea(5, 10)] // Permet d'avoir une zone de texte multi-lignes dans l'Inspector
+    public string[] cinematicLines; // Tes lignes de dialogue pour la cinématique
     private int currentLineIndex = 0;
-    private bool isTyping = false;
+    private bool isTyping = false; // Indique si le texte est en train de s'écrire caractère par caractère
     private Coroutine typingCoroutine;
     private float progress = 0f;
     private float activationTime = 2f;    // Temps pour remplir la barre
@@ -31,12 +31,20 @@ public class IntroCinematicManager : MonoBehaviour
 
     void Start()
     {
-        if (storyText != null) storyText.text = "";
+        // Initialise le texte et le fond
+        if (storyText != null)
+        {
+            storyText.text = "";
+            storyText.gameObject.SetActive(true); // S'assurer que le texte est actif
+        }
         if (timerNewZone != null) timerNewZone.text = "";
+        if (backgroundDim != null) backgroundDim.gameObject.SetActive(true); // S'assurer que le fond est actif
+
 
         // Texte cinématique
         if (cinematicLines == null || cinematicLines.Length == 0)
         {
+            // Game Story
             cinematicLines = new string[]
             {
                 "Jadis, le Professeur Tekno rêvait d'un monde où la technologie et la nature s'harmoniseraient...",
@@ -75,8 +83,29 @@ public class IntroCinematicManager : MonoBehaviour
             SceneManager.LoadScene(nextSceneName);
         }
     }
+    // IEnumerator PlayCinematic()
+    // {
+    //     // Boucle pour afficher chaque ligne de la cinématique
+    //     foreach (string line in cinematicLines)
+    //     {
+    //         yield return TypeLine(line); // Affiche la ligne caractère par caractère
+
+    //         // Attendre une entrée du joueur (clic ou touche) pour passer à la ligne suivante
+    //         // Ou attendre un court instant si tu préfères un défilement automatique
+    //         yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
+    //         // Ajoute un petit délai après le clic pour éviter les doubles clics rapides
+    //         yield return new WaitForSeconds(0.1f);
+    //     }
+
+    //     // Toutes les lignes ont été affichées, attendre un peu avant de charger la scène de jeu
+    //     yield return new WaitForSeconds(timeAfterLastLine);
+
+    //     // Charger la scène de jeu
+    //     SceneManager.LoadScene(nextSceneName);
+    // }
     IEnumerator PlayCinematic() /// Lancement de l'intro
     {
+        // Boucle pour afficher chaque ligne de la cinématique
         for (currentLineIndex = 0; currentLineIndex < cinematicLines.Length; currentLineIndex++)
         {
             typingCoroutine = StartCoroutine(TypeLine(cinematicLines[currentLineIndex]));
@@ -127,13 +156,14 @@ public class IntroCinematicManager : MonoBehaviour
             countdown -= Time.deltaTime;
             yield return null;
         }
-
+        // Charger la scène de jeu
         SceneManager.LoadScene(nextSceneName);
     }
     IEnumerator TypeLine(string line) // Ecriture du Texte Lettre par Lettre
     {
         isTyping = true;
-        storyText.text = "";
+        storyTextext = ""; // Efface le texte précédent
+
         foreach (char letter in line.ToCharArray())
         {
             storyText.text += letter;

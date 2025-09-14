@@ -57,6 +57,7 @@ public class Player : MonoBehaviour
     public bool controlDisable = false;
     private bool collidedObstacleJumpOn = false;
     public bool disableDeployFriend = false;
+    private bool ignoreNextJump = false;
 
     void Start()
     {
@@ -147,6 +148,7 @@ public class Player : MonoBehaviour
     private void finishKnockBack()
     {
         isKnockedBack = false;
+        ignoreNextJump = true; // POUR IGNORER LE SAUT LA PREMIERE FRAME
     }
 
     private IEnumerator ScaleFriendOverTime(GameObject friend, float from, float to, float duration)
@@ -202,18 +204,36 @@ public class Player : MonoBehaviour
 
     public void PushMeInDirection(Vector2 direction, float force, float duration = 0.18f)
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse);
-        isKnockedBack = true;
+        rb.linearVelocity = Vector2.zero; // (optionnel mais recommandé : efface l'élan précédent)
+        rb.AddForce(direction.normalized * force, ForceMode2D.Impulse); // <--- Utilise Impulse !
+        isKnockedBack = true; // désactive le contrôle pendant la durée voulue
         knockbackDuration = duration;
         knockbackTimer = 0f;
     }
 
     void Control()
     {
+        if (isKnockedBack || controlDisable)
+            return;
+
+        // Saut
+        if (
+            !ignoreNextJump
+            && // AJOUTÉ ICI !
+            (
+                (Input.GetKey(KeyCode.UpArrow) && isGrounded)
+                || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
+            )
+        )
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+
+        ignoreNextJump = false; // Réinitialise une fois le contrôle repris
         // Knockback : gestion dans Update
         if (isKnockedBack || controlDisable)
             return;
+
 
         // // Déploiement/rangement du Friend
         // if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -230,8 +250,7 @@ public class Player : MonoBehaviour
         //         Debug.LogWarning("friendInstance n'est pas assigné !");
         //     }
         // }
-
-
+        
         // // Saut (flèche haut/Espace/W), seulement si au sol
         // if (
         //     ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.Space)) && isGrounded)
@@ -240,7 +259,6 @@ public class Player : MonoBehaviour
         // {
         //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         // }
-
         // Gestion de la grâce après rebond
         if (justBounced)
         {
@@ -258,6 +276,12 @@ public class Player : MonoBehaviour
         // Déplacement horizontal
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        // // Ne permet le contrôle horizontal QUE si le joueur est au sol
+        // if (isGrounded && Mathf.Abs(moveInput) > 0.01f)
+        // {
+        //     rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        // }
     }
 
     void Update()
