@@ -245,18 +245,18 @@ public class Player : MonoBehaviour
         // Knockback : gestion dans Update
 
         // Saut (flèche haut/Espace/W), seulement si au sol
-        if (
-            (
-                (
-                    Input.GetKey(KeyCode.UpArrow)
-                    || Input.GetKey(KeyCode.W)
-                    || Input.GetKey(KeyCode.Space)
-                ) && isGrounded
-            ) || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
-        )
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        // if (
+        //     (
+        //         (
+        //             Input.GetKey(KeyCode.UpArrow)
+        //             || Input.GetKey(KeyCode.W)
+        //             || Input.GetKey(KeyCode.Space)
+        //         ) && isGrounded
+        //     ) || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
+        // )
+        // {
+        //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        // }
 
         // Gestion de la grâce après rebond
         if (justBounced)
@@ -299,8 +299,7 @@ public class Player : MonoBehaviour
             TogglePause();
         }
         // Mort si chute trop basse
-        if (transform.position.y < -3f)
-            Die();
+        // killIfUnderLimitAltitude();
 
         if (!controlDisable)
             Control();
@@ -321,6 +320,12 @@ public class Player : MonoBehaviour
             else
                 return; // Ignore inputs tant que push
         }
+    }
+
+    private void killIfUnderLimitAltitude()
+    {
+        if (transform.position.y < -3f)
+            Die();
     }
 
     private bool IsStomping(Vector2 contactPoint)
