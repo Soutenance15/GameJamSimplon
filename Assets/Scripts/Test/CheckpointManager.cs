@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class CheckpointManager : MonoBehaviour
+public class CheckpointManager2 : MonoBehaviour
 {
-    public static CheckpointManager Instance;
+    public static CheckpointManager2 Instance;
     private Vector3 checkpointPosition;
     private float playerHealth; // Ajoute d’autres états à sauvegarder si besoin
 

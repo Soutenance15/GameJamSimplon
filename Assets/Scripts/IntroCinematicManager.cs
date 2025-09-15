@@ -162,7 +162,7 @@ public class IntroCinematicManager : MonoBehaviour
     IEnumerator TypeLine(string line) // Ecriture du Texte Lettre par Lettre
     {
         isTyping = true;
-        storyTextext = ""; // Efface le texte précédent
+        storyText.text = ""; // Efface le texte précédent
 
         foreach (char letter in line.ToCharArray())
         {

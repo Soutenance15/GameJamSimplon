@@ -1,19 +1,19 @@
 using UnityEngine;
 
-public enum ProjectileSource
+public enum ProjectileSource2
 {
     Enemy,
     Friend,
 }
 
-public class ProjectileBasic : MonoBehaviour
+public class ProjectileBasic2 : MonoBehaviour
 {
     public float speed = 10f;
     public float lifeTime = 3f;
     private Vector2 direction;
-    public ProjectileSource source; // Ajout
+    public ProjectileSource2 source; // Ajout
 
-    public void Init(Vector2 dir, ProjectileSource src = ProjectileSource.Friend)
+    public void Init(Vector2 dir, ProjectileSource2 src = ProjectileSource2.Friend)
     {
         direction = dir.normalized;
         source = src;
@@ -28,7 +28,7 @@ public class ProjectileBasic : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         // GESTION CIBLE selon source
-        if (source == ProjectileSource.Friend)
+        if (source == ProjectileSource2.Friend)
         {
             // TODO, attention mauvaise pratique ici,
             // ajoute lheritage aussi pour la turret
@@ -48,7 +48,7 @@ public class ProjectileBasic : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        else if (source == ProjectileSource.Enemy)
+        else if (source == ProjectileSource2.Enemy)
         {
             if (other.CompareTag("Player"))
             {

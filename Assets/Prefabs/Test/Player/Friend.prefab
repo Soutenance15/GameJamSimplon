@@ -110,7 +110,6 @@ Transform:
   m_Children:
   - {fileID: 8110463852907073120}
   - {fileID: 947701624200824961}
-  - {fileID: 3906801771344350585}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &953557444731748145
@@ -243,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 601d2f78cb2c18443b5db66990c4b7a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShootAction: {fileID: 0}
   fireRateMultiplier: 1
   projectileScaleMultiplier: 1
   lockIndicatorPrefab: {fileID: 2439674290482588656, guid: d666ec1152a525e4ea1754a2a88a1cf2, type: 3}
@@ -372,8 +372,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-
-
 --- !u!1 &2503602761786595060
 GameObject:
   m_ObjectHideFlags: 0

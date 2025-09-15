@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PushZone : MonoBehaviour
+public class PushZone2 : MonoBehaviour
 {
     public float pushForce = 10f;
 

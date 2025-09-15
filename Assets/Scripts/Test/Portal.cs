@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class Portal : MonoBehaviour
+public class Portal2 : MonoBehaviour
 {
     public GameObject buttonToPress;
     public string sceneToLoad;

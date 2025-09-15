@@ -1,16 +1,20 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Portal : MonoBehaviour
 {
+    public GameObject buttonToPress;
     public string sceneToLoad;
+    public InputActionReference InteractAction;
     private bool playerInsidePortal = false;
     private Transform playerTransform = null;
     private bool isAbsorbing = false;
 
     public float attractDuration = 0.6f; // Durée de l’aspiration vers le centre
     public float shrinkDuration = 0.5f; // Durée du rapetissement
+    // Désactive la physique pour le joueur (plus de gravité, pas de mouvement physique)
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -33,9 +37,17 @@ public class Portal : MonoBehaviour
     void Update()
     {
         // Quand le joueur est dans le portail + appuie sur E
-        if (playerInsidePortal && !isAbsorbing && Input.GetKeyDown(KeyCode.E))
+        if (playerInsidePortal && !isAbsorbing && InteractAction.action.IsPressed())
         {
             StartCoroutine(AbsorbPlayerAndLoad());
+        }
+        if (playerInsidePortal && !isAbsorbing)
+        {
+            buttonToPress.SetActive(true);
+        }
+        else if (!playerInsidePortal)
+        {
+            buttonToPress.SetActive(false);
         }
     }
 
