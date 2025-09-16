@@ -1,3 +1,4 @@
+using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
 // Classe de base pour tous les ennemis au sol. Gère la vie, le déplacement, le flip, la barre de vie.
@@ -9,12 +10,14 @@ public abstract class Enemy : MonoBehaviour
     public float moveSpeed = 2f;
     public Transform groundCheck; // Point de vérification du sol
     public float groundCheckRadius = 0.2f; // Rayon de détection du sol
+    public Transform wallCheck; // Point de vérification du mur
+    public float wallCheckRadius = 0.2f; // Rayon de détection du mur
     public LayerMask groundLayer; // Masque pour détecter le sol
 
     //TODO
     // Il est possible d'integrer un flipWaitTime pou eviter les repetitions de Flip
     // Por le moment ce n'est pas le cas
-    // SOit integrer la fonctionalite, soit supprimer ce commentaire
+    // Soit integrer la fonctionalite, soit supprimer ce commentaire
     // Pour le moment l'inclinaison du sol choisit évite les repetitins de flip
     // TODO
     protected Rigidbody2D rb;
@@ -34,6 +37,12 @@ public abstract class Enemy : MonoBehaviour
     [Header("UI")]
     public Canvas healthBarCanvas; // ou Transform ou GameObject
     public Transform healthBar; // Barre de vie (scale X modifiée selon la vie restante)
+
+    void Awake()
+    {
+        groundCheck = transform.Find("GroundCheck");
+        wallCheck = transform.Find("WallCheck");
+    }
 
     // Prend des dégâts et vérifie si l'ennemi doit être détruit.
     public virtual void TakeDamage(float amount)
@@ -82,8 +91,6 @@ public abstract class Enemy : MonoBehaviour
     // Initialise la vie et récupère le rigidbody.
     public virtual void Start()
     {
-        // canvasHealthBar = transform.Find("CanvasHealthBar/HealthBar");
-        // healthBar = transform.Find("Canvas/HealthBar");
         groundLayer = LayerMask.GetMask("GroundLayer");
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
@@ -126,8 +133,11 @@ public abstract class Enemy : MonoBehaviour
             groundLayer
         );
 
+        // Détection du mur sous le point groundCheck
+        bool onWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, groundLayer);
+
         // Retourne l'ennemi seulement s'il n'y a plus de sol sous le pied avant
-        if (!onGround && !isCollidedPlayer)
+        if ((!onGround && !isCollidedPlayer) || onWall)
         {
             Flip();
         }
