@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -36,7 +37,9 @@ public class Player : MonoBehaviour
     public LayerMask groundLayer;
     private Rigidbody2D rb;
     private bool isGrounded;
+    private bool isCollidedGrounded;
     private bool justBounced = false;
+    private float sizeOnX;
 
     // Temps d'invulnerabilité après bounce
     private float bounceGraceTime = 0.12f;
@@ -47,7 +50,6 @@ public class Player : MonoBehaviour
     private float knockbackTimer = 0f;
     private float knockbackDuration = 0.15f; // Durée du repousse
 
-    [Header("Détection Sol")]
     public GameObject friendInstance;
     public Transform friendSpawnPoint;
     public bool isFriendDeployed = false;
@@ -55,6 +57,22 @@ public class Player : MonoBehaviour
     private bool collidedObstacleJumpOn = false;
     public bool disableDeployFriend = false;
     private bool ignoreNextJump = false;
+
+    public enum GroundModes
+    {
+        Strict,
+        AllJump,
+    }
+
+    public bool repeatJumpMode;
+
+    private string groundMode;
+
+    void Awake()
+    {
+        sizeOnX = GetComponent<Renderer>().bounds.size.x;
+        groundMode = GroundModes.AllJump.ToString();
+    }
 
     void Start()
     {
@@ -82,6 +100,11 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        isCollidedGrounded = Physics2D.OverlapCircle(
+            transform.position,
+            sizeOnX + groundCheckRadius,
+            groundLayer
+        );
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         // Friction personnalisée (freinage) uniquement si au sol
         if (
@@ -207,18 +230,57 @@ public class Player : MonoBehaviour
         UpdateHealthBar();
     }
 
+    bool GetGroundCheckType()
+    {
+        if (groundMode == GroundModes.Strict.ToString())
+        {
+            return isGrounded;
+        }
+        return isCollidedGrounded;
+    }
+
     void Control()
     {
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            groundMode = GroundModes.Strict.ToString();
+            Debug.LogWarning("Strict Mode Activated");
+        }
+        if (Input.GetKeyDown(KeyCode.CapsLock))
+        {
+            Debug.LogWarning("All Jump Mode Activated");
+            groundMode = GroundModes.AllJump.ToString();
+        }
+
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            repeatJumpMode = !repeatJumpMode;
+            if (repeatJumpMode)
+                Debug.LogWarning("Repeat Jump Mode Activated");
+            else
+                Debug.LogWarning("Repeat Jump Mode Disactivated");
+        }
+
         if (isKnockedBack || controlDisable)
             return;
+
+        bool pushControlJump = false;
+        if (repeatJumpMode)
+        {
+            pushControlJump = Input.GetKey(KeyCode.UpArrow);
+        }
+        else
+        {
+            pushControlJump = Input.GetKeyDown(KeyCode.UpArrow);
+        }
 
         // Saut
         if (
             !ignoreNextJump
-            && // AJOUTÉ ICI !
-            (
-                (Input.GetKey(KeyCode.UpArrow) && isGrounded)
-                || (Input.GetKey(KeyCode.UpArrow) && collidedObstacleJumpOn)
+            && (
+                // (Input.GetKey(KeyCode.UpArrow) && GetGroundCheckType())
+                (pushControlJump && GetGroundCheckType())
+                || (pushControlJump && collidedObstacleJumpOn)
             )
         )
         {
@@ -294,6 +356,10 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
         if (Input.GetKeyDown(KeyCode.P))
         {
             TogglePause();
@@ -414,17 +480,17 @@ public class Player : MonoBehaviour
         currentHealth -= amount;
         UpdateHealthBar();
         if (currentHealth <= 0f)
-            Die();
-        if (enemy != null)
-        {
-            // Calcul de la direction (Player ----- Enemy)
-            Vector2 pushDirection = (
-                (Vector2)transform.position - (Vector2)enemy.transform.position
-            ).normalized;
-            rb.linearVelocity = Vector2.zero;
-            rb.AddForce(pushDirection * enemy.giveKnockBackForce, ForceMode2D.Impulse);
-            startKnockBack();
-        }
+            // Die();
+            if (enemy != null)
+            {
+                // Calcul de la direction (Player ----- Enemy)
+                Vector2 pushDirection = (
+                    (Vector2)transform.position - (Vector2)enemy.transform.position
+                ).normalized;
+                rb.linearVelocity = Vector2.zero;
+                rb.AddForce(pushDirection * enemy.giveKnockBackForce, ForceMode2D.Impulse);
+                startKnockBack();
+            }
     }
 
     // Surcharge pour cas sans knockback
