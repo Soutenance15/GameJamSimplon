@@ -8,8 +8,8 @@ public enum ProjectileSource
 
 public class ProjectileBasic : MonoBehaviour
 {
-    public static float speed = 10f;
-    public float lifeTime = 3f;
+    public static float speed = 16f;
+    public float lifeTime = 1f;
     private Vector2 direction;
 
     // public Color projectileColor = Color.white;

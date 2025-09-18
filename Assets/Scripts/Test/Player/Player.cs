@@ -61,7 +61,6 @@ public class Player : MonoBehaviour
     public enum GroundModes
     {
         Strict,
-        AllJump,
     }
 
     public bool repeatJumpMode;
@@ -71,7 +70,7 @@ public class Player : MonoBehaviour
     void Awake()
     {
         sizeOnX = GetComponent<Renderer>().bounds.size.x;
-        groundMode = GroundModes.AllJump.ToString();
+        groundMode = GroundModes.Strict.ToString();
     }
 
     void Start()
@@ -245,11 +244,6 @@ public class Player : MonoBehaviour
         {
             groundMode = GroundModes.Strict.ToString();
             Debug.LogWarning("Strict Mode Activated");
-        }
-        if (Input.GetKeyDown(KeyCode.CapsLock))
-        {
-            Debug.LogWarning("All Jump Mode Activated");
-            groundMode = GroundModes.AllJump.ToString();
         }
 
         if (Input.GetKeyDown(KeyCode.J))

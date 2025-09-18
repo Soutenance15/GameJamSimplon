@@ -30,9 +30,9 @@ public class Friend : MonoBehaviour
     public Transform cooldownBarObject; // Cooldown pour le shoot
 
     [Header("Gestion énergie de tir")]
-    public float energyMax = 15f; // Energie totale
+    public float energyMax = 25f; // Energie totale
     public float energy = 0f; // Energie courante
-    public float energyCostPerShot = 1f; // Coût par tir
+    public float energyCostPerShot = 0.5f; // Coût par tir
     public float energyRegenRate = 3f; // Energie par seconde (lorsque relâché)
     public float emptyLockDuration = 3f; // Durée du verrou si énergie 0 (secondes)
 
@@ -42,7 +42,7 @@ public class Friend : MonoBehaviour
     [Header("Projectile")]
     public GameObject projectilePrefab; // Préfabriqué du projectile
     public Transform firePoint; // Position de tir
-    public float fireRate = 5f; // Coups par seconde
+    public float fireRate = 15f; // Coups par seconde
     float lastShotTime = 0f;
 
     [Header("Suivi du joueur")]
@@ -57,7 +57,7 @@ public class Friend : MonoBehaviour
 
     [Header("Détection d'ennemis")]
     public string enemyTag = "Enemy"; // Tag utilisé pour les ennemis
-    public float enemyDetectDistance = 20f; // Distance maximum pour cibler un ennemi
+    public float enemyDetectDistance = 10f; // Distance maximum pour cibler un ennemi
     private Transform lockedEnemy = null; // Cible actuellement verrouillée
     private int lockedEnemyIndex = -1; // Index dans la liste cyclique
     private List<Transform> validEnemies = new List<Transform>();

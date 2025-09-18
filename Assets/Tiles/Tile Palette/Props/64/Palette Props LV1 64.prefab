@@ -2450,7 +2450,7 @@ GameObject:
   - component: {fileID: 3888937786808131113}
   - component: {fileID: 5708802808865041677}
   m_Layer: 0
-  m_Name: Palette Props LV1
+  m_Name: Palette Props LV1 64
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
