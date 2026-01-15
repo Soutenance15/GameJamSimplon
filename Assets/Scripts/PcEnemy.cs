@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PCEnemyInteraction : MonoBehaviour
 {
+    public DroneUgradeManager droneUpgrade;
     public Transform progressBar;        // Barre visuelle à scaler sur X
     public float activationTime = 2f;    // Temps pour remplir la barre
     public float resetSpeed = 1f;        // Vitesse de descente de la barre (en secondes pour vider totalement)
@@ -20,6 +21,7 @@ public class PCEnemyInteraction : MonoBehaviour
 
     void Start()
     {
+        // droneUpgrade = DroneUpgradeManager.instance.AddUpgradePoint(1);
         player = GameObject.FindGameObjectWithTag("Player");
         SetProgressBar(0f);
     }
@@ -69,6 +71,7 @@ public class PCEnemyInteraction : MonoBehaviour
         {
             pcCounter.PCDeactivated();
             DropExplosiveEnemies();
+            droneUpgrade
         }
         else
         {
